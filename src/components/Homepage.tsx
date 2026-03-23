@@ -5,9 +5,10 @@ import Hero from "./Hero";
 const projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "Description of project 1",
-    image: "/placeholder.jpg",
+    title: "Production Management",
+    description:
+      "Designed to help beverage companies monitor production data across multiple factories, focusing on clarity, usability, and a seamless user experience.",
+    image: "/production-management.jpg",
     type: "Web App" as const,
   },
   {
@@ -38,7 +39,7 @@ const Homepage = () => {
           <p className="text-center text-gray-600 text-xl mb-12">
             Transform insights into simple, effective design solutions
           </p>
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center gap-6">
             {projects.map((project) => (
               <Card key={project.id} {...project} />
             ))}
