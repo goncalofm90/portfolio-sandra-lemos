@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Homepage from './components/Homepage';
-import About from './components/About';
-import ProjectDetail from './components/ProjectDetail';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from "./components/Homepage";
+import About from "./components/About";
+import ProjectDetail from "./components/ProjectDetail";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (

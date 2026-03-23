@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const brands = [
-  'Brand 1',
-  'Brand 2',
-  'Brand 3',
-  'Brand 4',
-  'Brand 5',
-  'Brand 6',
-  'Brand 7',
-  'Brand 8',
+  "Brand 1",
+  "Brand 2",
+  "Brand 3",
+  "Brand 4",
+  "Brand 5",
+  "Brand 6",
+  "Brand 7",
+  "Brand 8",
 ];
 
 const BrandCarousel = () => {

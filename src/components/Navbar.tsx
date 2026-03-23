@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,10 +7,16 @@ const Navbar = () => {
         Sandra Lemos Product Designer (UX/UI)
       </div>
       <div className="space-x-6">
-        <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+        <Link
+          to="/"
+          className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+        >
           Projects
         </Link>
-        <Link to="/about" className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+        <Link
+          to="/about"
+          className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+        >
           About
         </Link>
         <a
