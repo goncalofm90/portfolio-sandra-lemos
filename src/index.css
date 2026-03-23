@@ -32,9 +32,14 @@
 }
 
 /* Kalam text utility class */
-.kalam-grey {
+.text-kalam-grey {
   font-family: "Kalam", cursive;
   color: #5a5a5a;
+}
+
+.text-kalam-black {
+  font-family: "Kalam", cursive;
+  color: #212121;
 }
 
 /* Make font-kalam default to gray color */
@@ -133,4 +138,18 @@ label {
   background-size: cover;
   background-position: center;
   pointer-events: none;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  } /* subtle float */
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

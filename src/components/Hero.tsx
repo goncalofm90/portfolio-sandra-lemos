@@ -1,6 +1,16 @@
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen flex items-center">
+    <section className="relative w-full h-screen flex items-center overflow-hidden">
+      {/* Animated Background SVG */}
+      <img
+        src="/herovector.svg"
+        className="absolute inset-0 w-full h-full opacity-100 animate-float"
+        alt="Background vector"
+      />
+
+      {/* Optional subtle overlay */}
+      <div className="absolute inset-0 bg-white/10"></div>
+
       <div className="relative z-10 w-full px-16">
         {/* Staircase */}
         <div className="space-y-1">
@@ -15,22 +25,24 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* Right block — separate row, aligned right */}
+        {/* Right block */}
         <div className="flex justify-end mt-12">
           <div className="text-left">
             <p className="text-2xl lg:text-4xl font-bold text-black font-lufga">
               Product Designer{" "}
               <span className="font-lufga text-sm">(UX/UI)</span>
             </p>
-            <p className="mt-4 text-2xl kalam-grey">
+            <p className="mt-4 text-2xl text-kalam-grey">
               Turning pixels into human <br />
               experiences that feel like Magic!
             </p>
           </div>
         </div>
       </div>
+
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-500 text-center">
-        <img src={"/mouse-icon.gif"} className="p-8" width="120" />
+        <img src="/mouse-icon.gif" className="p-8" width="120" />
         <span>Scroll down</span>
       </div>
     </section>
