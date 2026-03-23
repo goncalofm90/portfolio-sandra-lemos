@@ -24,7 +24,7 @@ const BrandCarousel = () => {
   return (
     <div className="py-12">
       <div className="w-full mx-auto">
-        <h2 className="font-kalam text-4xl text-start text-black text-center mb-8 px-16">
+        <h2 className="text-kalam-black text-4xl text-start text-black text-center mb-8 px-16">
           Brands I've Worked With
         </h2>
         <div className="relative overflow-hidden">

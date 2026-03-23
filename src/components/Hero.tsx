@@ -13,14 +13,14 @@ const Hero = () => {
 
       <div className="relative z-10 w-full px-16">
         {/* Staircase */}
-        <div className="space-y-1">
-          <p className="font-lufga font-bold text-[8rem] text-gray-900 leading-none">
+        <div>
+          <p className="font-lufga text-[8rem] text-gray-900 leading-none">
             Sandra
           </p>
-          <p className="font-lufga font-light text-[6rem] text-gray-900 lg:ml-32 leading-none">
+          <p className="font-lufga text-kalam-black font-light text-[6rem] text-gray-900 lg:ml-32 leading-none">
             Braz Lemos
           </p>
-          <p className="font-lufga text-3xl text-black ml-90 mt-2">
+          <p className="font-lufga text-3xl text-kalam-black ml-90 mt-2">
             Web, Mobile & Dashboards
           </p>
         </div>

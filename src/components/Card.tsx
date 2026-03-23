@@ -71,7 +71,7 @@ const Card = ({
         <h2 className="font-lufga text-3xl font-bold text-black mb-2">
           {title}
         </h2>
-        <p className="font-lufga text-black mb-4 text-md text-gray-700 leading-relaxed line-clamp-5 whitespace-pre-line">
+        <p className="font-lufga text-black mb-4 text-md text-gray-700 leading-5 line-clamp-5 whitespace-pre-line">
           {description}
         </p>
         <p className="text-kalam-black dark:text-gray-400 text-lg">
