@@ -6,18 +6,21 @@ const projects = [
     title: "Project 1",
     description: "Description of project 1",
     image: "/placeholder.jpg",
+    type: "Web App" as const,
   },
   {
     id: 2,
     title: "Project 2",
     description: "Description of project 2",
     image: "/placeholder.jpg",
+    type: "Mobile App" as const,
   },
   {
     id: 3,
     title: "Project 3",
     description: "Description of project 3",
     image: "/placeholder.jpg",
+    type: "Dashboard" as const,
   },
 ];
 
