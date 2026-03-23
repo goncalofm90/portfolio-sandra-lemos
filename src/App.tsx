@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="relative min-h-screen bg-white overflow-hidden noise-bg">
-        <div className="relative z-10 pt-24">
+        <div className="relative z-10">
           <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />

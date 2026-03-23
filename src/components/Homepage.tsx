@@ -81,7 +81,7 @@ const projects = [
     id: 1,
     title: "Production Management",
     description:
-      "Designed to help beverage companies monitor production data across multiple factories, focusing on clarity, usability, and a seamless user experience.",
+      "Designed to help beverage companies monitor production data \n  across multiple factories, focusing on clarity, usability, and a \n  seamless user experience.",
     image: "/production-management.jpg",
     type: "Web App" as const,
   },
@@ -107,12 +107,12 @@ const Homepage = () => {
       <BlobBackground blobs={pageBlobs} />
       <div className="relative z-10">
         <Hero />
-        <section className="w-full py-8">
+        <section className="w-full py-24 gap-12 my-[18rem]">
           <div className="mx-auto max-w-6xl px-6">
-            <h1 className="text-6xl font-bold text-gray-800 mb-2 text-center">
+            <h1 className="text-8xl font-bold text-gray-800 mb-2 text-center">
               Projects
             </h1>
-            <p className="text-center text-gray-600 text-2xl mb-12">
+            <p className="text-center text-gray-600 text-4xl mb-24">
               Transform insights into simple, effective design solutions
             </p>
             <div className="space-y-6 flex flex-col items-center gap-6">

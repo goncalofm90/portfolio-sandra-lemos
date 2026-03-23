@@ -26,7 +26,7 @@ const projects = [
 
 const About = () => {
   return (
-    <div className="w-full bg-slate-50 dark:bg-gray-900 py-8">
+    <div className="w-full bg-slate-50 dark:bg-gray-900 mt-40">
       <div className="mx-auto max-w-6xl px-6">
         <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">
           About Me
