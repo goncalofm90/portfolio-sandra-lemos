@@ -87,17 +87,35 @@ const projects = [
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "Description of project 2",
-    image: "/placeholder.jpg",
-    type: "Mobile App" as const,
+    title: "Task & Mindfulness App",
+    description:
+      "Designed to help users manage daily tasks while promoting \n calm, balance, and organization through a gentle, pressure-free \n experience.",
+    image: "/mindfulness.png",
+    type: "Mobile" as const,
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "Description of project 3",
-    image: "/placeholder.jpg",
-    type: "Dashboard" as const,
+    title: "Spaceflight Booking & Operations",
+    description:
+      "A mobile app for passengers to book and manage spaceflights, \n and a tablet interface that equips crew with tools to support \n and monitor the journey.",
+    image: "/space.png",
+    type: "Mobile & Tablet" as const,
+  },
+  {
+    id: 4,
+    title: "Hotel Management App",
+    description:
+      "A comprehensive solution designed to streamline hotel operations and enhance guest experiences through modern, user-friendly interfaces",
+    image: "/hotel.png",
+    type: "Web, Mobile & Landing Page" as const,
+  },
+  {
+    id: 5,
+    title: "Ecommerce App",
+    description:
+      "A mobile app that simplifies shopping by offering price \n comparisons across multiple brands and products, enhanced \n with Augmented Reality (AR) for virtual product tryouts.",
+    image: "/fashion.png",
+    type: "Mobile" as const,
   },
 ];
 
@@ -107,7 +125,7 @@ const Homepage = () => {
       {/* <BlobBackground blobs={pageBlobs} /> */}
       <div className="relative z-10">
         <Hero />
-        <section className="w-full py-24 gap-12 my-[18rem]">
+        <section className="w-full py-24 gap-12 mt-[18rem]">
           <div className="mx-auto max-w-6xl px-6">
             <h1 className="text-8xl font-bold text-gray-800 mb-2 text-center">
               Projects

@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-import { FiMonitor, FiSmartphone, FiBarChart } from "react-icons/fi";
+import { FiMonitor, FiSmartphone } from "react-icons/fi";
+import { MdTabletMac } from "react-icons/md";
+
+import { LiaLaptopSolid } from "react-icons/lia";
 
 interface CardProps {
   id: number;
@@ -13,12 +16,25 @@ const getIcon = (type: string) => {
   switch (type) {
     case "Web App":
       return <FiMonitor className="w-5 h-5" />;
-    case "Mobile App":
+    case "Mobile":
       return <FiSmartphone className="w-5 h-5" />;
-    case "Dashboard":
-      return <FiBarChart className="w-5 h-5" />;
+    case "Mobile & Tablet":
+      return (
+        <div className="flex space-x-1">
+          <FiSmartphone className="w-5 h-5" />
+          <MdTabletMac className="w-5 h-5" />
+        </div>
+      );
+    case "Web, Mobile & Landing Page":
+      return (
+        <div className="flex space-x-1">
+          <FiMonitor className="w-5 h-5" />
+          <FiSmartphone className="w-5 h-5" />
+          <LiaLaptopSolid className="w-5 h-5" />
+        </div>
+      );
     default:
-      return <FiMonitor className="w-5 h-5" />;
+      return <LiaLaptopSolid className="w-5 h-5" />;
   }
 };
 
@@ -42,7 +58,7 @@ const Card = ({
         <span className="text-black">{getIcon(type)}</span>
       </div>
       <div className="flex justify-center">
-        <img src={image} alt={title} className="p-8" />
+        <img src={image} alt={title} className="py-8" />
       </div>
 
       <div>
