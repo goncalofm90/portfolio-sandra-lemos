@@ -104,7 +104,7 @@ const projects = [
 const Homepage = () => {
   return (
     <div className="relative">
-      <BlobBackground blobs={pageBlobs} />
+      {/* <BlobBackground blobs={pageBlobs} /> */}
       <div className="relative z-10">
         <Hero />
         <section className="w-full py-24 gap-12 my-[18rem]">

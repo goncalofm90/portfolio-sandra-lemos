@@ -10,7 +10,7 @@ const Hero = () => {
           <p className="font-lufga font-light text-[6rem] text-gray-900 lg:ml-32 leading-none">
             Braz Lemos
           </p>
-          <p className="font-lufga font-bold text-3xl text-black ml-86 mt-2">
+          <p className="font-lufga text-3xl text-black ml-90 mt-2">
             Web, Mobile & Dashboards
           </p>
         </div>
