@@ -1,5 +1,3 @@
-import Card from "./Card";
-
 const About = () => {
   return (
     <div className="w-full bg-slate-50 dark:bg-gray-900 mt-40">

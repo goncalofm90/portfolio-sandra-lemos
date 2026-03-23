@@ -9,7 +9,13 @@ interface CardProps {
   title: string;
   description: string;
   image: string;
-  type?: "Web App" | "Mobile App" | "Dashboard";
+  type?:
+    | "Web App"
+    | "Mobile"
+    | "Dashboard"
+    | "Web, Mobile & Landing Page"
+    | "Mobile & Tablet"
+    | string;
 }
 
 const getIcon = (type: string) => {
