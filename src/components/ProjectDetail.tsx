@@ -27,8 +27,8 @@ const ProjectDetail = () => {
 
   if (!project) {
     return (
-      <div className="container mx-auto px-6 py-8">
-        <div className="text-center">
+      <div className="w-full bg-slate-50 dark:bg-gray-900 py-8">
+        <div className="mx-auto max-w-6xl px-6 text-center">
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
             Project not found
           </h1>
@@ -41,19 +41,21 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="container mx-auto px-6 py-8">
-      <div className="max-w-4xl mx-auto">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-64 object-cover rounded-lg mb-6"
-        />
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
-          {project.title}
-        </h1>
-        <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-          {project.description}
-        </p>
+    <div className="w-full bg-slate-50 dark:bg-gray-900 py-8">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="max-w-4xl mx-auto">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-64 object-cover rounded-lg mb-6"
+          />
+          <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+            {project.title}
+          </h1>
+          <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+            {project.description}
+          </p>
+        </div>
       </div>
     </div>
   );
