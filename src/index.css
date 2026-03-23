@@ -19,7 +19,7 @@
     local("Lufga-Thin"),
     url("/fonts/Lufga-Thin.woff2") format("woff2"),
     url("/fonts/Lufga-Thin.woff") format("woff");
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
@@ -98,6 +98,10 @@ label {
 .font-lufga {
   font-family: var(--font-primary), sans-serif;
 }
+.font-lufga-thin {
+  font-family: "Lufga", sans-serif;
+  font-weight: 100;
+}
 
 .font-kalam {
   font-family: var(--font-secondary), cursive;
@@ -120,7 +124,7 @@ label {
 
 .noise-bg::before {
   content: "";
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   inset: 0;
   opacity: 1;

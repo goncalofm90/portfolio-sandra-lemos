@@ -1,25 +1,28 @@
 const Hero = () => {
   return (
-    <section className="w-full py-12">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <div className="space-y-4">
-            <p className="text-5xl lg:text-6xl text-gray-900 leading-tight">
-              <span className="font-lufga font-bold">Sandra</span> <br />
-              <span className="font-lufga font-light ml-8">Braz Lemos</span>
-            </p>
-            <p className="text-xl lg:text-2xl text-gray-700">
-              Web, Mobile & Dashboards
-            </p>
-          </div>
-          <div className="mt-8 lg:mt-16">
-            <p className="text-2xl lg:text-3xl font-bold text-black font-lufga">
-              Product Designer (UX/UI)
-            </p>
-            <p className="mt-4 text-lg lg:text-xl kalam-grey">
-              Turning pixels into human experiences <br /> that feel like Magic!
-            </p>
-          </div>
+    <section className="relative w-full min-h-screen py-12 flex items-center">
+      <div className="relative z-10 w-full px-16">
+        {/* Staircase */}
+        <div className="space-y-1">
+          <p className="font-lufga font-bold text-[8rem] text-gray-900 leading-none">
+            Sandra
+          </p>
+          <p className="font-lufga font-light text-[5rem] text-gray-900 ml-16 leading-none">
+            Braz Lemos
+          </p>
+          <p className="font-lufga text-2xl text-gray-700 ml-32 mt-2">
+            Web, Mobile & Dashboards
+          </p>
+        </div>
+
+        {/* Right block — separate row, aligned right */}
+        <div className="text-right mt-12">
+          <p className="text-2xl lg:text-3xl font-bold text-black font-lufga">
+            Product Designer (UX/UI)
+          </p>
+          <p className="mt-4 text-lg lg:text-xl kalam-grey">
+            Turning pixels into human experiences <br /> that feel like Magic!
+          </p>
         </div>
       </div>
     </section>

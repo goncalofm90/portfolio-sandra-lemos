@@ -4,15 +4,13 @@ import About from "./components/About";
 import ProjectDetail from "./components/ProjectDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import HeroBackground from "./components/HeroBackground";
 import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div className="relative min-h-screen bg-white overflow-hidden">
-        <HeroBackground />
-        <div className="relative z-10 pt-24 noise-bg ">
+      <div className="relative min-h-screen bg-white overflow-hidden noise-bg">
+        <div className="relative z-10 pt-24">
           <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />
