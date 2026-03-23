@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
 @import "tailwindcss";
 
 @font-face {
@@ -13,10 +13,41 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Lufga";
+  src:
+    local("Lufga-Thin"),
+    url("/fonts/Lufga-Thin.woff2") format("woff2"),
+    url("/fonts/Lufga-Thin.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light dark;
   --font-primary: "Lufga", sans-serif;
   --font-secondary: "Kalam", cursive;
+  --font-kalam-weight: 300;
+}
+
+/* Kalam text utility class */
+.kalam-grey {
+  font-family: "Kalam", cursive;
+  color: #5a5a5a;
+}
+
+/* Make font-kalam default to gray color */
+.font-kalam {
+  color: #5a5a5a;
+}
+
+/* Active nav link underline with margin */
+.nav-link-active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+  font-weight: bold;
 }
 
 * {
@@ -61,6 +92,16 @@ a,
 button,
 label {
   font-family: var(--font-secondary), cursive;
+}
+
+/* Font classes */
+.font-lufga {
+  font-family: var(--font-primary), sans-serif;
+}
+
+.font-kalam {
+  font-family: var(--font-secondary), cursive;
+  font-weight: var(--font-kalam-weight);
 }
 
 /* Infinite scroll animation for brand carousel */

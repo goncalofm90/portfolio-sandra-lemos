@@ -25,13 +25,11 @@ const projects = [
 
 const Homepage = () => {
   return (
-    <div className="w-full">
+    <div>
       <Hero />
-      <section className="w-full bg-slate-50 dark:bg-gray-800 py-8">
+      <section className="w-full py-8">
         <div className="mx-auto max-w-6xl px-6">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
-            My Projects
-          </h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-8">My Projects</h1>
           <div className="space-y-6">
             {projects.map((project) => (
               <Card key={project.id} {...project} />
