@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="relative min-h-screen bg-white overflow-hidden">
         <HeroBackground />
-        <div className="relative z-10 pt-24">
+        <div className="relative z-10 pt-24 noise-bg ">
           <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />

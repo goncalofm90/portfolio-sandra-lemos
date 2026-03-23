@@ -36,7 +36,7 @@ const Homepage = () => {
           <h1 className="text-6xl font-bold text-gray-800 mb-2 text-center">
             Projects
           </h1>
-          <p className="text-center text-gray-600 text-xl mb-12">
+          <p className="text-center text-gray-600 text-2xl mb-12">
             Transform insights into simple, effective design solutions
           </p>
           <div className="space-y-6 flex flex-col items-center gap-6">

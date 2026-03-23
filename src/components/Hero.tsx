@@ -13,11 +13,11 @@ const Hero = () => {
             </p>
           </div>
           <div className="mt-8 lg:mt-16">
-            <p className="text-2xl lg:text-3xl font-bold text-purple-700">
+            <p className="text-2xl lg:text-3xl font-bold text-black font-lufga">
               Product Designer (UX/UI)
             </p>
-            <p className="mt-4 text-lg lg:text-xl text-gray-800">
-              Turning pixels into human experiences that feel like Magic!
+            <p className="mt-4 text-lg lg:text-xl kalam-grey">
+              Turning pixels into human experiences <br /> that feel like Magic!
             </p>
           </div>
         </div>
