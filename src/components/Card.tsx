@@ -57,7 +57,7 @@ const Card = ({
       className="block w-150 bg-white rounded-4xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 p-8"
     >
       <div className="bg-white-50 dark:bg-white-700 flex items-center space-x-2 ">
-        <span className="font-lufga italic text-2xl font-bold text-black">
+        <span className="font-lufga italic text-2xl font-lufga-400 text-black">
           {type}
         </span>
         <span className="text-gray-400">|</span>
