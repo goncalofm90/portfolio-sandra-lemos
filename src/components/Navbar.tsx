@@ -55,8 +55,8 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center">
         <div className="text-2xl font-bold text-black">
-          <span className="font-lufga">Sandra Lemos</span>
-          <span className="block text-base font-normal font-kalam">
+          <span className="font-lufga mb-0">Sandra Lemos</span>
+          <span className="block font-kalam font-md text-kalam-grey mt-0">
             Product Designer (UX/UI)
           </span>
         </div>

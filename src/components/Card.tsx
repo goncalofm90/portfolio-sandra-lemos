@@ -74,7 +74,7 @@ const Card = ({
         <p className="font-lufga-400 text-black mb-4 text-md text-gray-700 leading-5 line-clamp-5 whitespace-pre-line">
           {description}
         </p>
-        <p className="text-kalam-black font-kalam-100 font-light font-kalam-thin">
+        <p className="text-kalam-black font-kalam-100 font-light">
           UX Research & UI Design
         </p>
       </div>
