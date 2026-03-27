@@ -166,7 +166,6 @@
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
-  font-weight: bold;
 }
 
 * {
@@ -247,7 +246,7 @@ label {
   position: absolute;
   inset: 0;
   opacity: 1;
-  background-image: url("/background-noise.svg");
+  background-image: url("/images/background-noise.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

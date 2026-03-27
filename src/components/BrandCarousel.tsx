@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 
 const brands = [
-  <img src={"/ima.png"} alt="Brand 1" />,
-  <img src={"/boiron.png"} alt="Brand 2" />,
-  <img src={"/astara.png"} alt="Brand 3" />,
-  <img src={"/bricomarche.png"} alt="Brand 4" />,
-  <img src={"/bioscalin.png"} alt="Brand 5" />,
-  <img src={"/psyllogel.png"} alt="Brand 6" />,
-  <img src={"/log.png"} alt="Brand 7" />,
-  <img src={"/casadearouca.png"} alt="Brand 8" />,
-  <img src={"/liquidland.png"} alt="Brand 8" />,
-  <img src={"/studyinpt.png"} alt="Brand 8" />,
+  <img src={"/images/ima.png"} alt="Brand 1" />,
+  <img src={"/images/boiron.png"} alt="Brand 2" />,
+  <img src={"/images/astara.png"} alt="Brand 3" />,
+  <img src={"/images/bricomarche.png"} alt="Brand 4" />,
+  <img src={"/images/bioscalin.png"} alt="Brand 5" />,
+  <img src={"/images/psyllogel.png"} alt="Brand 6" />,
+  <img src={"/images/log.png"} alt="Brand 7" />,
+  <img src={"/images/casadearouca.png"} alt="Brand 8" />,
+  <img src={"/images/liquidland.png"} alt="Brand 9" />,
+  <img src={"/images/studyinpt.png"} alt="Brand 10" />,
 ];
 
 const BrandCarousel = () => {

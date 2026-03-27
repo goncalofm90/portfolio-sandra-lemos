@@ -13,11 +13,11 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="inline-block text-black hover:text-blue-600 transition-colors"
           >
-            <FaLinkedinIn />
+            <FaLinkedinIn size={24} />
           </a>
         </div>
         <div>
-          <p className="font-lufga text-xs text-black">
+          <p className="font-lufga text-lg text-black">
             © Sandra Lemos {currentYear}
           </p>
         </div>

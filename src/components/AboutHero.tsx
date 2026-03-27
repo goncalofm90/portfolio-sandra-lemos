@@ -4,9 +4,9 @@ const AboutHero = () => {
       {/* <BlobBackground blobs={pageBlobs} /> */}
       <div className="relative z-10">
         {/* <AboutHero /> */}
-        <section className="flex w-full px-12 py-24 gap-12 mt-[18rem]">
+        <section className="flex w-full px-12 py-24 gap-12 mt-[10rem]">
           <div className="flex justify-center">
-            <img src={"/avatar.png"} alt="User Avatar" />
+            <img src={"images/avatar.png"} alt="User Avatar" />
           </div>
           <div className="max-w-6xl flex flex-col">
             <h1 className="text-8xl font-lufga-500 text-black mb-6">About</h1>
@@ -52,7 +52,8 @@ const AboutHero = () => {
             </p>
             {/* Button */}
             <a
-              href="/your-file.pdf"
+              href="/files/sandra-lemos-cv.pdf"
+              download="/files/sandra-lemos-cv.pdf"
               className="self-start text-white font-bold px-6 py-2 rounded-full mt-4 bg-[#292929] shadow-[0_4px_2px_rgba(0,0,0,0.35)] hover:shadow-none hover:scale-95"
             >
               Download CV

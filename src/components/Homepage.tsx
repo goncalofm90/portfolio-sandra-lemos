@@ -82,7 +82,7 @@ const projects = [
     title: "Production Management",
     description:
       "Designed to help beverage companies monitor production data \n  across multiple factories, focusing on clarity, usability, and a \n  seamless user experience.",
-    image: "/production-management.jpg",
+    image: "images/production-management.jpg",
     type: "Web App" as const,
   },
   {
@@ -90,7 +90,7 @@ const projects = [
     title: "Task & Mindfulness App",
     description:
       "Designed to help users manage daily tasks while promoting \n calm, balance, and organization through a gentle, pressure-free \n experience.",
-    image: "/mindfulness.png",
+    image: "images/mindfulness.png",
     type: "Mobile" as const,
   },
   {
@@ -98,7 +98,7 @@ const projects = [
     title: "Spaceflight Booking & Operations",
     description:
       "A mobile app for passengers to book and manage spaceflights, \n and a tablet interface that equips crew with tools to support \n and monitor the journey.",
-    image: "/space.png",
+    image: "images/space.png",
     type: "Mobile & Tablet" as const,
   },
   {
@@ -106,7 +106,7 @@ const projects = [
     title: "Hotel Management App",
     description:
       "A comprehensive solution designed to streamline hotel operations and enhance guest experiences through modern, user-friendly interfaces",
-    image: "/hotel.png",
+    image: "images/hotel.png",
     type: "Web, Mobile & Landing Page" as const,
   },
   {
@@ -114,7 +114,7 @@ const projects = [
     title: "Ecommerce App",
     description:
       "A mobile app that simplifies shopping by offering price \n comparisons across multiple brands and products, enhanced \n with Augmented Reality (AR) for virtual product tryouts.",
-    image: "/fashion.png",
+    image: "images/fashion.png",
     type: "Mobile" as const,
   },
 ];

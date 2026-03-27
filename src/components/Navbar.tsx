@@ -54,7 +54,7 @@ const Navbar = () => {
       }`}
     >
       <div className="flex justify-between items-center">
-        <div className="text-2xl font-bold text-black">
+        <div className="text-2xl font-lufga-500 text-black">
           <span className="font-lufga mb-0">Sandra Lemos</span>
           <span className="block font-kalam font-md text-kalam-grey mt-0">
             Product Designer (UX/UI)
@@ -64,8 +64,8 @@ const Navbar = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `font-kalam text-black hover:text-purple-600 transition-colors ${
-                isActive ? "font-bold nav-link-active italic" : "font-normal"
+              `text-black hover:text-purple-600 transition-colors text-2xl me-15 ${
+                isActive ? "nav-link-active font-kalam-800" : "font-normal"
               }`
             }
           >
@@ -74,8 +74,8 @@ const Navbar = () => {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `font-kalam text-black hover:text-purple-600 transition-colors ${
-                isActive ? "font-bold nav-link-active italic" : "font-normal"
+              `text-black hover:text-purple-600 transition-colors text-2xl ${
+                isActive ? "nav-link-active font-kalam-600" : "font-normal"
               }`
             }
           >
@@ -83,7 +83,7 @@ const Navbar = () => {
           </NavLink>
           <a
             href="mailto:SsandraBrazLemos@gmail.com"
-            className="text-white px-6 py-2 rounded-full hover:scale-95 font-bold"
+            className="text-white px-8 py-3 rounded-full hover:scale-95 font-kalam-500 text-xl ml-20"
             style={{
               backgroundColor: "#292929",
               boxShadow: "0 4px 2px rgba(0,0,0,0.35)",
