@@ -1,18 +1,76 @@
+import AboutHero from "./AboutHero";
+
 const About = () => {
   return (
-    <div className="w-full bg-slate-50 dark:bg-gray-900 mt-40">
-      <div className="mx-auto max-w-6xl px-6">
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">
-          About Me
-        </h1>
-        <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
-          This is the about page for Sandra Lemos' portfolio. Here you can learn
-          more about my background and experience as a Product Designer
-          specializing in UX/UI.
-        </p>
-        <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
-          Featured Projects
-        </h2>
+    <div className="relative">
+      {/* <BlobBackground blobs={pageBlobs} /> */}
+      <div className="relative z-10">
+        <AboutHero />
+        {/* Toolbox */}
+        <section className="w-full py-24 gap-12 mt-[18rem]">
+          <div className="mx-auto max-w-6xl px-6">
+            <h1 className="text-8xl font-bold text-gray-800 mb-2 text-center">
+              Toolbox
+            </h1>
+            <p className="text-center text-gray-600 text-4xl mb-24">
+              Transform insights into simple, effective design solutions
+            </p>
+            <div className="space-y-6 flex flex-col items-center gap-6">
+              {/* {projects.map((project) => (
+                <Card key={project.id} {...project} />
+              ))} */}
+            </div>
+          </div>
+        </section>
+        {/* Skills */}
+        <section className="w-full py-24 gap-12 mt-[18rem]">
+          <div className="mx-auto max-w-6xl px-6">
+            <h1 className="text-8xl font-bold text-gray-800 mb-2 text-center">
+              Skills
+            </h1>
+            <p className="text-center text-gray-600 text-4xl mb-24">
+              Transform insights into simple, effective design solutions
+            </p>
+            <div className="space-y-6 flex flex-col items-center gap-6">
+              {/* {projects.map((project) => (
+                <Card key={project.id} {...project} />
+              ))} */}
+            </div>
+          </div>
+        </section>
+        {/* AI-Assisted Design */}
+        <section className="w-full py-24 gap-12 mt-[18rem]">
+          <div className="mx-auto max-w-6xl px-6">
+            <h1 className="text-8xl font-bold text-gray-800 mb-2 text-center">
+              AI-Assisted Design
+            </h1>
+            <p className="text-center text-gray-600 text-4xl mb-24">
+              Transform insights into simple, effective design solutions
+            </p>
+            <div className="space-y-6 flex flex-col items-center gap-6">
+              {/* {projects.map((project) => (
+                <Card key={project.id} {...project} />
+              ))} */}
+            </div>
+          </div>
+        </section>
+        {/* Education */}
+        <section className="w-full py-24 gap-12 mt-[18rem]">
+          <div className="mx-auto max-w-6xl px-6">
+            <h1 className="text-8xl font-bold text-gray-800 mb-2 text-center">
+              Education
+            </h1>
+            <p className="text-center text-gray-600 text-4xl mb-24">
+              Transform insights into simple, effective design solutions
+            </p>
+            <div className="space-y-6 flex flex-col items-center gap-6">
+              {/* {projects.map((project) => (
+                <Card key={project.id} {...project} />
+              ))} */}
+            </div>
+          </div>
+        </section>
+        {/* <BrandCarousel /> */}
       </div>
     </div>
   );

@@ -83,7 +83,7 @@ const Navbar = () => {
           </NavLink>
           <a
             href="mailto:SsandraBrazLemos@gmail.com"
-            className="text-white px-6 py-2 rounded-full hover:scale-95"
+            className="text-white px-6 py-2 rounded-full hover:scale-95 font-bold"
             style={{
               backgroundColor: "#292929",
               boxShadow: "0 4px 2px rgba(0,0,0,0.35)",

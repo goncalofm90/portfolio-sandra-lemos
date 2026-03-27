@@ -1,25 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 @font-face {
   font-family: "Lufga";
-  src:
-    local("Lufga"),
-    local("LufgaRegular"),
-    url("/fonts/LufgaRegular.ttf") format("truetype"),
-    url("/fonts/LufgaRegular.ttf") format("truetype");
+  src: url("/fonts/LufgaThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("/fonts/LufgaExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("/fonts/LufgaLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("/fonts/LufgaRegular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Lufga";
-  src:
-    local("Lufga-Thin"),
-    url("/fonts/LufgaThin.ttf") format("truetype"),
-    url("/fonts/LufgaThin.ttf") format("truetype");
-  font-weight: 100;
+  src: url("/fonts/LufgaMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("/fonts/LufgaSemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("/fonts/LufgaBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("/fonts/LufgaExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("/fonts/LufgaBlack.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -31,10 +72,38 @@
   --font-kalam-weight: 300;
 }
 
-/* Kalam text utility class */
+/* Kalam text utility class and sizes */
+.font-kalam-300 {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+}
+.font-kalam-400 {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+}
+.font-kalam-500 {
+  font-family: "Kalam", cursive;
+  font-weight: 500;
+}
+.font-kalam-600 {
+  font-family: "Kalam", cursive;
+  font-weight: 600;
+}
+.font-kalam-700 {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+}
+.font-kalam-800 {
+  font-family: "Kalam", cursive;
+  font-weight: 800;
+}
 .text-kalam-grey {
   font-family: "Kalam", cursive;
   color: #5a5a5a;
+}
+
+.text-black {
+  color: #212121;
 }
 
 .text-kalam-black {
@@ -45,6 +114,51 @@
 /* Make font-kalam default to gray color */
 .font-kalam {
   color: #5a5a5a;
+}
+/* lufga font classes */
+.font-lufga-100 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 100;
+}
+
+.font-lufga-200 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 200;
+}
+
+.font-lufga-300 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 300;
+}
+
+.font-lufga-400 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 400;
+}
+
+.font-lufga-500 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 500;
+}
+
+.font-lufga-600 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 600;
+}
+
+.font-lufga-700 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 700;
+}
+
+.font-lufga-800 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 800;
+}
+
+.font-lufga-900 {
+  font-family: "Lufga", sans-serif;
+  font-weight: 900;
 }
 
 /* Active nav link underline with margin */
