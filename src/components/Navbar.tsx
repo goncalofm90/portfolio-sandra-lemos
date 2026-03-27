@@ -38,16 +38,16 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-4 left-4 right-4 md:left-8 md:right-8 lg:left-16 lg:right-16 z-50 bg-white py-4 px-10 rounded-xl transition-all duration-300 ${
+      className={`fixed top-4 left-4 right-4 md:left-8 md:right-8 lg:left-16 lg:right-16 z-50 bg-white py-2 px-6 md:py-4 md:px-10 rounded-xl transition-all duration-300 ${
         isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 -translate-y-2 pointer-events-none"
       }`}
     >
       <div className="flex justify-between items-center">
-        <div className="text-2xl font-lufga-500 text-black">
+        <div className="text-lg md:text-2xl font-lufga-500 text-black">
           <span className="font-lufga mb-0">Sandra Lemos</span>
-          <span className="block font-kalam font-md text-kalam-grey mt-0">
+          <span className="block font-kalam font-md text-kalam-grey mt-0 text-sm md:text-base">
             Product Designer (UX/UI)
           </span>
         </div>
