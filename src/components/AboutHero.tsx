@@ -14,14 +14,14 @@ const AboutHero = () => {
           </div>
 
           {/* Text Content */}
-          <div className="max-w-6xl flex flex-col">
+          <div className="max-w-3xl flex flex-col">
             <h1 className="text-8xl font-lufga-500 text-black mb-6 sm:text-7xl md:text-6xl xl:text-8xl">
               About
             </h1>
 
             <p className="font-lufga-300 text-base sm:text-lg md:text-lg xl:text-2xl text-kalam-grey mb-6 sm:mb-8 md:mb-10 xl:mb-12">
               After nearly a decade in hospitality,{" "}
-              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-5xl text-kalam-black font-kalam-400">
+              <span className="ms-1 sm:text-4xl md:text-4xl xl:text-3xl text-kalam-black font-kalam-400">
                 I found my passion
               </span>{" "}
               in designing experiences that make people’s lives easier.
@@ -29,7 +29,7 @@ const AboutHero = () => {
 
             <p className="font-lufga-300 text-base sm:text-lg md:text-lg xl:text-2xl text-kalam-grey mb-6 sm:mb-8 md:mb-10 xl:mb-12">
               Growing up around my family’s graphic design business also gave me{" "}
-              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-5xl text-kalam-black font-kalam-400">
+              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-3xl text-kalam-black font-kalam-400">
                 a natural connection
               </span>{" "}
               to creativity and design.
@@ -38,7 +38,7 @@ const AboutHero = () => {
             <p className="font-lufga-300 text-base sm:text-lg md:text-lg xl:text-2xl text-kalam-grey mb-6 sm:mb-8 md:mb-10 xl:mb-12">
               My path into UX/UI is driven by the wish to create simple, useful,
               and{" "}
-              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-5xl text-kalam-black font-kalam-400">
+              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-3xl text-kalam-black font-kalam-400">
                 meaningful solutions
               </span>
               . I believe design is more than visuals, it’s about listening,
@@ -47,7 +47,7 @@ const AboutHero = () => {
 
             <p className="font-lufga-300 text-base sm:text-lg md:text-lg xl:text-2xl text-kalam-grey mb-6 sm:mb-8 md:mb-10 xl:mb-12">
               I've worked across{" "}
-              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-5xl text-kalam-black font-kalam-400">
+              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-3xl text-kalam-black font-kalam-400">
                 B2B and B2C products
               </span>{" "}
               , collaborating with Product and Engineering teams in agile
@@ -57,7 +57,7 @@ const AboutHero = () => {
 
             <p className="font-lufga-300 text-base sm:text-lg md:text-lg xl:text-2xl text-kalam-grey mb-6 sm:mb-8 md:mb-10 xl:mb-12">
               My goal is to keep growing as a designer and be part of{" "}
-              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-5xl text-kalam-black font-kalam-400">
+              <span className="ms-1 text-3xl sm:text-4xl md:text-4xl xl:text-3xl text-kalam-black font-kalam-400">
                 projects that make a difference
               </span>
               .

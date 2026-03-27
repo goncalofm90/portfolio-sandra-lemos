@@ -11,9 +11,12 @@ const Footer = () => {
             href="https://www.linkedin.com/in/sandra-lemos-b937901aa/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-black hover:text-blue-600 transition-colors"
+            className="inline-block transition-colors"
           >
-            <FaLinkedinIn size={24} />
+            <FaLinkedinIn
+              size={24}
+              className="text-black hover:text-blue-600"
+            />
           </a>
         </div>
         <div>

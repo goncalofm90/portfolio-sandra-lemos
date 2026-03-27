@@ -249,7 +249,7 @@ const About = () => {
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-2 text-center font-lufga-500 text-black mb-6">
               Education
             </h1>
-            <p className="text-center text-kalam-grey text-2xl sm:text-3xl lg:text-4xl mb-24 font-kalam-300">
+            <p className="text-center text-kalam-grey text-2xl sm:text-3xl lg:text-3xl mb-24 font-kalam-300">
               Dedication to continuous learning and <br />
               enhancing design skills
             </p>
