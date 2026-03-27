@@ -127,10 +127,10 @@ const Homepage = () => {
         <Hero />
         <section className="w-full py-24 gap-12 mt-[18rem]">
           <div className="mx-auto max-w-6xl px-6">
-            <h1 className="text-8xl font-bold text-gray-800 mb-2 text-center">
+            <h1 className="text-8xl text-black font-lufga-500 mb-2 text-center">
               Projects
             </h1>
-            <p className="text-center text-gray-600 text-4xl mb-24">
+            <p className="text-center font-kalam-300 text-gray-600 text-4xl mb-24">
               Transform insights into simple, effective design solutions
             </p>
             <div className="space-y-6 flex flex-col items-center gap-6">

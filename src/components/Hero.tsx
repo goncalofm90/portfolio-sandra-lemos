@@ -17,7 +17,7 @@ const Hero = () => {
           <p className="font-lufga text-[8rem] text-gray-900 leading-none">
             Sandra
           </p>
-          <p className="font-lufga text-kalam-black font-light text-[6rem] text-gray-900 lg:ml-32 leading-none">
+          <p className="font-lufga-100 text-kalam-black font-light text-[6rem] text-gray-900 lg:ml-32 leading-none">
             Braz Lemos
           </p>
           <p className="font-lufga text-3xl text-kalam-black ml-90 mt-2">
@@ -28,11 +28,11 @@ const Hero = () => {
         {/* Right block */}
         <div className="flex justify-end mt-12">
           <div className="text-left">
-            <p className="text-2xl lg:text-4xl font-bold text-black font-lufga">
+            <p className="text-2xl lg:text-4xl font-lufga-500 text-black font-lufga">
               Product Designer{" "}
               <span className="font-lufga text-sm">(UX/UI)</span>
             </p>
-            <p className="mt-4 text-2xl text-kalam-grey">
+            <p className="mt-4 text-2xl text-kalam-grey font-kalam-300">
               Turning pixels into human <br />
               experiences that feel like Magic!
             </p>
