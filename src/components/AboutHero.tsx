@@ -9,7 +9,7 @@ const AboutHero = () => {
             <img src={"/avatar.png"} alt="User Avatar" />
           </div>
           <div className="max-w-6xl flex flex-col">
-            <h1 className="text-8xl font-lufga-400 text-black mb-6">About</h1>
+            <h1 className="text-8xl font-lufga-500 text-black mb-6">About</h1>
             <p className="font-lufga-300 text-2xl text-kalam-grey mb-12">
               After nearly a decade in hospitality,{" "}
               <span className="ms-1 text-5xl text-kalam-black font-kalam-400">
