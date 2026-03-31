@@ -170,7 +170,7 @@ export const PROJECTS: ProjectData[] = [
             { text: " embedded within the ticket view so passengers always know what's next." },
           ],
         ],
-        image: "/images/nexra-features-2.png",
+        image: "/images/paragraph-images/project-1/problem-statement-1.png",
       },
 
       {
@@ -237,7 +237,7 @@ export const PROJECTS: ProjectData[] = [
             { text: " designed for quick edits under time pressure." },
           ],
         ],
-        image: "/images/nexra-upgrade.png",
+         image: "/images/paragraph-images/project-1/problem-statement-1.png",
       },
 
       {
@@ -254,7 +254,7 @@ export const PROJECTS: ProjectData[] = [
             { text: " to reduce cognitive load at the critical conversion moment." },
           ],
         ],
-        image: "/images/nexra-seat.png",
+         image: "/images/paragraph-images/project-1/problem-statement-1.png",
       },
 
       {
@@ -271,7 +271,7 @@ export const PROJECTS: ProjectData[] = [
             { text: " with one-tap access to documentation." },
           ],
         ],
-        image: "/images/nexra-explore.png",
+         image: "/images/paragraph-images/project-1/problem-statement-1.png",
       },
 
       {
@@ -288,7 +288,7 @@ export const PROJECTS: ProjectData[] = [
             { text: "." },
           ],
         ],
-        image: "/images/nexra-tablet.png",
+         image: "/images/paragraph-images/project-1/problem-statement-1.png",
       },
 
       {
@@ -322,7 +322,7 @@ export const PROJECTS: ProjectData[] = [
             { text: " — it gets out of the way and lets the experience take centre stage." },
           ],
         ],
-        image: "/images/nexra-conclusion.png",
+        image: "/images/paragraph-images/project-1/problem-statement-1.png",
       },
     ],
   },
