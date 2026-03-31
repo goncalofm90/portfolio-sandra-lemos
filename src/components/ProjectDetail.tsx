@@ -1,63 +1,40 @@
-import { useParams } from "react-router-dom";
-
-const projects = [
-  {
-    id: 1,
-    title: "Project 1",
-    description: "Description of project 1",
-    image: "/placeholder.jpg",
-  },
-  {
-    id: 2,
-    title: "Project 2",
-    description: "Description of project 2",
-    image: "/placeholder.jpg",
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "Description of project 3",
-    image: "/placeholder.jpg",
-  },
-];
+import { useParams, Link } from "react-router-dom";
+import ProjectHero from "./ProjectHero";
+import { FiChevronLeft } from "react-icons/fi";
+import { PROJECTS } from "../data/projects";
+import { SplitSection } from "./SplitSection";
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const project = projects.find((p) => p.id === parseInt(id || "0"));
+  const project = PROJECTS.find((p) => p.id === Number(id));
 
   if (!project) {
     return (
-      <div className="w-full bg-slate-50 dark:bg-gray-900 py-8">
-        <div className="mx-auto max-w-6xl px-6 text-center">
-          <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-            Project not found
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300">
-            The project you're looking for doesn't exist.
-          </p>
-        </div>
+      <div className="flex flex-col items-center justify-center min-h-screen gap-6">
+        <p className="font-lufga text-2xl text-gray-400">Project not found</p>
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 text-black font-lufga-400 underline underline-offset-4"
+        >
+          <FiChevronLeft className="w-4 h-4" />
+          Back to Projects
+        </Link>
       </div>
     );
   }
 
   return (
-    <div className="w-full bg-slate-50 dark:bg-gray-900 py-8">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="max-w-4xl mx-auto">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-64 object-cover rounded-lg mb-6"
-          />
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
-            {project.title}
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line">
-            {project.description}
-          </p>
-        </div>
-      </div>
-    </div>
+    <main className="min-h-screen mx-auto">
+      <ProjectHero project={project} />
+      {/* Case study sections */}
+      {project.sections.map((section, index) => (
+        <SplitSection
+          key={`${section.title}-${index}`}
+          section={section}
+          index={index}
+        />
+      ))}
+    </main>
   );
 };
 
