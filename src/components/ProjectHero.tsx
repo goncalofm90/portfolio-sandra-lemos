@@ -1,6 +1,5 @@
 import { FiChevronLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { PROJECTS } from "../data/projects";
 import type { ProjectData } from "../data/types";
 
 const ProjectHero = ({ project }: { project: ProjectData }) => (
@@ -75,7 +74,3 @@ const ProjectHero = ({ project }: { project: ProjectData }) => (
 );
 
 export default ProjectHero;
-
-// ─── Export project data helper for use in other components ──────────────────
-export { PROJECTS };
-export type { ProjectData };

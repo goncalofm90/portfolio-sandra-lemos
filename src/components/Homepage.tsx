@@ -1,6 +1,7 @@
 import Card from "./Card";
 import BrandCarousel from "./BrandCarousel";
 import Hero from "./Hero";
+import { PROJECT_CARDS } from "../data/projectCards";
 // import BlobBackground from "./BlobBackground";
 
 // const pageBlobs = [
@@ -76,49 +77,6 @@ import Hero from "./Hero";
 //   },
 // ];
 
-const projects = [
-  {
-    id: 1,
-    title: "Production Management",
-    description:
-      "Designed to help beverage companies monitor production data \n  across multiple factories, focusing on clarity, usability, and a \n  seamless user experience.",
-    image: "images/production-management.jpg",
-    type: "Web App" as const,
-  },
-  {
-    id: 2,
-    title: "Task & Mindfulness App",
-    description:
-      "Designed to help users manage daily tasks while promoting \n calm, balance, and organization through a gentle, pressure-free \n experience.",
-    image: "images/mindfulness.png",
-    type: "Mobile" as const,
-  },
-  {
-    id: 3,
-    title: "Spaceflight Booking & Operations",
-    description:
-      "A mobile app for passengers to book and manage spaceflights, \n and a tablet interface that equips crew with tools to support \n and monitor the journey.",
-    image: "images/space.png",
-    type: "Mobile & Tablet" as const,
-  },
-  {
-    id: 4,
-    title: "Hotel Management App",
-    description:
-      "A comprehensive solution designed to streamline hotel operations and enhance guest experiences through modern, user-friendly interfaces",
-    image: "images/hotel.png",
-    type: "Web, Mobile & Landing Page" as const,
-  },
-  {
-    id: 5,
-    title: "Ecommerce App",
-    description:
-      "A mobile app that simplifies shopping by offering price \n comparisons across multiple brands and products, enhanced \n with Augmented Reality (AR) for virtual product tryouts.",
-    image: "images/fashion.png",
-    type: "Mobile" as const,
-  },
-];
-
 const Homepage = () => {
   return (
     <div className="relative">
@@ -134,7 +92,7 @@ const Homepage = () => {
               Transform insights into simple, effective design solutions
             </p>
             <div className="space-y-6 flex flex-col items-center gap-6">
-              {projects.map((project) => (
+              {PROJECT_CARDS.map((project) => (
                 <Card key={project.id} {...project} />
               ))}
             </div>

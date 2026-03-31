@@ -1,42 +1,34 @@
 import { useParams, Link } from "react-router-dom";
-import ProjectHero from "./ProjectHero";
 import { FiChevronLeft } from "react-icons/fi";
-import { PROJECTS } from "../data/projects";
-import { SplitSection } from "./SplitSection";
-import ProjectDetailNav from "./ProjecDetailNav";
+import SpaceflightBookingDetail from "./SpaceflightBookingDetail";
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const project = PROJECTS.find((p) => p.id === Number(id));
+  const projectId = Number(id);
 
-  if (!project) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-screen gap-6">
-        <p className="font-lufga text-2xl text-gray-400">Project not found</p>
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 text-black font-lufga-400 underline underline-offset-4"
-        >
-          <FiChevronLeft className="w-4 h-4" />
-          Back to Projects
-        </Link>
-      </div>
-    );
+  switch (projectId) {
+    case 3:
+      return <SpaceflightBookingDetail />;
+    case 1:
+    case 2:
+    case 4:
+    case 5:
+    default:
+      return (
+        <div className="flex min-h-screen flex-col items-center justify-center gap-6">
+          <p className="text-2xl text-gray-400 font-lufga">
+            Case study coming soon
+          </p>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-black underline underline-offset-4 font-lufga-400"
+          >
+            <FiChevronLeft className="h-4 w-4" />
+            Back to Projects
+          </Link>
+        </div>
+      );
   }
-
-  return (
-    <main className="mx-auto min-h-screen">
-      <ProjectHero project={project} />
-      <ProjectDetailNav sections={project.sections} />
-      {project.sections.map((section, index) => (
-        <SplitSection
-          key={`${section.title}-${index}`}
-          section={section}
-          index={index}
-        />
-      ))}
-    </main>
-  );
 };
 
 export default ProjectDetail;

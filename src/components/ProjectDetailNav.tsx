@@ -72,7 +72,7 @@ const ProjectDetailNav = ({ sections }: { sections: CaseStudySection[] }) => {
     setActiveId(id);
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      block: "center",
     });
     window.history.replaceState(null, "", `#${id}`);
   };
