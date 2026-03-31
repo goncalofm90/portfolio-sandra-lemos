@@ -24,8 +24,8 @@ const ProjectDetailNav = ({ sections }: { sections: CaseStudySection[] }) => {
   const navItems = useMemo(
     () =>
       NAV_LINKS.reduce<NavItem[]>((items, link) => {
-        const index = sections.findIndex((section) =>
-          section.title.toLowerCase().includes(link.match),
+        const index = sections.findIndex(
+          (section) => section.match === link.match,
         );
 
         if (index !== -1) {

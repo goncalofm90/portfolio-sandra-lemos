@@ -35,17 +35,17 @@ const SpaceflightBookingDetail = () => {
 
       <ProjectDetailNav
         sections={[
-          { title: "Problem Statement" },
-          { title: "Problem Solution" },
-          { title: "Target Users" },
-          { title: "UI Identity" },
-          { title: "Research Approach" },
-          { title: "Expected Outcomes" },
-          { title: "Key Features" },
-          { title: "Key Features" },
-          { title: "Design" },
-          { title: "Reflection & Improvement" },
-          { title: "Conclusion" },
+          { title: "Problem Statement", match: "statement" },
+          { title: "Problem Solution", match: "solution" },
+          { title: "Target Users", match: "users" },
+          { title: "UI Identity", match: "ui identity" },
+          { title: "Research Approach", match: "research" },
+          { title: "Expected Outcomes", match: "outcomes" },
+          { title: "Key Features", match: "key features" },
+          { title: "Key Features", match: "key features" },
+          { title: "Search Book and Opportunities", match: "design" },
+          { title: "Reflection & Improvement", match: "reflection" },
+          { title: "Conclusion", match: "conclusion" },
         ]}
       />
 
@@ -55,11 +55,11 @@ const SpaceflightBookingDetail = () => {
         image="/images/paragraph-images/project-1/problem-statement-1.png"
       >
         <div>
-          <p className="mb-8">
+          <p className="mb-6 lg:mb-8">
             As commercial space travel begins to take shape, there’s a growing
             need for a simple and intuitive way to book and manage spaceflights.
           </p>
-          <p className="mb-8">
+          <p className="mb-6 lg:mb-8">
             Passengers need clarity and control; crew members need efficient
             tools to support and monitor the journey.
           </p>
@@ -72,17 +72,17 @@ const SpaceflightBookingDetail = () => {
         image="/images/paragraph-images/project-1/problem-solution-1.png"
       >
         <div>
-          <p className="mb-8">
+          <p className="mb-6 lg:mb-8">
             This concept presents a dual-platform solution:
           </p>
-          <p className="my-8">
+          <p className="mb-6 lg:mb-8">
             <strong>Tablet Interface </strong>for crew operations;
           </p>
-          <p className="mb-8">
+          <p className="mb-6 lg:mb-8">
             <strong>Mobile App</strong> for passengers to book and manage
             flights;
           </p>
-          <p className="mb-8">
+          <p className="mb-6 lg:mb-8">
             Designed for space travel, it combines clean UI with intuitive UX to
             make complex journeys feel simple.
           </p>
@@ -94,14 +94,14 @@ const SpaceflightBookingDetail = () => {
         title="Target Users"
         image="/images/paragraph-images/project-1/target-users-1.png"
       >
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Passengers - Adults aged 25–55</strong> who are early adopters
           of commercial space travel. They seek clarity, control, and digital
           convenience when booking and managing their flights. They value
           safety, transparency, and an intuitive experience that makes space
           travel feel accessible;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Crew Members - </strong> Professional flight attendants and
           mission crew operating in commercial spaceflights. They need reliable
           tools to manage passengers and monitor operations efficiently. They
@@ -115,29 +115,29 @@ const SpaceflightBookingDetail = () => {
         title="UI Identity"
         image="/images/paragraph-images/project-1/ui-identity-1.png"
       >
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Color Palette: </strong>A dark, space-inspired background with
           high-contrast orange and white accents. Orange drives primary actions
           and key indicators, while white ensures readability across both
           platforms;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Typography: </strong>A clean, modern sans-serif typeface
           conveys precision and confidence, ideal for the futuristic nature of
           space travel and data-heavy screens;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Icons: </strong>Minimal outlined icons support quick
           recognition of key functions such as connectivity, oxygen levels and
           turbulence status without adding visual noise;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Components: </strong>The passenger app uses rounded cards and
           a clean booking flow for an approachable experience. The crew tablet
           uses structured tables, a seat map and status indicators designed for
           operational efficiency;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Background: </strong>A dark background reinforces the space
           environment, reduces eye strain and creates a premium, immersive feel
           across both platforms;
@@ -149,17 +149,17 @@ const SpaceflightBookingDetail = () => {
         title="Research Approach"
         image="/images/paragraph-images/project-1/research-approach-1.png"
       >
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           Given the conceptual and futuristic nature of the project, I began by
           analyzing patterns from existing airline and travel apps, studying
           booking flows, onboard service features, and cross-device
           interactions.
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           Based on these insights, I then created two detailed personas to guide
           design decisions and ensure a user-centered approach.
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           These findings were adapted to a space travel context, emphasizing
           safety, clarity, and ease of use. The ultimate goal was to craft an
           imaginative and engaging experience that never compromises on
@@ -172,31 +172,31 @@ const SpaceflightBookingDetail = () => {
         title="Expected Outcomes"
         image="/images/paragraph-images/project-1/expected-outcomes-1.png"
       >
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Safety:</strong> Users feel secure with clear, intuitive
           safety features;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Clarity:</strong> Booking and onboard information is easy to
           understand across all devices;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Efficiency:</strong> Travel planning and check-in are
           streamlined for a seamless experience;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Accessibility:</strong> Space travel services are easy to
           access, from reservations to onboard interactions;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Engagement:</strong> Immersive features enhance the excitement
           and anticipation of space travel;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Organization:</strong> All travel details and documents are
           stored in one central place;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Safety:</strong> Users feel secure with clear, intuitive
           safety features;
         </p>
@@ -210,26 +210,26 @@ const SpaceflightBookingDetail = () => {
         <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
           Mobile App - Passengers
         </div>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Flight Reservation:</strong> Choose destination / space route,
           available dates and times, seat selection, class type (Economy, etc.)
           selection;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Explore:</strong> Interactive map of destinations , search and
           discover routes;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Account:</strong> Past tickets, etc;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Boarding:</strong> Online check-in, boarding QR code,
           notifications;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Wishlist:</strong> Future travels;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Payments:</strong> Choose payment method & secure checkout;
         </p>
       </SplitSection>
@@ -242,22 +242,22 @@ const SpaceflightBookingDetail = () => {
         <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
           Tablet - Inflight Agents
         </div>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Passenger Management:</strong> Passenger list, boarding
           status;{" "}
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Onboard Support:</strong> Receive help requests, passenger
           notes & info,meals info;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Flight Management:</strong> Trip progress, ship status &
           conditions, checklist;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Offline Mode:</strong> Critical info must work Offline;
         </p>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           <strong>Communication:</strong> Chat with passengers or Bboadcast;
         </p>
       </SplitSection>
@@ -272,37 +272,24 @@ const SpaceflightBookingDetail = () => {
         <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
           Mobile App - Passengers
         </div>
-        <p className="mb-8">
+        <p className="mb-6 lg:mb-8">
           Book spaceflights with smart filters, explore curated trips, and
           manage voyages in real time
         </p>
       </SplitSection>
       <SplitSection
         index={9}
-        title="Reflection & Improvement"
+        designIndex={2}
+        total={7}
+        title="Tickets"
         image="/images/paragraph-images/project-1/design01-1.png"
       >
-        <p className="mb-8">
-          This project deepened my understanding of{" "}
-          <strong>high-stakes UX</strong>.
-        </p>
-        <p className="mb-8">
-          Future improvements include <strong>voice UI</strong> and
-          multi-language support.
-        </p>
-      </SplitSection>
-
-      <SplitSection
-        index={10}
-        title="Conclusion"
-        image="/images/paragraph-images/project-1/problem-statement-1.png"
-      >
-        <p className="mb-8">
-          NEXRA shows that complex systems can be simplified through{" "}
-          <strong>intentional design</strong>.
-        </p>
-        <p className="mb-8">
-          Great UX is <strong>invisible</strong>.
+        <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+          Mobile App - Passengers
+        </div>
+        <p className="mb-6 lg:mb-8">
+          Refine tickets with filters, smart labels, and dynamic options for
+          baggage, sharing, and wishlists
         </p>
       </SplitSection>
 
