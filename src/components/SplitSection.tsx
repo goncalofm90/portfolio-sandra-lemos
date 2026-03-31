@@ -1,6 +1,13 @@
 import { getSectionId } from "../helpers/sectionNavigation";
 
-export const SplitSection = ({ title, index, image, children }) => {
+export const SplitSection = ({
+  title,
+  index,
+  image,
+  children,
+  designIndex,
+  total,
+}) => {
   const sectionId = getSectionId(title, index);
 
   return (
@@ -18,6 +25,12 @@ export const SplitSection = ({ title, index, image, children }) => {
         </div>
 
         <div className="flex w-full flex-col justify-center space-y-4 text-base font-lufga-400 text-black sm:text-lg lg:w-1/2 lg:text-lg  max-w-2xl">
+          {designIndex && (
+            <p className="text-start text-lufga-salmon font-lufga-400">
+              {" "}
+              {designIndex}/{total}
+            </p>
+          )}
           <h1 className="mb-12 text-5xl font-lufga-500 sm:text-6xl">{title}</h1>
           {children}
         </div>

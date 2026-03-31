@@ -43,6 +43,7 @@ const SpaceflightBookingDetail = () => {
           { title: "Expected Outcomes" },
           { title: "Key Features" },
           { title: "Key Features" },
+          { title: "Design" },
           { title: "Reflection & Improvement" },
           { title: "Conclusion" },
         ]}
@@ -263,8 +264,23 @@ const SpaceflightBookingDetail = () => {
 
       <SplitSection
         index={8}
+        designIndex={1}
+        total={7}
+        title="Search Book and Opportunities"
+        image="/images/paragraph-images/project-1/design01-1.png"
+      >
+        <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+          Mobile App - Passengers
+        </div>
+        <p className="mb-8">
+          Book spaceflights with smart filters, explore curated trips, and
+          manage voyages in real time
+        </p>
+      </SplitSection>
+      <SplitSection
+        index={9}
         title="Reflection & Improvement"
-        image="/images/paragraph-images/project-1/problem-statement-1.png"
+        image="/images/paragraph-images/project-1/design01-1.png"
       >
         <p className="mb-8">
           This project deepened my understanding of{" "}
@@ -277,7 +293,7 @@ const SpaceflightBookingDetail = () => {
       </SplitSection>
 
       <SplitSection
-        index={9}
+        index={10}
         title="Conclusion"
         image="/images/paragraph-images/project-1/problem-statement-1.png"
       >
