@@ -198,16 +198,6 @@ h6 {
   font-family: var(--font-primary), sans-serif;
 }
 
-p,
-small,
-li,
-span,
-a,
-button,
-label {
-  font-family: var(--font-secondary), cursive;
-}
-
 /* Font classes */
 .font-lufga {
   font-family: var(--font-primary), sans-serif;

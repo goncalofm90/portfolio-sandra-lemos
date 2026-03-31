@@ -3,6 +3,7 @@ import ProjectHero from "./ProjectHero";
 import { FiChevronLeft } from "react-icons/fi";
 import { PROJECTS } from "../data/projects";
 import { SplitSection } from "./SplitSection";
+import ProjectDetailNav from "./ProjecDetailNav";
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -24,9 +25,9 @@ const ProjectDetail = () => {
   }
 
   return (
-    <main className="min-h-screen mx-auto">
+    <main className="mx-auto min-h-screen">
       <ProjectHero project={project} />
-      {/* Case study sections */}
+      <ProjectDetailNav sections={project.sections} />
       {project.sections.map((section, index) => (
         <SplitSection
           key={`${section.title}-${index}`}

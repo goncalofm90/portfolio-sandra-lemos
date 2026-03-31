@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const location = useLocation();
   const [isVisible, setIsVisible] = useState(true);
   const [hideTimeout, setHideTimeout] = useState<ReturnType<
     typeof setTimeout
@@ -53,21 +54,24 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-6 font-kalam">
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              `text-black hover:text-purple-600 transition-colors text-2xl me-15 ${
+            className={() => {
+              const isActive =
+                location.pathname === "/" ||
+                location.pathname.startsWith("/project");
+              return `text-black hover:text-lufga-salmon transition-colors text-2xl me-15 ${
                 isActive ? "nav-link-active font-kalam-800" : "font-normal"
-              }`
-            }
+              }`;
+            }}
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `text-black hover:text-purple-600 transition-colors text-2xl ${
+              `text-black hover:text-lufga-salmon transition-colors text-2xl ${
                 isActive ? "nav-link-active font-kalam-600" : "font-normal"
               }`
             }
@@ -110,7 +114,7 @@ const Navbar = () => {
             to="/"
             onClick={() => setMenuOpen(false)}
             className={({ isActive }) =>
-              `text-black hover:text-purple-600 transition-colors text-2xl ${
+              `text-black hover:text-lufga-salmon transition-colors text-2xl ${
                 isActive ? "nav-link-active font-kalam-800" : "font-normal"
               }`
             }
@@ -121,7 +125,7 @@ const Navbar = () => {
             to="/about"
             onClick={() => setMenuOpen(false)}
             className={({ isActive }) =>
-              `text-black hover:text-purple-600 transition-colors text-2xl ${
+              `text-black hover:text-lufga-salmon transition-colors text-2xl ${
                 isActive ? "nav-link-active font-kalam-600" : "font-normal"
               }`
             }

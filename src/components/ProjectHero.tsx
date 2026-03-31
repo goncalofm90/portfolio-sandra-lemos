@@ -35,7 +35,7 @@ const ProjectHero = ({ project }: { project: ProjectData }) => (
     </div>
 
     {/* Description */}
-    <p className="font-lufga-300 text-lg text-gray-600 max-w-2xl mb-8 leading-relaxed">
+    <p className="font-lufga-400 text-2xl text-black mb-8 max-w-5xl text-center">
       {project.description}
     </p>
     {/* Hero Subtitle */}

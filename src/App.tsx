@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="relative min-h-screen bg-white overflow-hidden noise-bg">
+      <div className="relative min-h-screen bg-white noise-bg">
         <div className="relative z-10">
           <Navbar />
           <Routes>

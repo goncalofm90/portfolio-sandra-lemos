@@ -4,12 +4,26 @@ type Tag = {
   arrowIcon: string; // path to image
 };
 
+type TextSegment = {
+  text: string;
+  bold?: boolean;
+};
+
+type Paragraph = TextSegment[];
+
+export interface DesignSlide {
+  title: string;
+  badge: string;
+  text: string;
+  image?: string;
+}
+
 export interface CaseStudySection {
   title: string;
-  content: string;
+  paragraphs: Paragraph[];
   image?: string;
-  imagePosition?: "left" | "right";
   layout?: "full" | "split";
+  design?: DesignSlide[];
 }
 
 export interface ProjectData {

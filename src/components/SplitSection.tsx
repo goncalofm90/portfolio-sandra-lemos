@@ -1,4 +1,5 @@
 import type { CaseStudySection } from "../data/types";
+import { getSectionId } from "../helpers/sectionNavigation";
 
 export const SplitSection = ({
   section,
@@ -7,42 +8,101 @@ export const SplitSection = ({
   section: CaseStudySection;
   index: number;
 }) => {
-  const isImageLeft = section.imagePosition === "left";
+  const sectionId = getSectionId(section.title, index);
+  const designSlides = section.design ?? [];
 
   return (
-    <section className="w-full px-4 sm:px-12 py-12 border-t border-gray-100">
-      <div
-        className={`flex flex-col ${
-          isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
-        } gap-8 lg:gap-16 items-center`}
-      >
-        {/* Image block */}
-        <div className="w-full lg:w-1/2 rounded-2xl overflow-hidden bg-gray-50 flex items-center justify-center min-h-56">
-          {section.image ? (
+    <section
+      id={sectionId}
+      className="w-full scroll-mt-40 border-t border-gray-100 px-4 py-12 sm:px-12 md:scroll-mt-48 lg:px-16"
+    >
+      {designSlides.length > 0 ? (
+        <div className="space-y-16">
+          {section.paragraphs.length > 0 && (
+            <div className="w-full lg:w-1/2">
+              <div className="space-y-4 text-base leading-7 text-black font-lufga-thin sm:text-lg">
+                <h1 className="mb-12 text-5xl leading-none text-black font-lufga font-lufga-500 sm:text-6xl md:text-5xl">
+                  {section.title}
+                </h1>
+                {section.paragraphs.map((paragraph, i) => (
+                  <p key={i}>
+                    {paragraph.map((seg, j) =>
+                      seg.bold ? (
+                        <strong key={j}>{seg.text}</strong>
+                      ) : (
+                        <span key={j}>{seg.text}</span>
+                      ),
+                    )}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {designSlides.map((slide, slideIndex) => (
+            <div
+              key={`${slide.title}-${slideIndex}`}
+              className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8"
+            >
+              <div className="flex w-full items-center justify-center overflow-hidden rounded-2xl lg:w-1/2">
+                {section.image ? (
+                  <img
+                    src={section.image}
+                    alt={slide.title}
+                    className="h-auto max-h-[560px] w-full max-w-[680px] object-contain"
+                  />
+                ) : slide.image ? (
+                  <img
+                    src={slide.image}
+                    alt={slide.title}
+                    className="h-auto max-h-[560px] w-full max-w-[680px] object-contain"
+                  />
+                ) : null}
+              </div>
+
+              <div className="flex w-full flex-col justify-center space-y-4 text-base leading-7 text-black font-lufga-thin sm:text-lg lg:w-1/2">
+                <p className="font-kalam text-lg text-kalam-grey">
+                  {slideIndex + 1} of {designSlides.length}
+                </p>
+                <span className="inline-flex rounded-full bg-[#212121] px-4 py-2 text-sm text-white font-kalam-500">
+                  {slide.badge}
+                </span>
+                <h2 className="text-4xl leading-none text-black font-lufga font-lufga-500 sm:text-5xl md:text-4xl">
+                  {slide.title}
+                </h2>
+                <p>{slide.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
+          <div className="flex w-full items-center justify-center overflow-hidden rounded-2xl lg:w-1/2">
             <img
               src={section.image}
               alt={section.title}
-              className="w-full object-cover"
+              className="h-auto max-h-[560px] w-full max-w-[680px] object-contain"
             />
-          ) : (
-            <div className="w-full h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center rounded-2xl">
-              <span className="text-gray-300 text-sm font-lufga-300">
-                Image {index + 1}
-              </span>
-            </div>
-          )}
-        </div>
+          </div>
 
-        {/* Text block */}
-        <div className="w-full lg:w-1/2">
-          <h2 className="font-lufga text-3xl sm:text-4xl font-lufga-500 text-black mb-4 leading-tight">
-            {section.title}
-          </h2>
-          <p className="font-lufga-300 text-gray-600 text-base sm:text-lg leading-7 whitespace-pre-line">
-            {section.content}
-          </p>
+          <div className="flex w-full flex-col justify-center space-y-4 text-base leading-7 text-black font-lufga-thin sm:text-lg lg:w-1/2">
+            <h1 className="mb-12 text-5xl leading-none text-black font-lufga font-lufga-500 sm:text-6xl md:text-5xl">
+              {section.title}
+            </h1>
+            {section.paragraphs.map((paragraph, i) => (
+              <p key={i}>
+                {paragraph.map((seg, j) =>
+                  seg.bold ? (
+                    <strong key={j}>{seg.text}</strong>
+                  ) : (
+                    <span key={j}>{seg.text}</span>
+                  ),
+                )}
+              </p>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 };
