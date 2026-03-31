@@ -14,10 +14,10 @@ export const SplitSection = ({
   return (
     <section
       id={sectionId}
-      className="w-full scroll-mt-40 border-t border-gray-100 px-4 py-12 sm:px-12 md:scroll-mt-48 lg:px-16"
+      className="w-full scroll-mt-40 border-t border-gray-100 px-4 py-6 sm:px-12 sm:py-8 md:scroll-mt-48 lg:px-16"
     >
       {designSlides.length > 0 ? (
-        <div className="space-y-16">
+        <div className="w-full space-y-8">
           {section.paragraphs.length > 0 && (
             <div className="w-full lg:w-1/2">
               <div className="space-y-4 text-base leading-7 text-black font-lufga-thin sm:text-lg">
@@ -42,25 +42,25 @@ export const SplitSection = ({
           {designSlides.map((slide, slideIndex) => (
             <div
               key={`${slide.title}-${slideIndex}`}
-              className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8"
+              className="flex min-h-[calc(100vh-7rem)] w-full flex-col gap-4 lg:flex-row lg:items-center lg:gap-5"
             >
-              <div className="flex w-full items-center justify-center overflow-hidden rounded-2xl lg:w-1/2">
+              <div className="flex w-full items-center justify-center rounded-2xl lg:w-1/2 lg:flex-[0_0_50%]">
                 {section.image ? (
                   <img
                     src={section.image}
                     alt={slide.title}
-                    className="h-auto max-h-[560px] w-full max-w-[680px] object-contain"
+                    className="block h-auto max-h-[72vh] w-full max-w-full object-contain"
                   />
                 ) : slide.image ? (
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="h-auto max-h-[560px] w-full max-w-[680px] object-contain"
+                    className="block h-auto max-h-[72vh] w-full max-w-full object-contain"
                   />
                 ) : null}
               </div>
 
-              <div className="flex w-full flex-col justify-center space-y-4 text-base leading-7 text-black font-lufga-thin sm:text-lg lg:w-1/2">
+              <div className="flex w-full flex-col justify-center space-y-3 text-base leading-7 text-black font-lufga-thin sm:text-lg lg:w-1/2 lg:flex-[0_0_50%]">
                 <p className="font-kalam text-lg text-kalam-grey">
                   {slideIndex + 1} of {designSlides.length}
                 </p>
@@ -76,26 +76,28 @@ export const SplitSection = ({
           ))}
         </div>
       ) : (
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
-          <div className="flex w-full items-center justify-center overflow-hidden rounded-2xl lg:w-1/2">
+        <div className="flex min-h-[calc(100vh-7rem)] w-full flex-col gap-4 lg:flex-row lg:items-center lg:gap-5">
+          <div className="flex w-full items-center justify-center rounded-2xl lg:w-1/2 lg:flex-[0_0_50%]">
             <img
               src={section.image}
               alt={section.title}
-              className="h-auto max-h-[560px] w-full max-w-[680px] object-contain"
+              className="block h-auto max-h-[72vh] w-full max-w-full object-contain"
             />
           </div>
 
-          <div className="flex w-full flex-col justify-center space-y-4 text-base leading-7 text-black font-lufga-thin sm:text-lg lg:w-1/2">
-            <h1 className="mb-12 text-5xl leading-none text-black font-lufga font-lufga-500 sm:text-6xl md:text-5xl">
+          <div className="flex w-full flex-col justify-center space-y-3 text-base leading-7 text-black font-lufga-thin sm:text-lg lg:w-1/2 lg:flex-[0_0_50%]">
+            <h1 className="mb-12 text-5xl leading-none text-black font-lufga font-lufga-500 sm:text-6xl md:text-6xl">
               {section.title}
             </h1>
             {section.paragraphs.map((paragraph, i) => (
-              <p key={i}>
+              <p className="max-w-2xl" key={i}>
                 {paragraph.map((seg, j) =>
                   seg.bold ? (
                     <strong key={j}>{seg.text}</strong>
                   ) : (
-                    <span key={j}>{seg.text}</span>
+                    <span className="font-lufga-400" key={j}>
+                      {seg.text}
+                    </span>
                   ),
                 )}
               </p>
