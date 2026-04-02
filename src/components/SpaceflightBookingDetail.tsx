@@ -51,11 +51,11 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/target-users-1.png",
     paragraphs: [
       {
-        bold: "Passengers - Adults aged 25–55",
+        bold: "Passengers - Adults aged 25–55: ",
         text: "who are early adopters of commercial space travel. They seek clarity, control, and digital convenience when booking and managing their flights. They value safety, transparency, and an intuitive experience that makes space travel feel accessible;",
       },
       {
-        bold: "Crew Members -",
+        bold: "Crew Members: ",
         text: "Professional flight attendants and mission crew operating in commercial spaceflights. They need reliable tools to manage passengers and monitor operations efficiently. They value streamlined workflows, accuracy, and intuitive interfaces that support them in high-stakes environments;",
       },
     ],

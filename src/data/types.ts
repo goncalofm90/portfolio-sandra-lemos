@@ -5,7 +5,7 @@ type Tag = {
 
 export type Paragraph = {
   bold?: string;
-  text: string;
+  text?: string;
   subItems?: Paragraph[];
 };
 
@@ -13,7 +13,7 @@ export type CaseStudySection = {
   title: string;
   match?: string; // ✅ ADD THIS
   paragraphs: {
-    text: string;
+    text?: string;
     bold?: string;
   }[];
   image?: string;

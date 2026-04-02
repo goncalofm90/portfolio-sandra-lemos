@@ -22,10 +22,13 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/problem-statement-1.png",
     paragraphs: [
       {
-        text: "As commercial space travel begins to take shape, there's a growing need for a simple and intuitive way to book and manage spaceflights.",
+        text: "In the fast-paced hospitality industry, traditional hotel management systems often fall short in providing a seamless and efficient experience for both hotel staff and guests.",
       },
       {
-        text: "Passengers need clarity and control; crew members need efficient tools to support and monitor the journey.",
+        text: "Hotel managers face challenges in streamlining operations, optimizing room management, and maintaining high levels of guest satisfaction.",
+      },
+      {
+        text: "At the same time, guests are increasingly seeking convenient, tech-driven solutions that allow them to personalize their stay, minimize waiting times, and access services on demand.",
       },
     ],
   },
@@ -34,14 +37,20 @@ const SECTIONS = [
     title: "Problem Solution",
     image: "/images/paragraph-images/project-1/problem-solution-1.png",
     paragraphs: [
-      { text: "This concept presents a dual-platform solution:" },
-      { bold: "Tablet Interface", text: "for crew operations;" },
       {
-        bold: "Mobile App",
-        text: "for passengers to book and manage flights;",
+        text: "To address these challenges, I've developed a comprehensive hotel management solution with three integrated components:",
       },
       {
-        text: "Designed for space travel, it combines clean UI with intuitive UX to make complex journeys feel simple.",
+        bold: "Hotel Management App:",
+        text: "Empowers staff to efficiently manage operations, including room assignments, reservations, check-ins, and more. It streamlines tasks, improves communication, and ensures high service standards;",
+      },
+      {
+        bold: "Guest App:",
+        text: "Offers a seamless digital experience for guests, enabling online check-ins, digital room keys, chat with reception, room service orders, and local activity exploration, all aimed at enhancing convenience and personalization;",
+      },
+      {
+        bold: "Landing Page",
+        text: "Showcases the product's features and benefits, allowing potential clients to book demos and explore how the solution meets their needs;",
       },
     ],
   },
@@ -51,39 +60,53 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/target-users-1.png",
     paragraphs: [
       {
-        bold: "Passengers - Adults aged 25–55",
-        text: "who are early adopters of commercial space travel. They seek clarity, control, and digital convenience when booking and managing their flights. They value safety, transparency, and an intuitive experience that makes space travel feel accessible;",
+        bold: "Hotel Staff:",
+        text: "Front Office and Operations teams responsible for reservations, check-ins, check-outs, and overall guest experience;",
       },
       {
-        bold: "Crew Members -",
-        text: "Professional flight attendants and mission crew operating in commercial spaceflights. They need reliable tools to manage passengers and monitor operations efficiently. They value streamlined workflows, accuracy, and intuitive interfaces that support them in high-stakes environments;",
+        bold: "Guests:",
+        text: "Users familiar with technology looking for a seamless, digital-first hospitality experience;",
       },
     ],
   },
   {
     index: 3,
     title: "UI Identity",
-    image: "/images/paragraph-images/project-1/ui-identity-1.png",
+    image: "/images/paragraph-images/project-3/ui-identity-3.png",
     paragraphs: [
       {
         bold: "Color Palette:",
-        text: "A dark, space-inspired background with high-contrast orange and white accents. Orange drives primary actions and key indicators, while white ensures readability across both platforms;",
+        subItems: [
+          {
+            bold: "The Hotel Management App ",
+            text: "uses a consistent white base with soft purple and lavender accents, conveying professionalism and clarity across all properties.",
+          },
+          {
+            bold: "The Guest App ",
+            text: "is designed to be fully customizable in terms of color, adapting to each hotel's brand identity. The warm earthy tones with olive greens and sandy neutrals presented reflect the identity of the featured hotel concept. ",
+          },
+        ],
       },
       {
         bold: "Typography:",
-        text: "A clean, modern sans-serif typeface conveys precision and confidence, ideal for the futuristic nature of space travel and data-heavy screens;",
+        text: "A clean sans-serif typeface was used across both platforms, balancing clarity for data-heavy staff screens with a warmer, more personal tone for the guest experience.",
       },
       {
         bold: "Icons:",
-        text: "Minimal outlined icons support quick recognition of key functions such as connectivity, oxygen levels and turbulence status without adding visual noise;",
+        text: "Minimal outlined icons maintain visual consistency while keeping both interfaces clean and intuitive.",
       },
       {
         bold: "Components:",
-        text: "The passenger app uses rounded cards and a clean booking flow for an approachable experience. The crew tablet uses structured tables, a seat map and status indicators designed for operational efficiency;",
-      },
-      {
-        bold: "Background:",
-        text: "A dark background reinforces the space environment, reduces eye strain and creates a premium, immersive feel across both platforms;",
+        subItems: [
+          {
+            bold: "The Management App ",
+            text: "The Management App uses structured cards and data tables with subtle borders for operational clarity.",
+          },
+          {
+            bold: "The Guest App ",
+            text: "uses full-width image cards and rounded components for an immersive, lifestyle-oriented feel.",
+          },
+        ],
       },
     ],
   },
@@ -91,15 +114,28 @@ const SECTIONS = [
     index: 4,
     title: "Research Approach",
     image: "/images/paragraph-images/project-1/research-approach-1.png",
+    icons: [
+      "/images/paragraph-images/project-4/research-icons/research-icon-1.png",
+      "/images/paragraph-images/project-4/research-icons/research-icon-2.png",
+      "/images/paragraph-images/project-4/research-icons/research-icon-3.png",
+      "/images/paragraph-images/project-4/research-icons/research-icon-4.png",
+    ],
     paragraphs: [
       {
-        text: "Given the conceptual and futuristic nature of the project, I began by analyzing patterns from existing airline and travel apps, studying booking flows, onboard service features, and cross-device interactions.",
+        bold: "Market Analysis: ",
+        text: "Conducted benchmarking on existing digital solutions in the hospitality industry;",
       },
       {
-        text: "Based on these insights, I then created two detailed personas to guide design decisions and ensure a user-centered approach.",
+        bold: "User Pain Points:",
+        text: "Gathered insights on key frustrations of both hotel staff and guests through industry research;",
       },
       {
-        text: "These findings were adapted to a space travel context, emphasizing safety, clarity, and ease of use. The ultimate goal was to craft an imaginative and engaging experience that never compromises on functionality.",
+        bold: "Industry Expertise:",
+        text: "Leveraged my background in hospitality to identify real-world operational challenges and opportunities for improvement;",
+      },
+      {
+        bold: "Opportunities for Innovation:",
+        text: "Streamlining daily staff operations, enhancing guest experience with digital-first solutions, bridging gaps in internal communication and administrative processes;",
       },
     ],
   },
@@ -109,32 +145,20 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/expected-outcomes-1.png",
     paragraphs: [
       {
-        bold: "Safety:",
-        text: "Users feel secure with clear, intuitive safety features;",
+        bold: "Optimize:",
+        text: "Hotel operations, making daily processes more agile and efficient;",
       },
       {
-        bold: "Clarity:",
-        text: "Booking and onboard information is easy to understand across all devices;",
+        bold: "Improve:",
+        text: "Productivity and focus on delivering high-quality service;",
       },
       {
-        bold: "Efficiency:",
-        text: "Travel planning and check-in are streamlined for a seamless experience;",
+        bold: "Enhance:",
+        text: "Guest experience through digital convenience and personalization;",
       },
       {
-        bold: "Accessibility:",
-        text: "Space travel services are easy to access, from reservations to onboard interactions;",
-      },
-      {
-        bold: "Engagement:",
-        text: "Immersive features enhance the excitement and anticipation of space travel;",
-      },
-      {
-        bold: "Organization:",
-        text: "All travel details and documents are stored in one central place;",
-      },
-      {
-        bold: "Safety:",
-        text: "Users feel secure with clear, intuitive safety features;",
+        bold: "Maximize:",
+        text: "Revenue opportunities through upselling and cross-selling;",
       },
     ],
   },
@@ -142,102 +166,76 @@ const SECTIONS = [
     index: 6,
     title: "Key Features",
     image: "/images/paragraph-images/project-1/key-features-1.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        bold: "Flight Reservation:",
-        text: "Choose destination / space route, available dates and times, seat selection, class type (Economy, etc.) selection;",
+        bold: "Hotel Management App: ",
+        text: "Comprehensive Room Management; Streamlined Check-In/Check-Out Process; Staff Communication; Real-Time Updates; Efficient Room Service Order Management;",
       },
       {
-        bold: "Explore:",
-        text: "Interactive map of destinations, search and discover routes;",
-      },
-      { bold: "Account:", text: "Past tickets, etc;" },
-      {
-        bold: "Boarding:",
-        text: "Online check-in, boarding QR code, notifications;",
-      },
-      { bold: "Wishlist:", text: "Future travels;" },
-      { bold: "Payments:", text: "Choose payment method & secure checkout;" },
-    ],
-  },
-  {
-    index: 6,
-    title: "Key Features",
-    image: "/images/paragraph-images/project-1/key-features-2.png",
-    badge: "Tablet - Inflight Agents",
-    paragraphs: [
-      {
-        bold: "Passenger Management:",
-        text: "Passenger list, boarding status;",
+        bold: "Guest App: ",
+        text: "Online Check-In; Digital Room Key; In-App Communication; Room Service and Upgrades; Activity Recommendations;",
       },
       {
-        bold: "Onboard Support:",
-        text: "Receive help requests, passenger notes & info, meals info;",
+        bold: "Landing Page: ",
+        text: "Product Overview; Client Testimonials; Demo Booking ; Contact Information;",
       },
-      {
-        bold: "Flight Management:",
-        text: "Trip progress, ship status & conditions, checklist;",
-      },
-      { bold: "Offline Mode:", text: "Critical info must work offline;" },
-      { bold: "Communication:", text: "Chat with passengers or broadcast;" },
     ],
   },
   {
     index: 7,
     designIndex: 1,
-    total: 7,
-    title: "Search Book and Opportunities",
+    total: 8,
+    title: "Dashboard",
     image: "/images/paragraph-images/project-1/search-book.png",
-    badge: "Mobile App - Passengers",
+    badge: "Hotel Management App",
     paragraphs: [
       {
-        text: "Book spaceflights with smart filters, explore curated trips, and manage voyages in real time.",
+        text: "Get a real-time overview of room status, occupancy rates, room pricing, and performance metrics, all from a single screen.",
       },
     ],
   },
   {
     designIndex: 2,
-    total: 7,
-    title: "Tickets",
+    total: 8,
+    title: "New Booking",
     image: "/images/paragraph-images/project-1/tickets.png",
-    badge: "Mobile App - Passengers",
+    badge: "Hotel Management App",
     paragraphs: [
       {
-        text: "Get trip overviews with pricing, VAT, and options to change cabin class and baggage.",
+        text: "Create bookings in seconds by selecting room type, setting check-in and check-out dates, and adjusting the number of guests",
       },
     ],
   },
   {
     designIndex: 3,
-    total: 7,
-    title: "Ticket Details",
+    total: 8,
+    title: "Reservations - All",
     image: "/images/paragraph-images/project-1/ticket-details.png",
-    badge: "Mobile App - Passengers",
+    badge: "Hotel Management App",
     paragraphs: [
       {
-        text: "Get trip overviews with pricing, VAT, and options to change cabin class and baggage.",
+        text: "View and manage all reservations in a timeline layout, filtered by check-in, check-out, or stay-overs for full operational clarity",
       },
     ],
   },
   {
     designIndex: 4,
-    total: 7,
-    title: "Upgrade & Personal Information",
+    total: 8,
+    title: "Guest Details",
     image: "/images/paragraph-images/project-1/upgrade.png",
-    badge: "Mobile App - Passengers",
+    badge: "Hotel Management App",
     paragraphs: [
       {
-        text: "Enhance trips with upgrades, clear pricing, autofill, and a comment field for notes.",
+        text: "View full guest profiles, additional guests, reservation history, and activity logs to deliver a more personalised experience.",
       },
     ],
   },
   {
     designIndex: 2,
-    total: 7,
+    total: 8,
     title: "Seat Selection & Payment Confirmation",
     image: "/images/paragraph-images/project-1/seat-selection.png",
-    badge: "Mobile App - Passengers",
+    badge: "Hotel Management App",
     paragraphs: [
       {
         text: "Choose seats with live availability, ticket count, and class. Confirm payment, view tickets, or explore.",
@@ -246,69 +244,108 @@ const SECTIONS = [
   },
   {
     designIndex: 5,
-    total: 7,
-    title: "Explore & Tickets",
+    total: 8,
+    title: "Guest App — Home",
     image: "/images/paragraph-images/project-1/explore.png",
-    badge: "Mobile App - Passengers",
+    badge: "Guest App",
     paragraphs: [
       {
-        text: "Find trips by map or list with easy filters, and manage tickets with in-app check-in.",
+        text: "Guests confirm their reservation details, fill in personal data, and sign their contract digitally — no queues, no paperwork",
       },
     ],
   },
   {
     designIndex: 6,
-    total: 7,
-    title: "Tablet Interface for Crew Operations",
+    total: 8,
+    title: "Guest App — Online Check-in",
     image: "/images/paragraph-images/project-1/tablet-interface.png",
-    badge: "Tablet - Inflight Agents",
+    badge: "Guest App",
     paragraphs: [
       {
-        text: "Monitor passengers, seat status, oxygen levels, connectivity, turbulence, and access key modules like tasks, meals, and emergencies.",
+        text: "Guests confirm their reservation details, fill in personal data, and sign their contract digitally — no queues, no paperwork",
       },
     ],
   },
   {
     index: 8,
-    title: "Reflection & Improvement",
+    title: "Guest App — Upgrade & Room Key",
     image: "/images/paragraph-images/project-1/reflection.png",
+    badge: "Guest App",
+
     paragraphs: [
       {
-        bold: "Navigation:",
-        text: "Refined booking and management flows for the mobile app, and operational flows for the tablet interface, ensuring both passengers and crew can navigate seamlessly;",
-      },
-      {
-        bold: "Technology:",
-        text: "Focused on creating a simplified, intuitive interface across platforms, with plans to expand features like itinerary sync, mission updates, and real-time notifications;",
-      },
-      {
-        bold: "Personalization:",
-        text: "Considering future smart recommendations for passengers based on travel history and preferences, and adaptive tools for crew based on operational needs;",
-      },
-      {
-        bold: "Design:",
-        text: "Prioritized a clean, futuristic UI that balances visual clarity with an immersive, space-themed experience across both devices;",
-      },
-      {
-        bold: "Engagement:",
-        text: "Exploring interactive mission previews and notifications to keep passengers excited, and task reminders to support crew efficiency;",
-      },
-      {
-        bold: "Support:",
-        text: "Identified the need for built-in communication channels, enabling passengers to contact support and crew members to coordinate operations effectively;",
+        text: "Offer room upgrades at check-in and let guests unlock their door digitally using their phone as a contactless room key.",
       },
     ],
   },
   {
     index: 9,
+    title: "Hero Section",
+    badge: "Landing Page",
+    image: "/images/paragraph-images/project-1/conclusion.png",
+    paragraphs: [
+      {
+        text: "A clean, conversion-focused page that communicates the product value and drives hotel managers to book a free demo.",
+      },
+    ],
+  },
+  {
+    index: 10,
+    designIndex: 1,
+    total: 2,
+    title: "Reflection, Improvement & Next Steps",
+    badge: "Hotel App",
+    image: "/images/paragraph-images/project-1/conclusion.png",
+    paragraphs: [
+      {
+        bold: "Impact:",
+        text: "More efficient reservation and room management, reduced errors in operations, faster and more intuitive workflow, improved communication between departments, enhanced overall efficiency of the team;",
+      },
+      {
+        bold: "Areas for Improvement:",
+        text: "Simplified and more intuitive interfaces, further optimization of reservation management, additional usability testing with real users, expansion of the solution to cover more operational needs;",
+      },
+      {
+        bold: "Next Steps:",
+        text: "Develop screens for new departments.Conduct further testing and validation, enhance administrative task automation;",
+      },
+    ],
+  },
+  {
+    index: 11,
+    designIndex: 2,
+    total: 2,
+    title: "Reflection, Improvement & Next Steps",
+    badge: "Guest App",
+    image: "/images/paragraph-images/project-1/conclusion.png",
+    paragraphs: [
+      {
+        bold: "Impact:",
+        text: "Reduced average time for check-in and check-out, more personalized and convenient service, increased use of digital room keys and online check-in, higher engagement with room service and upgrade options, improved overall guest satisfaction;",
+      },
+      {
+        bold: "Areas for Improvement:",
+        text: "More seamless digital interactions, enhanced user experience for service requests, additional personalization features for guests;",
+      },
+      {
+        bold: "Next Steps:",
+        text: "Improve in-app interfaces for room service and experience purchases, further enhance guest communication tools, increase guest satisfaction metrics and collect feedback for continuous improvement;",
+      },
+    ],
+  },
+  {
+    index: 12,
     title: "Conclusion",
     image: "/images/paragraph-images/project-1/conclusion.png",
     paragraphs: [
       {
-        text: "This concept reimagines space travel by unifying passenger booking, crew operations, and real-time communication across a dual-platform experience.",
+        text: "The hospitality industry faces challenges in streamlining operations and meeting the growing demand for tech-driven guest experiences.",
       },
       {
-        text: "By simplifying complex journeys and providing intuitive tools for both passengers and crew, it empowers users to focus on what matters most—exploring space safely and enjoying an engaging, seamless journey.",
+        text: "My hotel management solution addresses these issues through three integrated components: the Hotel Management App, which optimizes room management and staff communication; the Guest App, offering features like online check-ins, digital room keys, and in-app communication; and a Landing Page that highlights the product and allows clients to book demos.",
+      },
+      {
+        text: "This project showcases my ability to design user-friendly, efficient solutions that improve hotel operations while delivering a personalized, seamless experience for guests.",
       },
     ],
   },
@@ -318,18 +355,18 @@ const HERO_PROJECT = {
   id: 3,
   title: "Hotel Management App",
   description:
-    "A mobile app for passengers to book and manage spaceflights, and a tablet interface that equips crew with tools to support and monitor the journey.",
-  image: "/images/space.png",
+    "A comprehensive solution designed to streamline hotel operations and enhance guest experiences through modern, user-friendly interfaces",
+  image: "/images/hotel.png",
   type: "Mobile & Tablet",
   heroSubtitle: "UX Research & UI Design",
   tags: [
-    { name: "Retention and Loyalty", arrowIcon: "/images/up-arrow.svg" },
-    { name: "Crew Efficiency", arrowIcon: "/images/up-arrow.svg" },
+    { name: "Revenue Growth", arrowIcon: "/images/up-arrow.svg" },
+    { name: "Operational Efficiency", arrowIcon: "/images/up-arrow.svg" },
     {
-      name: "Reduce Average Time to Book",
-      arrowIcon: "/images/down-arrow.svg",
+      name: "User Engagement",
+      arrowIcon: "/images/up-arrow.svg",
     },
-    { name: "Customer Satisfaction", arrowIcon: "/images/up-arrow.svg" },
+    { name: "Retention and Loyalty", arrowIcon: "/images/up-arrow.svg" },
   ],
   sections: SECTIONS,
 };
@@ -342,7 +379,7 @@ const NAV_SECTIONS = [
   { title: "Research Approach", match: "research" },
   { title: "Expected Outcomes", match: "outcomes" },
   { title: "Key Features", match: "key features" },
-  { title: "Search Book and Opportunities", match: "design" },
+  { title: "Dashboard", match: "dashboard" },
   { title: "Reflection & Improvement", match: "reflection" },
   { title: "Conclusion", match: "conclusion" },
 ];
@@ -355,12 +392,45 @@ const Badge = ({ label }: { label: string }) => (
   </div>
 );
 
-const SectionParagraphs = ({ paragraphs }: { paragraphs: Paragraph[] }) =>
+const SectionParagraphs = ({
+  paragraphs,
+  icons,
+}: {
+  paragraphs: Paragraph[];
+  icons?: string[];
+}) =>
   paragraphs.map((p, i) => (
-    <p key={i} className="mb-6 lg:mb-8">
-      {p.bold && <strong>{p.bold} </strong>}
-      {p.text}
-    </p>
+    <div key={i}>
+      <div className="mb-6 lg:mb-8">
+        <p>
+          {p.bold && <strong>{p.bold} </strong>}
+          {p.text}
+        </p>
+        {p.subItems && p.subItems.length > 0 && (
+          <ul className="ml-6 mt-3 list-disc flex flex-col gap-2">
+            {p.subItems.map((sub, j) => (
+              <li key={j}>
+                {sub.bold && <strong>{sub.bold} </strong>}
+                {sub.text}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      {/* Icon row after the first paragraph */}
+      {i === 0 && icons && icons.length > 0 && (
+        <div className="flex flex-row items-center gap-6 mb-6 lg:mb-8">
+          {icons.map((src, j) => (
+            <img
+              key={j}
+              src={`${src}`}
+              alt={`icon-${j + 1}`}
+              className="w-30 h-10"
+            />
+          ))}
+        </div>
+      )}
+    </div>
   ));
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -370,10 +440,10 @@ const HotelManagementDetail = () => (
     <ProjectHero project={HERO_PROJECT} />
     <ProjectDetailNav sections={NAV_SECTIONS} />
 
-    {SECTIONS.map(({ paragraphs, badge, ...sectionProps }, i) => (
+    {SECTIONS.map(({ paragraphs, badge, icons, ...sectionProps }, i) => (
       <SplitSection key={i} {...sectionProps}>
         {badge && <Badge label={badge} />}
-        <SectionParagraphs paragraphs={paragraphs} />
+        <SectionParagraphs paragraphs={paragraphs} icons={icons} />
       </SplitSection>
     ))}
 
