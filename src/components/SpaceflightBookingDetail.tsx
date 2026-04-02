@@ -267,7 +267,7 @@ const SpaceflightBookingDetail = () => {
         designIndex={1}
         total={7}
         title="Search Book and Opportunities"
-        image="/images/paragraph-images/project-1/design01-1.png"
+        image="/images/paragraph-images/project-1/search-book.png"
       >
         <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
           Mobile App - Passengers
@@ -282,14 +282,142 @@ const SpaceflightBookingDetail = () => {
         designIndex={2}
         total={7}
         title="Tickets"
-        image="/images/paragraph-images/project-1/design01-1.png"
+        image="/images/paragraph-images/project-1/tickets.png"
       >
         <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
           Mobile App - Passengers
         </div>
         <p className="mb-6 lg:mb-8">
-          Refine tickets with filters, smart labels, and dynamic options for
-          baggage, sharing, and wishlists
+          Get trip overviews with pricing, VAT, and options to change cabin
+          class and baggage
+        </p>
+      </SplitSection>
+      <SplitSection
+        index={10}
+        designIndex={3}
+        total={7}
+        title="Ticket Details"
+        image="/images/paragraph-images/project-1/ticket-details.png"
+      >
+        <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+          Mobile App - Passengers
+        </div>
+        <p className="mb-6 lg:mb-8">
+          Get trip overviews with pricing, VAT, and options to change cabin
+          class and baggage
+        </p>
+      </SplitSection>
+      <SplitSection
+        index={11}
+        designIndex={4}
+        total={7}
+        title="Upgrade & Personal Information"
+        image="/images/paragraph-images/project-1/upgrade.png"
+      >
+        <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+          Mobile App - Passengers
+        </div>
+        <p className="mb-6 lg:mb-8">
+          Enhance trips with upgrades, clear pricing, autofill, and a comment
+          field for notes
+        </p>
+      </SplitSection>
+      <SplitSection
+        index={12}
+        designIndex={2}
+        total={7}
+        title="Seat Selection & Payment Confirmation"
+        image="/images/paragraph-images/project-1/seat-selection.png"
+      >
+        <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+          Mobile App - Passengers
+        </div>
+        <p className="mb-6 lg:mb-8">
+          Choose seats with live availability, ticket count, and class. Confirm
+          payment, view tickets, or explore
+        </p>
+      </SplitSection>
+      <SplitSection
+        index={13}
+        designIndex={5}
+        total={7}
+        title="Explore & Tickets"
+        image="/images/paragraph-images/project-1/explore.png"
+      >
+        <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+          Mobile App - Passengers
+        </div>
+        <p className="mb-6 lg:mb-8">
+          Find trips by map or list with easy filters, and manage tickets with
+          in-app check-in
+        </p>
+      </SplitSection>
+      <SplitSection
+        index={14}
+        designIndex={6}
+        total={7}
+        title="Tablet Interface for Crew Operations  "
+        image="/images/paragraph-images/project-1/tablet-interface.png"
+      >
+        <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+          Tablet - Inflight Agents
+        </div>
+        <p className="mb-6 lg:mb-8">
+          Monitor passengers, seat status, oxygen levels, connectivity,
+          turbulence, and access key modules like tasks, meals, and emergencies
+        </p>
+      </SplitSection>
+      <SplitSection
+        index={15}
+        title="Reflection & Improvement"
+        image="/images/paragraph-images/project-1/reflection.png"
+      >
+        <p className="mb-6 lg:mb-8">
+          <strong>Navigation:</strong> Refined booking and management flows for
+          the mobile app, and operational flows for the tablet interface,
+          ensuring both passengers and crew can navigate seamlessly;
+        </p>
+        <p className="mb-6 lg:mb-8">
+          <strong>Technology:</strong> Focused on creating a simplified,
+          intuitive interface across platforms, with plans to expand features
+          like itinerary sync, mission updates, and real-time notifications;
+        </p>
+        <p className="mb-6 lg:mb-8">
+          <strong>Personalization:</strong> Considering future smart
+          recommendations for passengers based on travel history and
+          preferences, and adaptive tools for crew based on operational needs;
+        </p>
+        <p className="mb-6 lg:mb-8">
+          <strong>Design:</strong> Prioritized a clean, futuristic UI that
+          balances visual clarity with an immersive, space-themed experience
+          across both devices;
+        </p>
+        <p className="mb-6 lg:mb-8">
+          <strong>Engagement:</strong> Exploring interactive mission previews
+          and notifications to keep passengers excited, and task reminders to
+          support crew efficiency;
+        </p>
+        <p className="mb-6 lg:mb-8">
+          <strong>Support:</strong> Identified the need for built-in
+          communication channels, enabling passengers to contact support and
+          crew members to coordinate operations effectively;
+        </p>
+      </SplitSection>
+      <SplitSection
+        index={4}
+        title="Conclusion"
+        image="/images/paragraph-images/project-1/conclusion.png"
+      >
+        <p className="mb-6 lg:mb-8">
+          This concept reimagines space travel by unifying passenger booking,
+          crew operations, and real-time communication across a dual-platform
+          experience.
+        </p>
+        <p className="mb-6 lg:mb-8">
+          By simplifying complex journeys and providing intuitive tools for both
+          passengers and crew, it empowers users to focus on what matters
+          most—exploring space safely and enjoying an engaging, seamless
+          journey.
         </p>
       </SplitSection>
 
