@@ -1,9 +1,9 @@
 const AboutHero = () => {
   return (
     <div className="relative">
-      <div className="relative z-10">
+      <div className="relative z-10  pt-32">
         {/* Use md:flex-col for tablets, xl:flex-row for desktop */}
-        <section className="flex flex-col md:flex-col xl:flex-row w-full px-4 sm:px-12 py-12 sm:py-24 gap-8 md:gap-10 xl:gap-12 mt-[10rem]">
+        <section className="flex flex-col md:flex-col xl:flex-row w-full px-4 sm:px-12 py-12 sm:py-24 gap-8 md:gap-10 xl:gap-12">
           {/* Avatar */}
           <div className="flex justify-center mb-6 md:mb-6 xl:mb-0">
             <img

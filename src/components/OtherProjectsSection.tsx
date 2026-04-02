@@ -23,9 +23,9 @@ const OtherProjectsSection = ({
             <Link
               key={project.id}
               to={`/project/${project.id}`}
-              className="rounded-2xl bg-white p-3 shadow-lg hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+              className="rounded-3xl bg-white p-4 shadow-lg hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
             >
-              <div className="mb-3 flex aspect-[3/3] items-center justify-center overflow-hidden rounded-xl transition-all duration-100 hover:scale-110 ">
+              <div className="mb-3 flex aspect-[3/3] items-center justify-center overflow-hidden rounded-xl transition-all duration-100 hover:scale-110">
                 <img
                   src={`/${project.image}`}
                   alt={project.title}
