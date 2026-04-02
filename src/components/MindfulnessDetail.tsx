@@ -18,7 +18,7 @@ const SECTIONS = [
   {
     index: 0,
     title: "Problem Statement",
-    image: "/images/paragraph-images/project-1/problem-statement-1.png",
+    image: "/images/paragraph-images/project-3/problem-statement-3.png",
     paragraphs: [
       {
         text: "Traditional productivity apps focus solely on task completion, creating pressure and anxiety in users. ",
@@ -31,7 +31,7 @@ const SECTIONS = [
   {
     index: 1,
     title: "Problem Solution",
-    image: "/images/paragraph-images/project-1/problem-solution-1.png",
+    image: "/images/paragraph-images/project-3/problem-solution-3.png",
     paragraphs: [
       {
         text: "Sway redefines productivity by combining task management with mindfulness.",
@@ -44,7 +44,7 @@ const SECTIONS = [
   {
     index: 2,
     title: "Target Users",
-    image: "/images/paragraph-images/project-1/target-users-1.png",
+    image: "/images/paragraph-images/project-3/target-users-3.png",
     paragraphs: [
       {
         bold: "Young professionals aged 25-35",
@@ -55,7 +55,7 @@ const SECTIONS = [
   {
     index: 3,
     title: "UI Identity",
-    image: "/images/paragraph-images/project-1/ui-identity-1.png",
+    image: "/images/paragraph-images/project-3/ui-identity-3.png",
     paragraphs: [
       {
         bold: "Color Palette:",
@@ -100,7 +100,7 @@ const SECTIONS = [
   {
     index: 5,
     title: "Expected Outcomes",
-    image: "/images/paragraph-images/project-1/expected-outcomes-1.png",
+    image: "/images/paragraph-images/project-3/expected-outcomes-3.png",
     paragraphs: [
       {
         text: "Increased daily task completion rate without stress;",
@@ -119,7 +119,7 @@ const SECTIONS = [
   {
     index: 6,
     title: "Key Features",
-    image: "/images/paragraph-images/project-1/key-features-1.png",
+    image: "/images/paragraph-images/project-3/key-features-3.png",
     paragraphs: [
       {
         bold: "Home / Task:",
@@ -145,7 +145,7 @@ const SECTIONS = [
     designIndex: 1,
     total: 5,
     title: "Tasks & Progress",
-    image: "/images/paragraph-images/project-1/search-book.png",
+    image: "/images/paragraph-images/project-3/tasks-progress-3.png",
     paragraphs: [
       {
         text: "Organize your tasks by category, track your daily progress, and stay focused on what truly matters",
@@ -156,7 +156,7 @@ const SECTIONS = [
     designIndex: 2,
     total: 5,
     title: "Filters & Labels",
-    image: "/images/paragraph-images/project-1/tickets.png",
+    image: "/images/paragraph-images/project-3/filters-labels-3.png",
     paragraphs: [
       {
         text: "Refine your tasks with smart filters, sort by date, category or priority, and customize your view",
@@ -167,7 +167,7 @@ const SECTIONS = [
     designIndex: 3,
     total: 5,
     title: "Task Details",
-    image: "/images/paragraph-images/project-1/ticket-details.png",
+    image: "/images/paragraph-images/project-3/task-details-3.png",
     paragraphs: [
       {
         text: "Create tasks with category, date, repeat, and reminders, everything in one place so nothing slips through",
@@ -178,7 +178,7 @@ const SECTIONS = [
     designIndex: 4,
     total: 5,
     title: "Stats & Insights",
-    image: "/images/paragraph-images/project-1/upgrade.png",
+    image: "/images/paragraph-images/project-3/stats-insights-3.png",
     paragraphs: [
       {
         text: "Track your balance across life areas with weekly charts and personal progress metrics",
@@ -189,7 +189,7 @@ const SECTIONS = [
     designIndex: 2,
     total: 5,
     title: "Focus Mode",
-    image: "/images/paragraph-images/project-1/seat-selection.png",
+    image: "/images/paragraph-images/project-3/focus-mode-3.png",
     paragraphs: [
       {
         text: "Pause, breathe, and pick a task to focus on. The timer helps you work with more intention and calm",
@@ -199,7 +199,7 @@ const SECTIONS = [
   {
     index: 8,
     title: "Reflection & Improvement",
-    image: "/images/paragraph-images/project-1/reflection.png",
+    image: "/images/paragraph-images/project-3/reflection-improvement-3.png",
     paragraphs: [
       {
         text: "The biggest challenge was balancing simplicity with functionality",
@@ -212,7 +212,7 @@ const SECTIONS = [
   {
     index: 9,
     title: "Conclusion",
-    image: "/images/paragraph-images/project-1/conclusion.png",
+    image: "/images/paragraph-images/project-3/conclusion-3.png",
     paragraphs: [
       {
         text: "Sway proves that productivity doesn't have to come at the cost of well-being.",
@@ -229,7 +229,7 @@ const HERO_PROJECT = {
   title: "Task & Mindfulness App",
   description:
     "Designed to help users manage daily tasks while promoting calm, balance, and organization through a gentle, pressure-free experience.",
-  image: "/images/space.png",
+  image: "/images/mindfulness.png",
   type: "Mobile & Tablet",
   heroSubtitle: "UX Research & UI Design",
   tags: [
