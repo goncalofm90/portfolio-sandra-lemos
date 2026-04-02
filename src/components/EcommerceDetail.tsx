@@ -19,71 +19,70 @@ const SECTIONS = [
   {
     index: 0,
     title: "Problem Statement",
-    image: "/images/paragraph-images/project-1/problem-statement-1.png",
+    image: "/images/paragraph-images/project-4/problem-statement-4.png",
     paragraphs: [
       {
-        text: "As commercial space travel begins to take shape, there's a growing need for a simple and intuitive way to book and manage spaceflights.",
+        text: "In today's fast-paced environment, users demand seamless and efficient shopping experiences. They seek a process that is not only swift and secure but also aligns perfectly with their expectations.",
       },
       {
-        text: "Passengers need clarity and control; crew members need efficient tools to support and monitor the journey.",
+        text: "While exploring diverse online platforms provides the opportunity to compare prices and inspect various brand models, traditional methods like visiting shopping malls or physical stores offer the advantage of hands-on product evaluation. ",
+      },
+      {
+        text: "However, both these approaches are time-consuming and can often lead to frustration.The challenge lies in striking a balance between the convenience of online shopping and the tangible benefits of in-person experiences, without compromising on speed or security.",
       },
     ],
   },
   {
     index: 1,
     title: "Problem Solution",
-    image: "/images/paragraph-images/project-1/problem-solution-1.png",
+    image: "/images/paragraph-images/project-4/problem-solution-4.png",
     paragraphs: [
-      { text: "This concept presents a dual-platform solution:" },
-      { bold: "Tablet Interface", text: "for crew operations;" },
       {
-        bold: "Mobile App",
-        text: "for passengers to book and manage flights;",
+        text: "Additionally, a key feature will be the integration of augmented reality (AR), allowing users to virtually try out products from the comfort of their own physical space. ",
       },
       {
-        text: "Designed for space travel, it combines clean UI with intuitive UX to make complex journeys feel simple.",
+        text: "This groundbreaking approach not only enhances the speed and convenience of the shopping experience but also bridges the gap between online exploration and the tactile engagement offered by traditional in-store visits.",
+      },
+      {
+        text: "The synergy of a diverse product catalog and the immersive capabilities of augmented reality will redefine how users interact with and select products, revolutionizing the retail landscape.",
       },
     ],
   },
   {
     index: 2,
     title: "Target Users",
-    image: "/images/paragraph-images/project-1/target-users-1.png",
+    image: "/images/paragraph-images/project-4/target-users-4.png",
     paragraphs: [
       {
-        bold: "Passengers - Adults aged 25–55",
-        text: "who are early adopters of commercial space travel. They seek clarity, control, and digital convenience when booking and managing their flights. They value safety, transparency, and an intuitive experience that makes space travel feel accessible;",
-      },
-      {
-        bold: "Crew Members -",
-        text: "Professional flight attendants and mission crew operating in commercial spaceflights. They need reliable tools to manage passengers and monitor operations efficiently. They value streamlined workflows, accuracy, and intuitive interfaces that support them in high-stakes environments;",
+        bold: "Millennials and Generation Z (18-40 years old), ",
+        text: " frequent online shoppers, consumers concerned with personalized shopping experiences, technology enthusiasts;",
       },
     ],
   },
   {
     index: 3,
     title: "UI Identity",
-    image: "/images/paragraph-images/project-1/ui-identity-1.png",
+    image: "/images/paragraph-images/project-3/ui-identity-3.png",
     paragraphs: [
       {
         bold: "Color Palette:",
-        text: "A dark, space-inspired background with high-contrast orange and white accents. Orange drives primary actions and key indicators, while white ensures readability across both platforms;",
+        text: "The design uses a clean white base with soft neutral tones and minimal color accents, keeping the focus entirely on the products. This restrained palette ensures that clothing items and imagery take center stage without visual competition;",
       },
       {
         bold: "Typography:",
-        text: "A clean, modern sans-serif typeface conveys precision and confidence, ideal for the futuristic nature of space travel and data-heavy screens;",
+        text: "A modern, lightweight sans-serif typeface was chosen to convey simplicity and elegance — reflecting the refined shopping experience the app aims to deliver;",
       },
       {
         bold: "Icons:",
-        text: "Minimal outlined icons support quick recognition of key functions such as connectivity, oxygen levels and turbulence status without adding visual noise;",
+        text: "Minimal outlined icons are used throughout the navigation and product interactions, maintaining a clean and intuitive interface that feels familiar to frequent online shoppers.",
       },
       {
         bold: "Components:",
-        text: "The passenger app uses rounded cards and a clean booking flow for an approachable experience. The crew tablet uses structured tables, a seat map and status indicators designed for operational efficiency;",
+        text: "Product cards use a borderless, image-forward layout to maximize visual impact. Sorting and filter options are presented as compact toggles and chips, allowing users to refine their search quickly without disrupting the browsing flow;",
       },
       {
         bold: "Background:",
-        text: "A dark background reinforces the space environment, reduces eye strain and creates a premium, immersive feel across both platforms;",
+        text: "A clean white background was chosen to create a gallery-like feel, putting the products at the forefront and reinforcing the premium, editorial aesthetic of the app;",
       },
     ],
   },
@@ -91,224 +90,232 @@ const SECTIONS = [
     index: 4,
     title: "Research Approach",
     image: "/images/paragraph-images/project-1/research-approach-1.png",
+    icons: [
+      "/images/paragraph-images/project-5/research-icons/research-icon-1.png",
+      "/images/paragraph-images/project-5/research-icons/research-icon-2.png",
+      "/images/paragraph-images/project-5/research-icons/research-icon-3.png",
+      "/images/paragraph-images/project-5/research-icons/research-icon-4.png",
+      "/images/paragraph-images/project-5/research-icons/research-icon-5.png",
+    ],
     paragraphs: [
       {
-        text: "Given the conceptual and futuristic nature of the project, I began by analyzing patterns from existing airline and travel apps, studying booking flows, onboard service features, and cross-device interactions.",
+        bold: "Market Analysis: ",
+        text: "Existing e-commerce platforms were benchmarked to identify trends, gaps and opportunities in the market;",
       },
       {
-        text: "Based on these insights, I then created two detailed personas to guide design decisions and ensure a user-centered approach.",
+        bold: "User Research:",
+        text: "User questionnaires were conducted to collect data on preferences, pain points and expectations. Personas and empathy maps were built to represent distinct user profiles and uncover deeper motivations;",
       },
       {
-        text: "These findings were adapted to a space travel context, emphasizing safety, clarity, and ease of use. The ultimate goal was to craft an imaginative and engaging experience that never compromises on functionality.",
+        bold: "User Experience Mapping:",
+        text: "User journey maps and user flows visualized key steps and pain points across the shopping experience, from product discovery to checkout;",
+      },
+      {
+        bold: "Information Architecture:",
+        text: "Card sorting exercises informed a structured and intuitive catalog organization to support easy navigation;",
+      },
+      {
+        bold: "Key Findings:",
+        text: "Research highlighted opportunities around navigation clarity, product personalization, push notifications as engagement drivers, and growing user interest in AR — insights that directly shaped the design direction;",
       },
     ],
   },
   {
     index: 5,
     title: "Expected Outcomes",
-    image: "/images/paragraph-images/project-1/expected-outcomes-1.png",
+    image: "/images/paragraph-images/project-4/expected-outcomes-4.png",
     paragraphs: [
       {
-        bold: "Safety:",
-        text: "Users feel secure with clear, intuitive safety features;",
+        bold: "Enhanced User Satisfaction:",
+        text: "By addressing the pain points of traditional and online shopping, the application aims to significantly improve user satisfaction through a more efficient and enjoyable shopping journey;",
       },
       {
-        bold: "Clarity:",
-        text: "Booking and onboard information is easy to understand across all devices;",
+        bold: "Increased Engagement:",
+        text: "The incorporation of AR is expected to boost user engagement, attracting a wider audience by offering a unique and interactive shopping experience;",
       },
       {
-        bold: "Efficiency:",
-        text: "Travel planning and check-in are streamlined for a seamless experience;",
-      },
-      {
-        bold: "Accessibility:",
-        text: "Space travel services are easy to access, from reservations to onboard interactions;",
-      },
-      {
-        bold: "Engagement:",
-        text: "Immersive features enhance the excitement and anticipation of space travel;",
-      },
-      {
-        bold: "Organization:",
-        text: "All travel details and documents are stored in one central place;",
-      },
-      {
-        bold: "Safety:",
-        text: "Users feel secure with clear, intuitive safety features;",
+        bold: "Market Impact:",
+        text: "With a focus on innovation and convenience, the project aims to make a significant impact on the retail market, setting new standards for user-centric shopping applications;",
       },
     ],
   },
   {
     index: 6,
     title: "Key Features",
-    image: "/images/paragraph-images/project-1/key-features-1.png",
-    badge: "Mobile App - Passengers",
+    image: "/images/paragraph-images/project-4/key-features-4.png",
     paragraphs: [
       {
-        bold: "Flight Reservation:",
-        text: "Choose destination / space route, available dates and times, seat selection, class type (Economy, etc.) selection;",
+        bold: "Unified Platform: ",
+        text: "The application serves as a centralized hub, presenting users with a diverse array of brands and products, eliminating the need to navigate multiple websites for comparison;",
       },
       {
-        bold: "Explore:",
-        text: "Interactive map of destinations, search and discover routes;",
-      },
-      { bold: "Account:", text: "Past tickets, etc;" },
-      {
-        bold: "Boarding:",
-        text: "Online check-in, boarding QR code, notifications;",
-      },
-      { bold: "Wishlist:", text: "Future travels;" },
-      { bold: "Payments:", text: "Choose payment method & secure checkout;" },
-    ],
-  },
-  {
-    index: 6,
-    title: "Key Features",
-    image: "/images/paragraph-images/project-1/key-features-2.png",
-    badge: "Tablet - Inflight Agents",
-    paragraphs: [
-      {
-        bold: "Passenger Management:",
-        text: "Passenger list, boarding status;",
-      },
-      {
-        bold: "Onboard Support:",
-        text: "Receive help requests, passenger notes & info, meals info;",
-      },
-      {
-        bold: "Flight Management:",
-        text: "Trip progress, ship status & conditions, checklist;",
-      },
-      { bold: "Offline Mode:", text: "Critical info must work offline;" },
-      { bold: "Communication:", text: "Chat with passengers or broadcast;" },
-    ],
-  },
-  {
-    index: 7,
-    designIndex: 1,
-    total: 7,
-    title: "Search Book and Opportunities",
-    image: "/images/paragraph-images/project-1/search-book.png",
-    badge: "Mobile App - Passengers",
-    paragraphs: [
-      {
-        text: "Book spaceflights with smart filters, explore curated trips, and manage voyages in real time.",
-      },
-    ],
-  },
-  {
-    designIndex: 2,
-    total: 7,
-    title: "Tickets",
-    image: "/images/paragraph-images/project-1/tickets.png",
-    badge: "Mobile App - Passengers",
-    paragraphs: [
-      {
-        text: "Get trip overviews with pricing, VAT, and options to change cabin class and baggage.",
-      },
-    ],
-  },
-  {
-    designIndex: 3,
-    total: 7,
-    title: "Ticket Details",
-    image: "/images/paragraph-images/project-1/ticket-details.png",
-    badge: "Mobile App - Passengers",
-    paragraphs: [
-      {
-        text: "Get trip overviews with pricing, VAT, and options to change cabin class and baggage.",
-      },
-    ],
-  },
-  {
-    designIndex: 4,
-    total: 7,
-    title: "Upgrade & Personal Information",
-    image: "/images/paragraph-images/project-1/upgrade.png",
-    badge: "Mobile App - Passengers",
-    paragraphs: [
-      {
-        text: "Enhance trips with upgrades, clear pricing, autofill, and a comment field for notes.",
-      },
-    ],
-  },
-  {
-    designIndex: 2,
-    total: 7,
-    title: "Seat Selection & Payment Confirmation",
-    image: "/images/paragraph-images/project-1/seat-selection.png",
-    badge: "Mobile App - Passengers",
-    paragraphs: [
-      {
-        text: "Choose seats with live availability, ticket count, and class. Confirm payment, view tickets, or explore.",
-      },
-    ],
-  },
-  {
-    designIndex: 5,
-    total: 7,
-    title: "Explore & Tickets",
-    image: "/images/paragraph-images/project-1/explore.png",
-    badge: "Mobile App - Passengers",
-    paragraphs: [
-      {
-        text: "Find trips by map or list with easy filters, and manage tickets with in-app check-in.",
-      },
-    ],
-  },
-  {
-    designIndex: 6,
-    total: 7,
-    title: "Tablet Interface for Crew Operations",
-    image: "/images/paragraph-images/project-1/tablet-interface.png",
-    badge: "Tablet - Inflight Agents",
-    paragraphs: [
-      {
-        text: "Monitor passengers, seat status, oxygen levels, connectivity, turbulence, and access key modules like tasks, meals, and emergencies.",
+        bold: "Augmented Reality (AR): ",
+        text: "Users can leverage AR technology to virtually try out products, bridging the gap between online and in-person shopping experiences. This feature enhances confidence in purchase decisions by providing a realistic preview of products within the user's physical space;",
       },
     ],
   },
   {
     index: 8,
-    title: "Reflection & Improvement",
-    image: "/images/paragraph-images/project-1/reflection.png",
+    designIndex: 1,
+    total: 10,
+    title: "On Boarding",
+    image: "/images/paragraph-images/project-4/dashboard-4.png",
     paragraphs: [
       {
-        bold: "Navigation:",
-        text: "Refined booking and management flows for the mobile app, and operational flows for the tablet interface, ensuring both passengers and crew can navigate seamlessly;",
+        text: "Discover a smarter way to shop and  try items virtually with AR, browse top brands, and enjoy fast, secure deliveries from day one",
       },
+    ],
+  },
+  {
+    designIndex: 2,
+    total: 10,
+    title: "Home/Shop & Cupons",
+    image: "/images/paragraph-images/project-4/new-booking-4.png",
+    paragraphs: [
       {
-        bold: "Technology:",
-        text: "Focused on creating a simplified, intuitive interface across platforms, with plans to expand features like itinerary sync, mission updates, and real-time notifications;",
+        text: "Browse by category, explore top brands, discover new trends, and unlock exclusive coupons tailored to your style",
       },
+    ],
+  },
+  {
+    designIndex: 3,
+    total: 10,
+    title: "Shop/Clothing",
+    image: "/images/paragraph-images/project-4/reservations-all-4.png",
+    paragraphs: [
       {
-        bold: "Personalization:",
-        text: "Considering future smart recommendations for passengers based on travel history and preferences, and adaptive tools for crew based on operational needs;",
+        text: "Browse thousands of clothing items, filter by category, and find exactly what you're looking for across all your favourite brands.",
       },
+    ],
+  },
+  {
+    designIndex: 4,
+    total: 10,
+    title: "Filters",
+    image: "/images/paragraph-images/project-4/guest-details-4.png",
+    paragraphs: [
       {
-        bold: "Design:",
-        text: "Prioritized a clean, futuristic UI that balances visual clarity with an immersive, space-themed experience across both devices;",
+        text: "Narrow down your search by price, size, colour, brand, body fit, material, style and find your perfect match faster.",
       },
+    ],
+  },
+  {
+    designIndex: 5,
+    total: 10,
+    title: "Product Page",
+    image: "/images/paragraph-images/project-4/guest-app-home-4.png",
+
+    paragraphs: [
       {
-        bold: "Engagement:",
-        text: "Exploring interactive mission previews and notifications to keep passengers excited, and task reminders to support crew efficiency;",
+        text: "View product details, check customer reviews, compare fit ratings, and add your favourites straight to your basket.",
       },
+    ],
+  },
+  {
+    designIndex: 6,
+    total: 10,
+    title: "Size, Virtual Try on & Brands Selection",
+    image: "/images/paragraph-images/project-4/guest-app-online-check-in-4.png",
+    paragraphs: [
       {
-        bold: "Support:",
-        text: "Identified the need for built-in communication channels, enabling passengers to contact support and crew members to coordinate operations effectively;",
+        text: "Pick your size, virtually try on items using AR from your space, and browse your favourite brands all in one place.",
+      },
+    ],
+  },
+  {
+    designIndex: 7,
+    total: 10,
+    title: "Account, Support, & Orders Details",
+    image:
+      "/images/paragraph-images/project-4/guest-app-upgrade-room-key-4.png",
+
+    paragraphs: [
+      {
+        text: "Manage your orders, track deliveries, get live support, and keep your account details up to date with ease.",
+      },
+    ],
+  },
+  {
+    designIndex: 8,
+    total: 10,
+    title: "Wishlist",
+    image: "/images/paragraph-images/project-4/hero-section-4.png",
+    paragraphs: [
+      {
+        text: "Save your favourite pieces, sort by price or date added, and keep track of everything you love in one place.",
+      },
+    ],
+  },
+  {
+    designIndex: 9,
+    total: 10,
+    title: "Basket",
+    image: "/images/paragraph-images/project-4/reflection-4.png",
+    paragraphs: [
+      {
+        text: "Review your items, apply vouchers or gift cards, check your total with VAT, and proceed to checkout securely.",
+      },
+    ],
+  },
+  {
+    designIndex: 10,
+    total: 10,
+    title: "Shipping, Payment & Confirmation",
+    image: "/images/paragraph-images/project-4/reflection-4.png",
+    paragraphs: [
+      {
+        text: "Enter your delivery address or choose a collection point, then pay securely with your preferred method.",
       },
     ],
   },
   {
     index: 9,
-    title: "Conclusion",
-    image: "/images/paragraph-images/project-1/conclusion.png",
+    title: "Reflection & Improvement ",
+    image: "/images/paragraph-images/project-4/reflection2-4.png",
     paragraphs: [
       {
-        text: "This concept reimagines space travel by unifying passenger booking, crew operations, and real-time communication across a dual-platform experience.",
+        bold: "Navigation:",
+        text: "Incorporation of Augmented Reality (AR) features to enhance the shopping experience;",
       },
       {
-        text: "By simplifying complex journeys and providing intuitive tools for both passengers and crew, it empowers users to focus on what matters most—exploring space safely and enjoying an engaging, seamless journey.",
+        bold: "Checkout:",
+        text: "Optimization of the checkout process for faster, smoother transactions;",
+      },
+      {
+        bold: "Technology:",
+        text: "Simplified and more intuitive interfaces, further optimization of reservation management, additional usability testing with real users, expansion of the solution to cover more operational needs;",
+      },
+      {
+        bold: "Personalization:",
+        text: "Delivery of smart product recommendations tailored to user preferences;",
+      },
+      {
+        bold: "Design:",
+        text: "Enhancing interfaces and overall design to ensure a seamless user experience;",
+      },
+      {
+        bold: "Engagement:",
+        text: "Use of personalized push notifications to increase user interaction and retention;",
+      },
+      {
+        bold: "Support:",
+        text: "Providing efficient and immediate customer support to resolve issues in real time;",
+      },
+    ],
+  },
+  {
+    index: 10,
+    title: "Conclusion",
+    image: "/images/paragraph-images/project-4/conclusion-4.png",
+    paragraphs: [
+      {
+        text: "The Closhe e-commerce project redefines the shopping experience by seamlessly integrating the best aspects of online and in-person retail.",
+      },
+      {
+        text: "Through an expansive product catalog and the immersive potential of augmented reality, users can explore, compare, and virtually experience products without the constraints of physical stores. This innovative approach not only enhances convenience and accessibility but also bridges the gap between digital exploration and tangible product evaluation.",
+      },
+      {
+        text: "Closhe sets a new standard for e-commerce, offering a streamlined, interactive, and user-centered journey that transforms the way we shop.",
       },
     ],
   },
@@ -318,18 +325,18 @@ const HERO_PROJECT = {
   id: 3,
   title: "Ecommerce App",
   description:
-    "A mobile app for passengers to book and manage spaceflights, and a tablet interface that equips crew with tools to support and monitor the journey.",
-  image: "/images/space.png",
+    "A mobile app that simplifies shopping by offering price comparisons across multiple brands and products, enhanced with Augmented Reality (AR) for virtual product tryouts.",
+  image: "/images/fashion.png",
   type: "Mobile & Tablet",
   heroSubtitle: "UX Research & UI Design",
   tags: [
-    { name: "Retention and Loyalty", arrowIcon: "/images/up-arrow.svg" },
-    { name: "Crew Efficiency", arrowIcon: "/images/up-arrow.svg" },
+    { name: "Market Impact", arrowIcon: "/images/up-arrow.svg" },
+    { name: "User Satisfaction", arrowIcon: "/images/up-arrow.svg" },
     {
-      name: "Reduce Average Time to Book",
-      arrowIcon: "/images/down-arrow.svg",
+      name: "User Engagement",
+      arrowIcon: "/images/up-arrow.svg",
     },
-    { name: "Customer Satisfaction", arrowIcon: "/images/up-arrow.svg" },
+    { name: "Retention and Loyalty", arrowIcon: "/images/up-arrow.svg" },
   ],
   sections: SECTIONS,
 };
@@ -342,7 +349,8 @@ const NAV_SECTIONS = [
   { title: "Research Approach", match: "research" },
   { title: "Expected Outcomes", match: "outcomes" },
   { title: "Key Features", match: "key features" },
-  { title: "Search Book and Opportunities", match: "design" },
+  { title: "Dashboard", match: "dashboard" },
+  { title: "On Boarding", match: "design" },
   { title: "Reflection & Improvement", match: "reflection" },
   { title: "Conclusion", match: "conclusion" },
 ];
@@ -350,17 +358,54 @@ const NAV_SECTIONS = [
 // ─── Sub-components ──────────────────────────────────────────────────────────
 
 const Badge = ({ label }: { label: string }) => (
-  <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+  <div className="w-fit bg-white text-md px-4 py-4.5 mb-42 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
     {label}
   </div>
 );
 
-const SectionParagraphs = ({ paragraphs }: { paragraphs: Paragraph[] }) =>
+const SectionParagraphs = ({
+  paragraphs,
+  icons,
+}: {
+  paragraphs: Paragraph[];
+  icons?: string[];
+}) =>
   paragraphs.map((p, i) => (
-    <p key={i} className="mb-6 lg:mb-8">
-      {p.bold && <strong>{p.bold} </strong>}
-      {p.text}
-    </p>
+    <div key={i}>
+      <div className="mb-6 lg:mb-4">
+        <p>
+          {p.bold && <strong>{p.bold} </strong>}
+          {p.text}
+        </p>
+        {p.subItems && p.subItems.length > 0 && (
+          <ul className="ml-6 mt-3 list-disc flex flex-col gap-2">
+            {p.subItems.map((sub, j) => (
+              <li key={j}>
+                {sub.bold && <strong>{sub.bold} </strong>}
+                {sub.text}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      {/* Icon row after the first paragraph */}
+      {i === 0 && icons && icons.length > 0 && (
+        <div className="flex flex-row items-center gap-6 mb-6 lg:mb-8">
+          {icons.map((src, j) => (
+            <img
+              key={j}
+              src={`${src}`}
+              alt={`icon-${j + 1}`}
+              className={
+                j === 2
+                  ? "w-[30px] h-[30px] sm:w-[40px] sm:h-[34px] md:w-[50px] md:h-[37px] lg:w-[50px] lg:h-[35px] xl:w-[70px] xl:h-[40px]"
+                  : "w-[60px] h-[20px] sm:w-[80px] sm:h-[27px] md:w-[100px] md:h-[33px] lg:w-[100px] lg:h-[30px] xl:w-[140px] xl:h-[40px]"
+              }
+            />
+          ))}
+        </div>
+      )}
+    </div>
   ));
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -370,10 +415,10 @@ const EcommerceDetail = () => (
     <ProjectHero project={HERO_PROJECT} />
     <ProjectDetailNav sections={NAV_SECTIONS} />
 
-    {SECTIONS.map(({ paragraphs, badge, ...sectionProps }, i) => (
+    {SECTIONS.map(({ paragraphs, badge, icons, ...sectionProps }, i) => (
       <SplitSection key={i} {...sectionProps}>
         {badge && <Badge label={badge} />}
-        <SectionParagraphs paragraphs={paragraphs} />
+        <SectionParagraphs paragraphs={paragraphs} icons={icons} />
       </SplitSection>
     ))}
 
