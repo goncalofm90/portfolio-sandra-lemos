@@ -42,7 +42,6 @@ const SpaceflightBookingDetail = () => {
           { title: "Research Approach", match: "research" },
           { title: "Expected Outcomes", match: "outcomes" },
           { title: "Key Features", match: "key features" },
-          { title: "Key Features", match: "key features" },
           { title: "Search Book and Opportunities", match: "design" },
           { title: "Reflection & Improvement", match: "reflection" },
           { title: "Conclusion", match: "conclusion" },
@@ -235,7 +234,7 @@ const SpaceflightBookingDetail = () => {
       </SplitSection>
 
       <SplitSection
-        index={7}
+        index={6}
         title="Key Features"
         image="/images/paragraph-images/project-1/key-features-2.png"
       >
@@ -263,7 +262,7 @@ const SpaceflightBookingDetail = () => {
       </SplitSection>
 
       <SplitSection
-        index={8}
+        index={7}
         designIndex={1}
         total={7}
         title="Search Book and Opportunities"
@@ -278,7 +277,6 @@ const SpaceflightBookingDetail = () => {
         </p>
       </SplitSection>
       <SplitSection
-        index={9}
         designIndex={2}
         total={7}
         title="Tickets"
@@ -293,7 +291,6 @@ const SpaceflightBookingDetail = () => {
         </p>
       </SplitSection>
       <SplitSection
-        index={10}
         designIndex={3}
         total={7}
         title="Ticket Details"
@@ -308,7 +305,6 @@ const SpaceflightBookingDetail = () => {
         </p>
       </SplitSection>
       <SplitSection
-        index={11}
         designIndex={4}
         total={7}
         title="Upgrade & Personal Information"
@@ -323,7 +319,6 @@ const SpaceflightBookingDetail = () => {
         </p>
       </SplitSection>
       <SplitSection
-        index={12}
         designIndex={2}
         total={7}
         title="Seat Selection & Payment Confirmation"
@@ -338,7 +333,6 @@ const SpaceflightBookingDetail = () => {
         </p>
       </SplitSection>
       <SplitSection
-        index={13}
         designIndex={5}
         total={7}
         title="Explore & Tickets"
@@ -353,7 +347,6 @@ const SpaceflightBookingDetail = () => {
         </p>
       </SplitSection>
       <SplitSection
-        index={14}
         designIndex={6}
         total={7}
         title="Tablet Interface for Crew Operations  "
@@ -368,7 +361,7 @@ const SpaceflightBookingDetail = () => {
         </p>
       </SplitSection>
       <SplitSection
-        index={15}
+        index={8}
         title="Reflection & Improvement"
         image="/images/paragraph-images/project-1/reflection.png"
       >
@@ -404,7 +397,7 @@ const SpaceflightBookingDetail = () => {
         </p>
       </SplitSection>
       <SplitSection
-        index={4}
+        index={9}
         title="Conclusion"
         image="/images/paragraph-images/project-1/conclusion.png"
       >
