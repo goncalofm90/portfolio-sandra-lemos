@@ -19,7 +19,7 @@ const SECTIONS = [
   {
     index: 0,
     title: "Problem Statement",
-    image: "/images/paragraph-images/project-4/problem-statement-4.png",
+    image: "/images/paragraph-images/project-5/problem-statement-5.png",
     paragraphs: [
       {
         text: "In today's fast-paced environment, users demand seamless and efficient shopping experiences. They seek a process that is not only swift and secure but also aligns perfectly with their expectations.",
@@ -35,7 +35,7 @@ const SECTIONS = [
   {
     index: 1,
     title: "Problem Solution",
-    image: "/images/paragraph-images/project-4/problem-solution-4.png",
+    image: "/images/paragraph-images/project-5/problem-solution-5.png",
     paragraphs: [
       {
         text: "Additionally, a key feature will be the integration of augmented reality (AR), allowing users to virtually try out products from the comfort of their own physical space. ",
@@ -51,7 +51,7 @@ const SECTIONS = [
   {
     index: 2,
     title: "Target Users",
-    image: "/images/paragraph-images/project-4/target-users-4.png",
+    image: "/images/paragraph-images/project-5/target-users-5.png",
     paragraphs: [
       {
         bold: "Millennials and Generation Z (18-40 years old), ",
@@ -62,7 +62,7 @@ const SECTIONS = [
   {
     index: 3,
     title: "UI Identity",
-    image: "/images/paragraph-images/project-3/ui-identity-3.png",
+    image: "/images/paragraph-images/project-5/ui-identity-5.png",
     paragraphs: [
       {
         bold: "Color Palette:",
@@ -123,7 +123,7 @@ const SECTIONS = [
   {
     index: 5,
     title: "Expected Outcomes",
-    image: "/images/paragraph-images/project-4/expected-outcomes-4.png",
+    image: "/images/paragraph-images/project-5/expected-outcomes-5.png",
     paragraphs: [
       {
         bold: "Enhanced User Satisfaction:",
@@ -142,7 +142,7 @@ const SECTIONS = [
   {
     index: 6,
     title: "Key Features",
-    image: "/images/paragraph-images/project-4/key-features-4.png",
+    image: "/images/paragraph-images/project-5/key-features-5.png",
     paragraphs: [
       {
         bold: "Unified Platform: ",
@@ -159,7 +159,7 @@ const SECTIONS = [
     designIndex: 1,
     total: 10,
     title: "On Boarding",
-    image: "/images/paragraph-images/project-4/dashboard-4.png",
+    image: "/images/paragraph-images/project-5/on-boarding-5.png",
     paragraphs: [
       {
         text: "Discover a smarter way to shop and  try items virtually with AR, browse top brands, and enjoy fast, secure deliveries from day one",
@@ -170,7 +170,7 @@ const SECTIONS = [
     designIndex: 2,
     total: 10,
     title: "Home/Shop & Cupons",
-    image: "/images/paragraph-images/project-4/new-booking-4.png",
+    image: "/images/paragraph-images/project-5/home-shop-5.png",
     paragraphs: [
       {
         text: "Browse by category, explore top brands, discover new trends, and unlock exclusive coupons tailored to your style",
@@ -181,7 +181,7 @@ const SECTIONS = [
     designIndex: 3,
     total: 10,
     title: "Shop/Clothing",
-    image: "/images/paragraph-images/project-4/reservations-all-4.png",
+    image: "/images/paragraph-images/project-5/shop-clothing-5.png",
     paragraphs: [
       {
         text: "Browse thousands of clothing items, filter by category, and find exactly what you're looking for across all your favourite brands.",
@@ -192,7 +192,7 @@ const SECTIONS = [
     designIndex: 4,
     total: 10,
     title: "Filters",
-    image: "/images/paragraph-images/project-4/guest-details-4.png",
+    image: "/images/paragraph-images/project-5/filters-5.png",
     paragraphs: [
       {
         text: "Narrow down your search by price, size, colour, brand, body fit, material, style and find your perfect match faster.",
@@ -203,7 +203,7 @@ const SECTIONS = [
     designIndex: 5,
     total: 10,
     title: "Product Page",
-    image: "/images/paragraph-images/project-4/guest-app-home-4.png",
+    image: "/images/paragraph-images/project-5/product-page-5.png",
 
     paragraphs: [
       {
@@ -215,7 +215,7 @@ const SECTIONS = [
     designIndex: 6,
     total: 10,
     title: "Size, Virtual Try on & Brands Selection",
-    image: "/images/paragraph-images/project-4/guest-app-online-check-in-4.png",
+    image: "/images/paragraph-images/project-5/virtual-try-on-5.png",
     paragraphs: [
       {
         text: "Pick your size, virtually try on items using AR from your space, and browse your favourite brands all in one place.",
@@ -226,8 +226,7 @@ const SECTIONS = [
     designIndex: 7,
     total: 10,
     title: "Account, Support, & Orders Details",
-    image:
-      "/images/paragraph-images/project-4/guest-app-upgrade-room-key-4.png",
+    image: "/images/paragraph-images/project-5/account-support-5.png",
 
     paragraphs: [
       {
@@ -239,7 +238,7 @@ const SECTIONS = [
     designIndex: 8,
     total: 10,
     title: "Wishlist",
-    image: "/images/paragraph-images/project-4/hero-section-4.png",
+    image: "/images/paragraph-images/project-5/wishlist-5.png",
     paragraphs: [
       {
         text: "Save your favourite pieces, sort by price or date added, and keep track of everything you love in one place.",
@@ -250,7 +249,7 @@ const SECTIONS = [
     designIndex: 9,
     total: 10,
     title: "Basket",
-    image: "/images/paragraph-images/project-4/reflection-4.png",
+    image: "/images/paragraph-images/project-5/basket-5.png",
     paragraphs: [
       {
         text: "Review your items, apply vouchers or gift cards, check your total with VAT, and proceed to checkout securely.",
@@ -261,7 +260,7 @@ const SECTIONS = [
     designIndex: 10,
     total: 10,
     title: "Shipping, Payment & Confirmation",
-    image: "/images/paragraph-images/project-4/reflection-4.png",
+    image: "/images/paragraph-images/project-5/shipping-5.png",
     paragraphs: [
       {
         text: "Enter your delivery address or choose a collection point, then pay securely with your preferred method.",
@@ -271,7 +270,7 @@ const SECTIONS = [
   {
     index: 9,
     title: "Reflection & Improvement ",
-    image: "/images/paragraph-images/project-4/reflection2-4.png",
+    image: "/images/paragraph-images/project-5/reflection-5.png",
     paragraphs: [
       {
         bold: "Navigation:",
@@ -306,7 +305,7 @@ const SECTIONS = [
   {
     index: 10,
     title: "Conclusion",
-    image: "/images/paragraph-images/project-4/conclusion-4.png",
+    image: "/images/paragraph-images/project-5/conclusion-5.png",
     paragraphs: [
       {
         text: "The Closhe e-commerce project redefines the shopping experience by seamlessly integrating the best aspects of online and in-person retail.",
