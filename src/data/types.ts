@@ -1,30 +1,31 @@
-
 type Tag = {
   name: string;
   arrowIcon: string; // path to image
 };
 
-type TextSegment = {
+export type Paragraph = {
   text: string;
-  bold?: boolean;
+  bold?: string; // if present, rendered as <strong>{bold}</strong> before text
 };
 
-type Paragraph = TextSegment[];
-
-export interface DesignSlide {
+export type CaseStudySection = {
   title: string;
-  badge: string;
-  text: string;
+  match?: string; // ✅ ADD THIS
+  paragraphs: {
+    text: string;
+    bold?: string;
+  }[];
   image?: string;
-}
+  badge?: string;
+  index?: number;
+  designIndex?: number;
+  total?: number;
+};
 
-export interface CaseStudySection {
+export type NavSection = {
   title: string;
-  paragraphs: Paragraph[];
-  image?: string;
-  layout?: "full" | "split";
-  design?: DesignSlide[];
-}
+  match: string;
+};
 
 export interface ProjectData {
   id: number;
@@ -38,3 +39,12 @@ export interface ProjectData {
   deliverables?: string[];
   tools?: string[];
 }
+
+export type SplitSectionProps = {
+  title: string;
+  index?: number;
+  image: string;
+  children: React.ReactNode;
+  designIndex?: number;
+  total?: number;
+};

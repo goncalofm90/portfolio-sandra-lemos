@@ -1,4 +1,5 @@
 import { getSectionId } from "../helpers/sectionNavigation";
+import type { SplitSectionProps } from "../data/types";
 
 export const SplitSection = ({
   title,
@@ -7,7 +8,7 @@ export const SplitSection = ({
   children,
   designIndex,
   total,
-}) => {
+}: SplitSectionProps) => {
   const sectionId = getSectionId(title, index);
 
   return (

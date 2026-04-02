@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, type MouseEvent } from "react";
-import type { CaseStudySection } from "../data/types";
+import type { NavSection } from "../data/types";
 import { getSectionId } from "../helpers/sectionNavigation";
 
 const NAV_LINKS = [
@@ -20,7 +20,7 @@ type NavItem = {
   label: string;
 };
 
-const ProjectDetailNav = ({ sections }: { sections: CaseStudySection[] }) => {
+const ProjectDetailNav = ({ sections }: { sections: NavSection[] }) => {
   const navItems = useMemo(
     () =>
       NAV_LINKS.reduce<NavItem[]>((items, link) => {
