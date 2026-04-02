@@ -12,14 +12,13 @@ import type { Paragraph } from "../data/types";
  *   total?       – forwarded to <SplitSection>
  *   title        – section heading
  *   image        – illustration path
- *   badge?       – pill label (Mobile App / Tablet)
  *   paragraphs   – array of { bold?: string, text: string }
  */
 const SECTIONS = [
   {
     index: 0,
     title: "Problem Statement",
-    image: "/images/paragraph-images/project-1/problem-statement-1.png",
+    image: "/images/paragraph-images/project-2/problem-statement-2.png",
     paragraphs: [
       {
         text: "Beverage companies operating across multiple factories and countries face significant challenges in monitoring and managing production data in a unified way.",
@@ -32,7 +31,7 @@ const SECTIONS = [
   {
     index: 1,
     title: "Problem Solution",
-    image: "/images/paragraph-images/project-1/problem-solution-1.png",
+    image: "/images/paragraph-images/project-2/problem-solution-2.png",
     paragraphs: [
       {
         text: "Refresh Industries Production Management is a web application designed to centralize and visualize production data across multiple factories and countries.",
@@ -45,7 +44,7 @@ const SECTIONS = [
   {
     index: 2,
     title: "Target Users",
-    image: "/images/paragraph-images/project-1/target-users-1.png",
+    image: "/images/paragraph-images/project-2/target-users-2.png",
     paragraphs: [
       {
         bold: "Operations managers and production teams",
@@ -56,7 +55,7 @@ const SECTIONS = [
   {
     index: 3,
     title: "UI Identity",
-    image: "/images/paragraph-images/project-1/ui-identity-1.png",
+    image: "/images/paragraph-images/project-2/ui-identity-2.png",
     paragraphs: [
       {
         bold: "Color Palette:",
@@ -96,7 +95,7 @@ const SECTIONS = [
   {
     index: 5,
     title: "Expected Outcomes",
-    image: "/images/paragraph-images/project-1/expected-outcomes-1.png",
+    image: "/images/paragraph-images/project-2/expected-outcomes-2.png",
     paragraphs: [
       {
         text: "Faster identification of production trends through clear, comparative charts;",
@@ -115,8 +114,7 @@ const SECTIONS = [
   {
     index: 6,
     title: "Key Features",
-    image: "/images/paragraph-images/project-1/key-features-1.png",
-    badge: "Mobile App - Passengers",
+    image: "/images/paragraph-images/project-2/key-features-p2.png",
     paragraphs: [
       {
         bold: "Dashboard:",
@@ -151,9 +149,9 @@ const SECTIONS = [
   {
     index: 7,
     designIndex: 1,
-    total: 7,
+    total: 5,
     title: "Dashboard",
-    image: "/images/paragraph-images/project-1/search-book.png",
+    image: "/images/paragraph-images/project-2/dashboard-2.png",
     paragraphs: [
       {
         text: "Monitor revenue, costs, gross margin, and stock levels across factories and countries with real-time charts and filterable KPIs in one unified view",
@@ -162,9 +160,9 @@ const SECTIONS = [
   },
   {
     designIndex: 2,
-    total: 7,
+    total: 5,
     title: "Orders Management",
-    image: "/images/paragraph-images/project-1/tickets.png",
+    image: "/images/paragraph-images/project-2/orders-management-2.png",
     paragraphs: [
       {
         text: "Track every order by product, size, value, and delivery status, filtered by country, facility, and timeframe for full operational visibility",
@@ -173,9 +171,9 @@ const SECTIONS = [
   },
   {
     designIndex: 3,
-    total: 7,
+    total: 5,
     title: "Planning",
-    image: "/images/paragraph-images/project-1/ticket-details.png",
+    image: "/images/paragraph-images/project-2/planning-2.png",
     paragraphs: [
       {
         text: "Schedule and monitor production runs across product lines and facilities, with capacity tracking, a monthly order calendar and a prioritised queue updated in real time",
@@ -184,9 +182,9 @@ const SECTIONS = [
   },
   {
     designIndex: 4,
-    total: 7,
+    total: 5,
     title: "Raw Materials",
-    image: "/images/paragraph-images/project-1/upgrade.png",
+    image: "/images/paragraph-images/project-2/raw-materials-2.png",
     paragraphs: [
       {
         text: "Oversee stock levels, supplier coverage and material availability across all categories, with low-stock alerts and a full inventory breakdown by product, unit and status",
@@ -194,10 +192,10 @@ const SECTIONS = [
     ],
   },
   {
-    designIndex: 2,
+    designIndex: 5,
     total: 5,
     title: "Analytics & Reports",
-    image: "/images/paragraph-images/project-1/seat-selection.png",
+    image: "/images/paragraph-images/project-2/analytics-2.png",
     paragraphs: [
       {
         text: "Measure delivery performance, cancellation trends and top product volumes across facilities, with filterable KPIs and charts that turn operational data into clear, actionable insight.",
@@ -207,7 +205,7 @@ const SECTIONS = [
   {
     index: 8,
     title: "Reflection & Improvement",
-    image: "/images/paragraph-images/project-1/reflection.png",
+    image: "/images/paragraph-images/project-2/reflection-2.png",
     paragraphs: [
       {
         text: "The main challenge was balancing data density with visual clarity enterprise dashboards risk becoming overwhelming if hierarchy and spacing are not carefully considered. Beyond the original briefing, KPI summary cards and additional order status categories were introduced to better reflect real operational needs. ",
@@ -220,7 +218,7 @@ const SECTIONS = [
   {
     index: 9,
     title: "Conclusion",
-    image: "/images/paragraph-images/project-1/conclusion.png",
+    image: "/images/paragraph-images/project-2/conclusion-2.png",
     paragraphs: [
       {
         text: "This project demonstrated how thoughtful UX and UI design can transform complex production data into a clear, actionable interface.",
@@ -270,12 +268,6 @@ const NAV_SECTIONS = [
 
 // ─── Sub-components ──────────────────────────────────────────────────────────
 
-const Badge = ({ label }: { label: string }) => (
-  <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
-    {label}
-  </div>
-);
-
 const SectionParagraphs = ({ paragraphs }: { paragraphs: Paragraph[] }) =>
   paragraphs.map((p, i) => (
     <p key={i} className="mb-6 lg:mb-8">
@@ -291,9 +283,8 @@ const ProductionManagementDetail = () => (
     <ProjectHero project={HERO_PROJECT} />
     <ProjectDetailNav sections={NAV_SECTIONS} />
 
-    {SECTIONS.map(({ paragraphs, badge, ...sectionProps }, i) => (
+    {SECTIONS.map(({ paragraphs, ...sectionProps }, i) => (
       <SplitSection key={i} {...sectionProps}>
-        {badge && <Badge label={badge} />}
         <SectionParagraphs paragraphs={paragraphs} />
       </SplitSection>
     ))}
