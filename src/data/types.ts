@@ -4,8 +4,9 @@ type Tag = {
 };
 
 export type Paragraph = {
+  bold?: string;
   text: string;
-  bold?: string; // if present, rendered as <strong>{bold}</strong> before text
+  subItems?: Paragraph[];
 };
 
 export type CaseStudySection = {

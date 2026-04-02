@@ -12,7 +12,6 @@ import type { Paragraph } from "../data/types";
  *   total?       – forwarded to <SplitSection>
  *   title        – section heading
  *   image        – illustration path
- *   badge?       – pill label (Mobile App / Tablet)
  *   paragraphs   – array of { bold?: string, text: string }
  */
 const SECTIONS = [
@@ -22,10 +21,10 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/problem-statement-1.png",
     paragraphs: [
       {
-        text: "As commercial space travel begins to take shape, there's a growing need for a simple and intuitive way to book and manage spaceflights.",
+        text: "Traditional productivity apps focus solely on task completion, creating pressure and anxiety in users. ",
       },
       {
-        text: "Passengers need clarity and control; crew members need efficient tools to support and monitor the journey.",
+        text: "People feel overwhelmed by rigid, work-focused tools that lack positive reinforcement, making it harder to build consistent habits and maintain a healthy work-life balance.",
       },
     ],
   },
@@ -34,14 +33,11 @@ const SECTIONS = [
     title: "Problem Solution",
     image: "/images/paragraph-images/project-1/problem-solution-1.png",
     paragraphs: [
-      { text: "This concept presents a dual-platform solution:" },
-      { bold: "Tablet Interface", text: "for crew operations;" },
       {
-        bold: "Mobile App",
-        text: "for passengers to book and manage flights;",
+        text: "Sway redefines productivity by combining task management with mindfulness.",
       },
       {
-        text: "Designed for space travel, it combines clean UI with intuitive UX to make complex journeys feel simple.",
+        text: "Instead of pressuring users to complete tasks, the app encourages calm, balance and organization through gentle reminders, positive messages and a pressure-free interface that celebrates small wins.",
       },
     ],
   },
@@ -51,12 +47,8 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/target-users-1.png",
     paragraphs: [
       {
-        bold: "Passengers - Adults aged 25–55",
-        text: "who are early adopters of commercial space travel. They seek clarity, control, and digital convenience when booking and managing their flights. They value safety, transparency, and an intuitive experience that makes space travel feel accessible;",
-      },
-      {
-        bold: "Crew Members -",
-        text: "Professional flight attendants and mission crew operating in commercial spaceflights. They need reliable tools to manage passengers and monitor operations efficiently. They value streamlined workflows, accuracy, and intuitive interfaces that support them in high-stakes environments;",
+        bold: "Young professionals aged 25-35",
+        text: " who struggle to balance work and personal life. Users who feel overwhelmed by traditional productivity tools and are looking for a calmer, more encouraging approach to managing their daily tasks and building healthy habits.",
       },
     ],
   },
@@ -72,18 +64,20 @@ const SECTIONS = [
       {
         bold: "Typography:",
         text: "A clean, modern sans-serif typeface conveys precision and confidence, ideal for the futuristic nature of space travel and data-heavy screens;",
+        subItems: [
+          {
+            bold: "Montserrat Alternates",
+            text: "was chosen as the primary font for its clean, modern feel with subtle letter variations that add character without being distracting;",
+          },
+          {
+            bold: "Comic Sans",
+            text: "used sparingly for informal callouts;",
+          },
+        ],
       },
       {
-        bold: "Icons:",
-        text: "Minimal outlined icons support quick recognition of key functions such as connectivity, oxygen levels and turbulence status without adding visual noise;",
-      },
-      {
-        bold: "Components:",
-        text: "The passenger app uses rounded cards and a clean booking flow for an approachable experience. The crew tablet uses structured tables, a seat map and status indicators designed for operational efficiency;",
-      },
-      {
-        bold: "Background:",
-        text: "A dark background reinforces the space environment, reduces eye strain and creates a premium, immersive feel across both platforms;",
+        bold: "Colors:",
+        text: "The palette was chosen to evoke calm and balance. Soft purple (#9E7CDC) conveys focus and creativity, light blue (#6BAED6 ) inspires freshness and tranquility, and the whites and greys ensure clarity, contrast and readability throughout the interface.",
       },
     ],
   },
@@ -93,13 +87,13 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/research-approach-1.png",
     paragraphs: [
       {
-        text: "Given the conceptual and futuristic nature of the project, I began by analyzing patterns from existing airline and travel apps, studying booking flows, onboard service features, and cross-device interactions.",
+        text: "The research for Sway was primarily based on market analysis. Existing productivity apps such as Todoist, Notion and Apple Reminders were studied to identify gaps in the market, particularly the lack of emotional support and mindfulness features in task management tools.",
       },
       {
-        text: "Based on these insights, I then created two detailed personas to guide design decisions and ensure a user-centered approach.",
+        text: "User reviews and app store feedback were also analyzed to understand common frustrations and unmet needs among productivity app users.",
       },
       {
-        text: "These findings were adapted to a space travel context, emphasizing safety, clarity, and ease of use. The ultimate goal was to craft an imaginative and engaging experience that never compromises on functionality.",
+        text: "This secondary research helped define the core design direction — a calm, pressure-free experience that prioritizes well-being alongside productivity.",
       },
     ],
   },
@@ -109,32 +103,16 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/expected-outcomes-1.png",
     paragraphs: [
       {
-        bold: "Safety:",
-        text: "Users feel secure with clear, intuitive safety features;",
+        text: "Increased daily task completion rate without stress;",
       },
       {
-        bold: "Clarity:",
-        text: "Booking and onboard information is easy to understand across all devices;",
+        text: "Higher user retention due to positive reinforcement;",
       },
       {
-        bold: "Efficiency:",
-        text: "Travel planning and check-in are streamlined for a seamless experience;",
+        text: "Reduced time to add and manage tasks;",
       },
       {
-        bold: "Accessibility:",
-        text: "Space travel services are easy to access, from reservations to onboard interactions;",
-      },
-      {
-        bold: "Engagement:",
-        text: "Immersive features enhance the excitement and anticipation of space travel;",
-      },
-      {
-        bold: "Organization:",
-        text: "All travel details and documents are stored in one central place;",
-      },
-      {
-        bold: "Safety:",
-        text: "Users feel secure with clear, intuitive safety features;",
+        text: "Improved sense of well-being and mindfulness among users;",
       },
     ],
   },
@@ -142,129 +120,79 @@ const SECTIONS = [
     index: 6,
     title: "Key Features",
     image: "/images/paragraph-images/project-1/key-features-1.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        bold: "Flight Reservation:",
-        text: "Choose destination / space route, available dates and times, seat selection, class type (Economy, etc.) selection;",
+        bold: "Home / Task:",
+        text: "Daily task list with progress bar showing completion percentage;",
       },
       {
-        bold: "Explore:",
-        text: "Interactive map of destinations, search and discover routes;",
+        bold: "Add Task:",
+        text: "Quick task creation with category, date and reminders;",
       },
       { bold: "Account:", text: "Past tickets, etc;" },
       {
-        bold: "Boarding:",
-        text: "Online check-in, boarding QR code, notifications;",
-      },
-      { bold: "Wishlist:", text: "Future travels;" },
-      { bold: "Payments:", text: "Choose payment method & secure checkout;" },
-    ],
-  },
-  {
-    index: 6,
-    title: "Key Features",
-    image: "/images/paragraph-images/project-1/key-features-2.png",
-    badge: "Tablet - Inflight Agents",
-    paragraphs: [
-      {
-        bold: "Passenger Management:",
-        text: "Passenger list, boarding status;",
+        bold: "Stats:",
+        text: "Weekly and monthly overview with positive messages;",
       },
       {
-        bold: "Onboard Support:",
-        text: "Receive help requests, passenger notes & info, meals info;",
+        bold: "Focus:",
+        text: "Timer to minimize distractions linked directly to tasks;",
       },
-      {
-        bold: "Flight Management:",
-        text: "Trip progress, ship status & conditions, checklist;",
-      },
-      { bold: "Offline Mode:", text: "Critical info must work offline;" },
-      { bold: "Communication:", text: "Chat with passengers or broadcast;" },
     ],
   },
   {
     index: 7,
     designIndex: 1,
-    total: 7,
-    title: "Search Book and Opportunities",
+    total: 5,
+    title: "Tasks & Progress",
     image: "/images/paragraph-images/project-1/search-book.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Book spaceflights with smart filters, explore curated trips, and manage voyages in real time.",
+        text: "Organize your tasks by category, track your daily progress, and stay focused on what truly matters",
       },
     ],
   },
   {
     designIndex: 2,
-    total: 7,
-    title: "Tickets",
+    total: 5,
+    title: "Filters & Labels",
     image: "/images/paragraph-images/project-1/tickets.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Get trip overviews with pricing, VAT, and options to change cabin class and baggage.",
+        text: "Refine your tasks with smart filters, sort by date, category or priority, and customize your view",
       },
     ],
   },
   {
     designIndex: 3,
-    total: 7,
-    title: "Ticket Details",
+    total: 5,
+    title: "Task Details",
     image: "/images/paragraph-images/project-1/ticket-details.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Get trip overviews with pricing, VAT, and options to change cabin class and baggage.",
+        text: "Create tasks with category, date, repeat, and reminders, everything in one place so nothing slips through",
       },
     ],
   },
   {
     designIndex: 4,
-    total: 7,
-    title: "Upgrade & Personal Information",
+    total: 5,
+    title: "Stats & Insights",
     image: "/images/paragraph-images/project-1/upgrade.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Enhance trips with upgrades, clear pricing, autofill, and a comment field for notes.",
+        text: "Track your balance across life areas with weekly charts and personal progress metrics",
       },
     ],
   },
   {
     designIndex: 2,
-    total: 7,
-    title: "Seat Selection & Payment Confirmation",
+    total: 5,
+    title: "Focus Mode",
     image: "/images/paragraph-images/project-1/seat-selection.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Choose seats with live availability, ticket count, and class. Confirm payment, view tickets, or explore.",
-      },
-    ],
-  },
-  {
-    designIndex: 5,
-    total: 7,
-    title: "Explore & Tickets",
-    image: "/images/paragraph-images/project-1/explore.png",
-    badge: "Mobile App - Passengers",
-    paragraphs: [
-      {
-        text: "Find trips by map or list with easy filters, and manage tickets with in-app check-in.",
-      },
-    ],
-  },
-  {
-    designIndex: 6,
-    total: 7,
-    title: "Tablet Interface for Crew Operations",
-    image: "/images/paragraph-images/project-1/tablet-interface.png",
-    badge: "Tablet - Inflight Agents",
-    paragraphs: [
-      {
-        text: "Monitor passengers, seat status, oxygen levels, connectivity, turbulence, and access key modules like tasks, meals, and emergencies.",
+        text: "Pause, breathe, and pick a task to focus on. The timer helps you work with more intention and calm",
       },
     ],
   },
@@ -274,28 +202,10 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/reflection.png",
     paragraphs: [
       {
-        bold: "Navigation:",
-        text: "Refined booking and management flows for the mobile app, and operational flows for the tablet interface, ensuring both passengers and crew can navigate seamlessly;",
+        text: "The biggest challenge was balancing simplicity with functionality",
       },
       {
-        bold: "Technology:",
-        text: "Focused on creating a simplified, intuitive interface across platforms, with plans to expand features like itinerary sync, mission updates, and real-time notifications;",
-      },
-      {
-        bold: "Personalization:",
-        text: "Considering future smart recommendations for passengers based on travel history and preferences, and adaptive tools for crew based on operational needs;",
-      },
-      {
-        bold: "Design:",
-        text: "Prioritized a clean, futuristic UI that balances visual clarity with an immersive, space-themed experience across both devices;",
-      },
-      {
-        bold: "Engagement:",
-        text: "Exploring interactive mission previews and notifications to keep passengers excited, and task reminders to support crew efficiency;",
-      },
-      {
-        bold: "Support:",
-        text: "Identified the need for built-in communication channels, enabling passengers to contact support and crew members to coordinate operations effectively;",
+        text: "Future improvements could include a social accountability feature, more personalized mindfulness reminders based on user behaviour, and a deeper integration between the Focus timer and the Stats dashboard to give users a clearer picture of their productivity patterns.",
       },
     ],
   },
@@ -305,10 +215,10 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/conclusion.png",
     paragraphs: [
       {
-        text: "This concept reimagines space travel by unifying passenger booking, crew operations, and real-time communication across a dual-platform experience.",
+        text: "Sway proves that productivity doesn't have to come at the cost of well-being.",
       },
       {
-        text: "By simplifying complex journeys and providing intuitive tools for both passengers and crew, it empowers users to focus on what matters most—exploring space safely and enjoying an engaging, seamless journey.",
+        text: "By putting the user's emotional experience at the center of the design, the app creates a tool that people actually want to use every day, not because they have to, but because it makes them feel good about their progress.",
       },
     ],
   },
@@ -318,18 +228,18 @@ const HERO_PROJECT = {
   id: 3,
   title: "Task & Mindfulness App",
   description:
-    "A mobile app for passengers to book and manage spaceflights, and a tablet interface that equips crew with tools to support and monitor the journey.",
+    "Designed to help users manage daily tasks while promoting calm, balance, and organization through a gentle, pressure-free experience.",
   image: "/images/space.png",
   type: "Mobile & Tablet",
   heroSubtitle: "UX Research & UI Design",
   tags: [
-    { name: "Retention and Loyalty", arrowIcon: "/images/up-arrow.svg" },
-    { name: "Crew Efficiency", arrowIcon: "/images/up-arrow.svg" },
+    { name: "Task Completion Rate", arrowIcon: "/images/up-arrow.svg" },
+    { name: "Reduce Time to Add Task", arrowIcon: "/images/down-arrow.svg" },
     {
-      name: "Reduce Average Time to Book",
-      arrowIcon: "/images/down-arrow.svg",
+      name: "Mindfulness Engagement",
+      arrowIcon: "/images/up-arrow.svg",
     },
-    { name: "Customer Satisfaction", arrowIcon: "/images/up-arrow.svg" },
+    { name: "User Satisfaction", arrowIcon: "/images/up-arrow.svg" },
   ],
   sections: SECTIONS,
 };
@@ -342,25 +252,31 @@ const NAV_SECTIONS = [
   { title: "Research Approach", match: "research" },
   { title: "Expected Outcomes", match: "outcomes" },
   { title: "Key Features", match: "key features" },
-  { title: "Search Book and Opportunities", match: "design" },
+  { title: "Tasks & Progress", match: "design" },
   { title: "Reflection & Improvement", match: "reflection" },
   { title: "Conclusion", match: "conclusion" },
 ];
 
 // ─── Sub-components ──────────────────────────────────────────────────────────
 
-const Badge = ({ label }: { label: string }) => (
-  <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
-    {label}
-  </div>
-);
-
 const SectionParagraphs = ({ paragraphs }: { paragraphs: Paragraph[] }) =>
   paragraphs.map((p, i) => (
-    <p key={i} className="mb-6 lg:mb-8">
-      {p.bold && <strong>{p.bold} </strong>}
-      {p.text}
-    </p>
+    <div key={i} className="mb-6 lg:mb-8">
+      <p>
+        {p.bold && <strong>{p.bold} </strong>}
+        {p.text}
+      </p>
+      {p.subItems && p.subItems.length > 0 && (
+        <ul className="ml-6 mt-3 list-disc flex flex-col gap-2">
+          {p.subItems.map((sub, j) => (
+            <li key={j}>
+              {sub.bold && <strong>{sub.bold} </strong>}
+              {sub.text}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   ));
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -370,9 +286,8 @@ const MindfulnessDetail = () => (
     <ProjectHero project={HERO_PROJECT} />
     <ProjectDetailNav sections={NAV_SECTIONS} />
 
-    {SECTIONS.map(({ paragraphs, badge, ...sectionProps }, i) => (
+    {SECTIONS.map(({ paragraphs, ...sectionProps }, i) => (
       <SplitSection key={i} {...sectionProps}>
-        {badge && <Badge label={badge} />}
         <SectionParagraphs paragraphs={paragraphs} />
       </SplitSection>
     ))}
