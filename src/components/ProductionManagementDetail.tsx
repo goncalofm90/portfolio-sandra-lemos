@@ -22,10 +22,10 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/problem-statement-1.png",
     paragraphs: [
       {
-        text: "As commercial space travel begins to take shape, there's a growing need for a simple and intuitive way to book and manage spaceflights.",
+        text: "Beverage companies operating across multiple factories and countries face significant challenges in monitoring and managing production data in a unified way.",
       },
       {
-        text: "Passengers need clarity and control; crew members need efficient tools to support and monitor the journey.",
+        text: "The lack of a centralized, intuitive platform makes it difficult to track order statuses, analyze costs, and compare stock levels  leading to inefficiencies and poor decision-making.",
       },
     ],
   },
@@ -34,14 +34,11 @@ const SECTIONS = [
     title: "Problem Solution",
     image: "/images/paragraph-images/project-1/problem-solution-1.png",
     paragraphs: [
-      { text: "This concept presents a dual-platform solution:" },
-      { bold: "Tablet Interface", text: "for crew operations;" },
       {
-        bold: "Mobile App",
-        text: "for passengers to book and manage flights;",
+        text: "Refresh Industries Production Management is a web application designed to centralize and visualize production data across multiple factories and countries.",
       },
       {
-        text: "Designed for space travel, it combines clean UI with intuitive UX to make complex journeys feel simple.",
+        text: "Through a clean, intuitive dashboard with real-time KPI cards, interactive charts and a comprehensive order management system, it gives teams the clarity and control they need to make faster, more informed decisions.",
       },
     ],
   },
@@ -51,12 +48,8 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/target-users-1.png",
     paragraphs: [
       {
-        bold: "Passengers - Adults aged 25–55",
-        text: "who are early adopters of commercial space travel. They seek clarity, control, and digital convenience when booking and managing their flights. They value safety, transparency, and an intuitive experience that makes space travel feel accessible;",
-      },
-      {
-        bold: "Crew Members -",
-        text: "Professional flight attendants and mission crew operating in commercial spaceflights. They need reliable tools to manage passengers and monitor operations efficiently. They value streamlined workflows, accuracy, and intuitive interfaces that support them in high-stakes environments;",
+        bold: "Operations managers and production teams",
+        text: "within large beverage companies managing multiple industrial units across different countries. Users who need quick access to production data, order tracking and cost analysis without technical complexity.",
       },
     ],
   },
@@ -67,19 +60,19 @@ const SECTIONS = [
     paragraphs: [
       {
         bold: "Color Palette:",
-        text: "A dark, space-inspired background with high-contrast orange and white accents. Orange drives primary actions and key indicators, while white ensures readability across both platforms;",
+        text: "A soft base with pastel accents reduces visual fatigue across data-heavy views. Greens, blues and salmon tones differentiate products clearly without competing for attention;",
       },
       {
         bold: "Typography:",
-        text: "A clean, modern sans-serif typeface conveys precision and confidence, ideal for the futuristic nature of space travel and data-heavy screens;",
+        text: "Roboto was chosen for its neutral, modern legibility — a reliable choice for interfaces where reading speed matters;",
       },
       {
         bold: "Icons:",
-        text: "Minimal outlined icons support quick recognition of key functions such as connectivity, oxygen levels and turbulence status without adding visual noise;",
+        text: "Hero Icons keep navigation minimal and consistent, reinforcing the calm, structural tone of the product;",
       },
       {
         bold: "Components:",
-        text: "The passenger app uses rounded cards and a clean booking flow for an approachable experience. The crew tablet uses structured tables, a seat map and status indicators designed for operational efficiency;",
+        text: "Cards use subtle borders rather than shadows to maintain a light, breathable feel. Color-coded status badges allow instant order recognition, reducing cognitive load during data scanning;",
       },
       {
         bold: "Background:",
@@ -93,13 +86,10 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/research-approach-1.png",
     paragraphs: [
       {
-        text: "Given the conceptual and futuristic nature of the project, I began by analyzing patterns from existing airline and travel apps, studying booking flows, onboard service features, and cross-device interactions.",
+        text: "The research was based on market analysis of existing production management and data visualization tools, identifying common usability gaps in enterprise dashboards. Competitor platforms were studied to understand best practices in data hierarchy, filter systems and chart readability.",
       },
       {
-        text: "Based on these insights, I then created two detailed personas to guide design decisions and ensure a user-centered approach.",
-      },
-      {
-        text: "These findings were adapted to a space travel context, emphasizing safety, clarity, and ease of use. The ultimate goal was to craft an imaginative and engaging experience that never compromises on functionality.",
+        text: "The briefing requirements were carefully analyzed to ensure every design decision was grounded in real operational needs.",
       },
     ],
   },
@@ -109,32 +99,16 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/expected-outcomes-1.png",
     paragraphs: [
       {
-        bold: "Safety:",
-        text: "Users feel secure with clear, intuitive safety features;",
+        text: "Faster identification of production trends through clear, comparative charts;",
       },
       {
-        bold: "Clarity:",
-        text: "Booking and onboard information is easy to understand across all devices;",
+        text: "Improved order tracking and delivery performance monitoring;",
       },
       {
-        bold: "Efficiency:",
-        text: "Travel planning and check-in are streamlined for a seamless experience;",
+        text: "Reduced decision-making time through centralized, filtered data views;",
       },
       {
-        bold: "Accessibility:",
-        text: "Space travel services are easy to access, from reservations to onboard interactions;",
-      },
-      {
-        bold: "Engagement:",
-        text: "Immersive features enhance the excitement and anticipation of space travel;",
-      },
-      {
-        bold: "Organization:",
-        text: "All travel details and documents are stored in one central place;",
-      },
-      {
-        bold: "Safety:",
-        text: "Users feel secure with clear, intuitive safety features;",
+        text: "A scalable interface adaptable to different factories and countries;",
       },
     ],
   },
@@ -145,126 +119,88 @@ const SECTIONS = [
     badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        bold: "Flight Reservation:",
-        text: "Choose destination / space route, available dates and times, seat selection, class type (Economy, etc.) selection;",
+        bold: "Dashboard:",
+        text: "Revenue, costs, margin and stock in real time. Three interactive charts: order values by product, unit cost over time and inventory allocation;",
       },
       {
-        bold: "Explore:",
-        text: "Interactive map of destinations, search and discover routes;",
-      },
-      { bold: "Account:", text: "Past tickets, etc;" },
-      {
-        bold: "Boarding:",
-        text: "Online check-in, boarding QR code, notifications;",
-      },
-      { bold: "Wishlist:", text: "Future travels;" },
-      { bold: "Payments:", text: "Choose payment method & secure checkout;" },
-    ],
-  },
-  {
-    index: 6,
-    title: "Key Features",
-    image: "/images/paragraph-images/project-1/key-features-2.png",
-    badge: "Tablet - Inflight Agents",
-    paragraphs: [
-      {
-        bold: "Passenger Management:",
-        text: "Passenger list, boarding status;",
+        bold: "Orders Management:",
+        text: "Full order table with five color-coded statuses: Delivered, Delayed, In Transit, Cancelled and Pending;",
       },
       {
-        bold: "Onboard Support:",
-        text: "Receive help requests, passenger notes & info, meals info;",
+        bold: "Production Planning:",
+        text: "Monthly Gantt by product line, capacity tracking and a prioritised production queue;",
       },
       {
-        bold: "Flight Management:",
-        text: "Trip progress, ship status & conditions, checklist;",
+        bold: "Raw Materials:",
+        text: "Stock value, low-stock alerts, supplier tracking and a full inventory breakdown by material and unit;",
       },
-      { bold: "Offline Mode:", text: "Critical info must work offline;" },
-      { bold: "Communication:", text: "Chat with passengers or broadcast;" },
+      {
+        bold: "Analytics & Reports:",
+        text: "Delivery rates, cancellation trends and top products by volume, with facility-level performance charts;",
+      },
+      {
+        bold: "Global Filters:",
+        text: "Country and Facility filters with one-click reset, available across all pages;",
+      },
+      {
+        bold: "Navigation:",
+        text: "Persistent sidebar across Dashboard, Orders, Production, Inventory & Stock and Financial;",
+      },
     ],
   },
   {
     index: 7,
     designIndex: 1,
     total: 7,
-    title: "Search Book and Opportunities",
+    title: "Dashboard",
     image: "/images/paragraph-images/project-1/search-book.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Book spaceflights with smart filters, explore curated trips, and manage voyages in real time.",
+        text: "Monitor revenue, costs, gross margin, and stock levels across factories and countries with real-time charts and filterable KPIs in one unified view",
       },
     ],
   },
   {
     designIndex: 2,
     total: 7,
-    title: "Tickets",
+    title: "Orders Management",
     image: "/images/paragraph-images/project-1/tickets.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Get trip overviews with pricing, VAT, and options to change cabin class and baggage.",
+        text: "Track every order by product, size, value, and delivery status, filtered by country, facility, and timeframe for full operational visibility",
       },
     ],
   },
   {
     designIndex: 3,
     total: 7,
-    title: "Ticket Details",
+    title: "Planning",
     image: "/images/paragraph-images/project-1/ticket-details.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Get trip overviews with pricing, VAT, and options to change cabin class and baggage.",
+        text: "Schedule and monitor production runs across product lines and facilities, with capacity tracking, a monthly order calendar and a prioritised queue updated in real time",
       },
     ],
   },
   {
     designIndex: 4,
     total: 7,
-    title: "Upgrade & Personal Information",
+    title: "Raw Materials",
     image: "/images/paragraph-images/project-1/upgrade.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Enhance trips with upgrades, clear pricing, autofill, and a comment field for notes.",
+        text: "Oversee stock levels, supplier coverage and material availability across all categories, with low-stock alerts and a full inventory breakdown by product, unit and status",
       },
     ],
   },
   {
     designIndex: 2,
-    total: 7,
-    title: "Seat Selection & Payment Confirmation",
+    total: 5,
+    title: "Analytics & Reports",
     image: "/images/paragraph-images/project-1/seat-selection.png",
-    badge: "Mobile App - Passengers",
     paragraphs: [
       {
-        text: "Choose seats with live availability, ticket count, and class. Confirm payment, view tickets, or explore.",
-      },
-    ],
-  },
-  {
-    designIndex: 5,
-    total: 7,
-    title: "Explore & Tickets",
-    image: "/images/paragraph-images/project-1/explore.png",
-    badge: "Mobile App - Passengers",
-    paragraphs: [
-      {
-        text: "Find trips by map or list with easy filters, and manage tickets with in-app check-in.",
-      },
-    ],
-  },
-  {
-    designIndex: 6,
-    total: 7,
-    title: "Tablet Interface for Crew Operations",
-    image: "/images/paragraph-images/project-1/tablet-interface.png",
-    badge: "Tablet - Inflight Agents",
-    paragraphs: [
-      {
-        text: "Monitor passengers, seat status, oxygen levels, connectivity, turbulence, and access key modules like tasks, meals, and emergencies.",
+        text: "Measure delivery performance, cancellation trends and top product volumes across facilities, with filterable KPIs and charts that turn operational data into clear, actionable insight.",
       },
     ],
   },
@@ -274,28 +210,10 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/reflection.png",
     paragraphs: [
       {
-        bold: "Navigation:",
-        text: "Refined booking and management flows for the mobile app, and operational flows for the tablet interface, ensuring both passengers and crew can navigate seamlessly;",
+        text: "The main challenge was balancing data density with visual clarity enterprise dashboards risk becoming overwhelming if hierarchy and spacing are not carefully considered. Beyond the original briefing, KPI summary cards and additional order status categories were introduced to better reflect real operational needs. ",
       },
       {
-        bold: "Technology:",
-        text: "Focused on creating a simplified, intuitive interface across platforms, with plans to expand features like itinerary sync, mission updates, and real-time notifications;",
-      },
-      {
-        bold: "Personalization:",
-        text: "Considering future smart recommendations for passengers based on travel history and preferences, and adaptive tools for crew based on operational needs;",
-      },
-      {
-        bold: "Design:",
-        text: "Prioritized a clean, futuristic UI that balances visual clarity with an immersive, space-themed experience across both devices;",
-      },
-      {
-        bold: "Engagement:",
-        text: "Exploring interactive mission previews and notifications to keep passengers excited, and task reminders to support crew efficiency;",
-      },
-      {
-        bold: "Support:",
-        text: "Identified the need for built-in communication channels, enabling passengers to contact support and crew members to coordinate operations effectively;",
+        text: "In future iterations, it would be valuable to add real-time data integration, exportable reports and a notification system for delayed orders. User testing with actual operations managers would also help refine the filter logic and chart interactions.",
       },
     ],
   },
@@ -305,10 +223,10 @@ const SECTIONS = [
     image: "/images/paragraph-images/project-1/conclusion.png",
     paragraphs: [
       {
-        text: "This concept reimagines space travel by unifying passenger booking, crew operations, and real-time communication across a dual-platform experience.",
+        text: "This project demonstrated how thoughtful UX and UI design can transform complex production data into a clear, actionable interface.",
       },
       {
-        text: "By simplifying complex journeys and providing intuitive tools for both passengers and crew, it empowers users to focus on what matters most—exploring space safely and enjoying an engaging, seamless journey.",
+        text: "By focusing on usability, visual hierarchy and the specific needs of multi-factory beverage operations, the result is a dashboard that empowers teams to work more efficiently and confidently.",
       },
     ],
   },
@@ -318,18 +236,21 @@ const HERO_PROJECT = {
   id: 3,
   title: "Production Management",
   description:
-    "A mobile app for passengers to book and manage spaceflights, and a tablet interface that equips crew with tools to support and monitor the journey.",
-  image: "/images/space.png",
+    "Designed to help beverage companies monitor production data across multiple factories, focusing on clarity, usability, and a seamless user experience.",
+  image: "/images/paragraph-images/project-2/production-hero.png",
   type: "Mobile & Tablet",
   heroSubtitle: "UX Research & UI Design",
   tags: [
-    { name: "Retention and Loyalty", arrowIcon: "/images/up-arrow.svg" },
-    { name: "Crew Efficiency", arrowIcon: "/images/up-arrow.svg" },
+    { name: "Data Clarity & Readability", arrowIcon: "/images/up-arrow.svg" },
     {
-      name: "Reduce Average Time to Book",
+      name: "Reduce Decision-Making Time",
       arrowIcon: "/images/down-arrow.svg",
     },
-    { name: "Customer Satisfaction", arrowIcon: "/images/up-arrow.svg" },
+    {
+      name: "Order Tracking Efficiency",
+      arrowIcon: "/images/up-arrow.svg",
+    },
+    { name: "User Satisfaction", arrowIcon: "/images/up-arrow.svg" },
   ],
   sections: SECTIONS,
 };
@@ -342,7 +263,7 @@ const NAV_SECTIONS = [
   { title: "Research Approach", match: "research" },
   { title: "Expected Outcomes", match: "outcomes" },
   { title: "Key Features", match: "key features" },
-  { title: "Search Book and Opportunities", match: "design" },
+  { title: "Dashboard", match: "design" },
   { title: "Reflection & Improvement", match: "reflection" },
   { title: "Conclusion", match: "conclusion" },
 ];
