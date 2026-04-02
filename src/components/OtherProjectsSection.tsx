@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { PROJECT_CARDS } from "../data/projectCards";
+import { getIcon } from "../utils/getIcon";
 
 const OtherProjectsSection = ({
   currentProjectId,
@@ -22,18 +23,27 @@ const OtherProjectsSection = ({
             <Link
               key={project.id}
               to={`/project/${project.id}`}
-              className="rounded-2xl bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              className="rounded-2xl bg-white p-3 shadow-lg hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
             >
-              <div className="mb-3 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl bg-[#f5f5f3]">
+              <div className="mb-3 flex aspect-[3/3] items-center justify-center overflow-hidden rounded-xl transition-all duration-100 hover:scale-110 ">
                 <img
-                  src={project.image}
+                  src={`/${project.image}`}
                   alt={project.title}
                   className="h-full w-full object-contain"
                 />
               </div>
-              <p className="text-xs text-gray-500 font-lufga-400">
-                {project.type}
-              </p>
+
+              {/* Type & Icon */}
+              <div className="flex items-center space-x-1.5 mb-1">
+                <p className="text-xs text-gray-500 font-lufga-400">
+                  {project.type}
+                </p>
+                <span className="text-gray-400 text-xs">|</span>
+                <span className="text-black">
+                  {getIcon(project.type ?? "Web App", "sm")}
+                </span>
+              </div>
+
               <h3 className="mt-1 text-sm text-black font-lufga-500 sm:text-base">
                 {project.title}
               </h3>

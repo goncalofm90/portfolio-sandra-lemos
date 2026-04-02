@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
-import { FiMonitor, FiSmartphone } from "react-icons/fi";
-import { MdTabletMac } from "react-icons/md";
-
-import { LiaLaptopSolid } from "react-icons/lia";
+import { getIcon } from "../utils/getIcon";
 
 interface CardProps {
   id: number;
@@ -17,32 +14,6 @@ interface CardProps {
     | "Mobile & Tablet"
     | string;
 }
-
-const getIcon = (type: string) => {
-  switch (type) {
-    case "Web App":
-      return <FiMonitor className="w-5 h-5" />;
-    case "Mobile":
-      return <FiSmartphone className="w-5 h-5" />;
-    case "Mobile & Tablet":
-      return (
-        <div className="flex space-x-1">
-          <FiSmartphone className="w-5 h-5" />
-          <MdTabletMac className="w-5 h-5" />
-        </div>
-      );
-    case "Web, Mobile & Landing Page":
-      return (
-        <div className="flex space-x-1">
-          <FiMonitor className="w-5 h-5" />
-          <FiSmartphone className="w-5 h-5" />
-          <LiaLaptopSolid className="w-5 h-5" />
-        </div>
-      );
-    default:
-      return <LiaLaptopSolid className="w-5 h-5" />;
-  }
-};
 
 const Card = ({
   id,
