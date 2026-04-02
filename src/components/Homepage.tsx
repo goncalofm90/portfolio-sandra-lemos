@@ -2,8 +2,25 @@ import Card from "./Card";
 import BrandCarousel from "./BrandCarousel";
 import Hero from "./Hero";
 import { PROJECT_CARDS } from "../data/projectCards";
+import { useEffect } from "react";
 
 const Homepage = () => {
+  useEffect(() => {
+    const saved = sessionStorage.getItem("homepage-scroll");
+    if (saved) {
+      window.scrollTo(0, parseInt(saved));
+      sessionStorage.removeItem("homepage-scroll");
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      sessionStorage.setItem("homepage-scroll", window.scrollY.toString());
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="relative">
       {/* <BlobBackground blobs={pageBlobs} /> */}
