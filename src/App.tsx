@@ -5,10 +5,12 @@ import ProjectDetail from "./components/ProjectDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
+import EdgeSprayBackground from "./components/EdgeSprayBackground/EdgeSprayBackground";
 
 function App() {
   return (
     <Router>
+      <EdgeSprayBackground />
       <div className="relative min-h-screen bg-white noise-bg">
         <div className="relative z-10">
           <Navbar />

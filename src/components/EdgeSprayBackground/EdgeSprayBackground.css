@@ -1,0 +1,134 @@
+.esp-blob {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+  overflow: visible;
+  display: block;
+  transform: translate(0, 0);
+}
+
+/* Left / Right helpers */
+.esp-left {
+  left: 0;
+}
+.esp-right {
+  right: 0;
+}
+
+/* Drift animation */
+@keyframes drift-l {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(-6deg);
+  }
+  50% {
+    transform: translate(18px, 28px) rotate(4deg);
+  }
+}
+@keyframes drift-r {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(5deg);
+  }
+  50% {
+    transform: translate(-22px, 18px) rotate(-5deg);
+  }
+}
+
+.spray.esp-left ellipse {
+  animation: drift-l 20s ease-in-out infinite;
+}
+.spray.esp-right ellipse {
+  animation: drift-r 20s ease-in-out infinite;
+}
+
+/* Color animations */
+@keyframes color1 {
+  0%,
+  100% {
+    fill: #ffb1ad;
+    opacity: 0.55;
+  }
+  33% {
+    fill: #d9aed3;
+    opacity: 0.45;
+  }
+  66% {
+    fill: #ffdfd5;
+    opacity: 0.5;
+  }
+}
+@keyframes color2 {
+  0%,
+  100% {
+    fill: #d9aed3;
+    opacity: 0.5;
+  }
+  33% {
+    fill: #ffdfd5;
+    opacity: 0.55;
+  }
+  66% {
+    fill: #ffb1ad;
+    opacity: 0.5;
+  }
+}
+@keyframes color3 {
+  0%,
+  100% {
+    fill: #ffdfd5;
+    opacity: 0.55;
+  }
+  33% {
+    fill: #ffb1ad;
+    opacity: 0.5;
+  }
+  66% {
+    fill: #d9aed3;
+    opacity: 0.45;
+  }
+}
+
+.color1 ellipse {
+  animation: color1 7s ease-in-out infinite;
+}
+.color2 ellipse {
+  animation: color2 6s ease-in-out infinite;
+}
+.color3 ellipse {
+  animation: color3 8s ease-in-out infinite;
+}
+
+/* Combine drift + color */
+.spray-ellipse.color1 {
+  animation:
+    drift-l 20s ease-in-out infinite,
+    color1 7s ease-in-out infinite;
+}
+.spray-ellipse.color2 {
+  animation:
+    drift-l 20s ease-in-out infinite,
+    color2 6s ease-in-out infinite;
+}
+.spray-ellipse.color3 {
+  animation:
+    drift-l 20s ease-in-out infinite,
+    color3 8s ease-in-out infinite;
+}
+.spray-ellipse.esp-right.color1 {
+  animation:
+    drift-r 20s ease-in-out infinite,
+    color1 7s ease-in-out infinite;
+}
+.spray-ellipse.esp-right.color2 {
+  animation:
+    drift-r 20s ease-in-out infinite,
+    color2 6s ease-in-out infinite;
+}
+.spray-ellipse.esp-right.color3 {
+  animation:
+    drift-r 20s ease-in-out infinite,
+    color3 8s ease-in-out infinite;
+}
