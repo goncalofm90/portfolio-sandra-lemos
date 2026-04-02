@@ -19,7 +19,7 @@ const SECTIONS = [
   {
     index: 0,
     title: "Problem Statement",
-    image: "/images/paragraph-images/project-1/problem-statement-1.png",
+    image: "/images/paragraph-images/project-4/problem-statement-4.png",
     paragraphs: [
       {
         text: "In the fast-paced hospitality industry, traditional hotel management systems often fall short in providing a seamless and efficient experience for both hotel staff and guests.",
@@ -35,7 +35,7 @@ const SECTIONS = [
   {
     index: 1,
     title: "Problem Solution",
-    image: "/images/paragraph-images/project-1/problem-solution-1.png",
+    image: "/images/paragraph-images/project-4/problem-solution-4.png",
     paragraphs: [
       {
         text: "To address these challenges, I've developed a comprehensive hotel management solution with three integrated components:",
@@ -57,7 +57,7 @@ const SECTIONS = [
   {
     index: 2,
     title: "Target Users",
-    image: "/images/paragraph-images/project-1/target-users-1.png",
+    image: "/images/paragraph-images/project-4/target-users-4.png",
     paragraphs: [
       {
         bold: "Hotel Staff:",
@@ -115,7 +115,7 @@ const SECTIONS = [
     title: "Research Approach",
     image: "/images/paragraph-images/project-1/research-approach-1.png",
     icons: [
-      "/images/paragraph-images/project-4/research-icons/research-icon-1.png",
+      "/images/paragraph-images/project-4/research-icons/research-icon-4.png",
       "/images/paragraph-images/project-4/research-icons/research-icon-2.png",
       "/images/paragraph-images/project-4/research-icons/research-icon-3.png",
       "/images/paragraph-images/project-4/research-icons/research-icon-4.png",
@@ -142,7 +142,7 @@ const SECTIONS = [
   {
     index: 5,
     title: "Expected Outcomes",
-    image: "/images/paragraph-images/project-1/expected-outcomes-1.png",
+    image: "/images/paragraph-images/project-4/expected-outcomes-4.png",
     paragraphs: [
       {
         bold: "Optimize:",
@@ -165,7 +165,7 @@ const SECTIONS = [
   {
     index: 6,
     title: "Key Features",
-    image: "/images/paragraph-images/project-1/key-features-1.png",
+    image: "/images/paragraph-images/project-4/key-features-4.png",
     paragraphs: [
       {
         bold: "Hotel Management App: ",
@@ -186,7 +186,7 @@ const SECTIONS = [
     designIndex: 1,
     total: 8,
     title: "Dashboard",
-    image: "/images/paragraph-images/project-1/search-book.png",
+    image: "/images/paragraph-images/project-4/dashboard-4.png",
     badge: "Hotel Management App",
     paragraphs: [
       {
@@ -198,7 +198,7 @@ const SECTIONS = [
     designIndex: 2,
     total: 8,
     title: "New Booking",
-    image: "/images/paragraph-images/project-1/tickets.png",
+    image: "/images/paragraph-images/project-4/new-booking-4.png",
     badge: "Hotel Management App",
     paragraphs: [
       {
@@ -210,7 +210,7 @@ const SECTIONS = [
     designIndex: 3,
     total: 8,
     title: "Reservations - All",
-    image: "/images/paragraph-images/project-1/ticket-details.png",
+    image: "/images/paragraph-images/project-4/reservations-all-4.png",
     badge: "Hotel Management App",
     paragraphs: [
       {
@@ -222,7 +222,7 @@ const SECTIONS = [
     designIndex: 4,
     total: 8,
     title: "Guest Details",
-    image: "/images/paragraph-images/project-1/upgrade.png",
+    image: "/images/paragraph-images/project-4/guest-details-4.png",
     badge: "Hotel Management App",
     paragraphs: [
       {
@@ -231,22 +231,10 @@ const SECTIONS = [
     ],
   },
   {
-    designIndex: 2,
-    total: 8,
-    title: "Seat Selection & Payment Confirmation",
-    image: "/images/paragraph-images/project-1/seat-selection.png",
-    badge: "Hotel Management App",
-    paragraphs: [
-      {
-        text: "Choose seats with live availability, ticket count, and class. Confirm payment, view tickets, or explore.",
-      },
-    ],
-  },
-  {
     designIndex: 5,
     total: 8,
     title: "Guest App — Home",
-    image: "/images/paragraph-images/project-1/explore.png",
+    image: "/images/paragraph-images/project-4/guest-app-home-4.png",
     badge: "Guest App",
     paragraphs: [
       {
@@ -258,7 +246,7 @@ const SECTIONS = [
     designIndex: 6,
     total: 8,
     title: "Guest App — Online Check-in",
-    image: "/images/paragraph-images/project-1/tablet-interface.png",
+    image: "/images/paragraph-images/project-4/guest-app-online-check-in-4.png",
     badge: "Guest App",
     paragraphs: [
       {
@@ -269,7 +257,8 @@ const SECTIONS = [
   {
     index: 8,
     title: "Guest App — Upgrade & Room Key",
-    image: "/images/paragraph-images/project-1/reflection.png",
+    image:
+      "/images/paragraph-images/project-4/guest-app-upgrade-room-key-4.png",
     badge: "Guest App",
 
     paragraphs: [
@@ -282,7 +271,7 @@ const SECTIONS = [
     index: 9,
     title: "Hero Section",
     badge: "Landing Page",
-    image: "/images/paragraph-images/project-1/conclusion.png",
+    image: "/images/paragraph-images/project-4/hero-section-4.png",
     paragraphs: [
       {
         text: "A clean, conversion-focused page that communicates the product value and drives hotel managers to book a free demo.",
@@ -295,7 +284,7 @@ const SECTIONS = [
     total: 2,
     title: "Reflection, Improvement & Next Steps",
     badge: "Hotel App",
-    image: "/images/paragraph-images/project-1/conclusion.png",
+    image: "/images/paragraph-images/project-4/reflection-4.png",
     paragraphs: [
       {
         bold: "Impact:",
@@ -317,7 +306,7 @@ const SECTIONS = [
     total: 2,
     title: "Reflection, Improvement & Next Steps",
     badge: "Guest App",
-    image: "/images/paragraph-images/project-1/conclusion.png",
+    image: "/images/paragraph-images/project-4/reflection2-4.png",
     paragraphs: [
       {
         bold: "Impact:",
@@ -336,7 +325,7 @@ const SECTIONS = [
   {
     index: 12,
     title: "Conclusion",
-    image: "/images/paragraph-images/project-1/conclusion.png",
+    image: "/images/paragraph-images/project-4/conclusion-4.png",
     paragraphs: [
       {
         text: "The hospitality industry faces challenges in streamlining operations and meeting the growing demand for tech-driven guest experiences.",
@@ -387,7 +376,7 @@ const NAV_SECTIONS = [
 // ─── Sub-components ──────────────────────────────────────────────────────────
 
 const Badge = ({ label }: { label: string }) => (
-  <div className="w-fit bg-white text-md px-4 py-1.5 mb-12 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
+  <div className="w-fit bg-white text-md px-4 py-4.5 mb-42 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2">
     {label}
   </div>
 );
@@ -425,7 +414,7 @@ const SectionParagraphs = ({
               key={j}
               src={`${src}`}
               alt={`icon-${j + 1}`}
-              className="w-30 h-10"
+              className="w-30 h-40"
             />
           ))}
         </div>
