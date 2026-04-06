@@ -221,7 +221,7 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {aiTools.map((tool) => (
                 <div
-                  className={`flex items-start gap-4 sm:gap-6 ${tool.justifyStart ? "justify-start" : "justify-end"}`}
+                  className={`flex items-start gap-4 sm:gap-6 lg:${tool.justifyStart ? "justify-start" : "justify-end"}`}
                   key={tool.id}
                 >
                   <img
