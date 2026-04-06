@@ -64,12 +64,12 @@ const Hero = () => {
         </div>
 
         {/* Right block — centered on mobile, right-aligned on sm+ */}
-        <div className="mt-6 sm:mt-8 lg:mt-12 flex justify-center sm:justify-end">
+        <div className="mt-24 sm:mt-8 lg:mt-12 flex justify-center sm:justify-end">
           <div className="text-center sm:text-left w-full sm:w-3/4 lg:w-auto">
-            <p className="lg:text-5xl font-lufga-500 text-black">
+            <p className="text-2xl lg:text-5xl font-lufga-500 text-black">
               Product Designer
             </p>
-            <p className="mt-2 sm:mt-4 text-base sm:text-lg lg:text-3xl text-kalam-grey font-kalam-300">
+            <p className="mt-2 sm:mt-4 text-base text-lg lg:text-3xl text-kalam-grey font-kalam-300">
               Turning pixels into human <br />
               experiences that feel like Magic!
             </p>
