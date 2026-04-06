@@ -4,7 +4,7 @@ export const PROJECT_CARDS = [
     title: "Production Management",
     description:
       "Designed to help beverage companies monitor production data across multiple factories, focusing on clarity, usability, and a seamless user experience.",
-    image: "images/production-management.jpg",
+    image: "images/production-management.png",
     type: "Web App",
   },
   {

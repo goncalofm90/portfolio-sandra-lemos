@@ -25,11 +25,11 @@ const Card = ({
   return (
     <Link
       to={`/project/${id}`}
-      className="block w-full sm:w-[30rem] lg:w-150 bg-white rounded-4xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 p-6 sm:p-8"
+      className="block w-full sm:w-[30rem] lg:w-120 bg-white rounded-4xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 p-6 sm:p-8"
     >
       {/* Type & Icon */}
       <div className="flex items-center space-x-2 mb-4">
-        <span className="font-lufga italic text-lg sm:text-2xl font-lufga-400 text-black">
+        <span className="font-lufga italic text-lg sm:text-lg font-lufga-400 text-black">
           {type}
         </span>
         <span className="text-gray-400">|</span>
