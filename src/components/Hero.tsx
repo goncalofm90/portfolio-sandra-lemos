@@ -78,9 +78,11 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-500 text-center">
-        <img src="images/mouse-icon.gif" className="p-4 sm:p-6" width="80" />
-        <span className="text-sm sm:text-base lg:text-base">Scroll down</span>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-500 text-center flex flex-col items-center space-x-2">
+        <img src="images/mouse-icon.gif" className="mb-2" width="30" />
+        <span className="text-sm sm:text-base lg:text-base font-kalam-300">
+          Scroll down
+        </span>
       </div>
     </section>
   );
