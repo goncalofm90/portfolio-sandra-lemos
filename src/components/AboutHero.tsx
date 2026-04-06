@@ -67,7 +67,7 @@ const AboutHero = () => {
             <a
               href="/files/sandra-lemos-cv.pdf"
               download="/files/sandra-lemos-cv.pdf"
-              className="self-start text-white font-bold px-6 py-2 rounded-full mt-4 bg-[#292929] shadow-[0_4px_2px_rgba(0,0,0,0.35)] hover:shadow-none hover:scale-95 text-base sm:text-base xl:text-base"
+              className="font-kalam-500 self-start text-white font-bold px-6 py-2 rounded-full mt-4 bg-[#292929] shadow-[0_4px_2px_rgba(0,0,0,0.35)] hover:shadow-none hover:scale-95 text-base sm:text-base xl:text-base"
             >
               Download CV
             </a>

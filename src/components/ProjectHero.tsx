@@ -34,7 +34,7 @@ const ProjectHero = ({ project }: { project: ProjectData }) => (
     </div>
 
     {/* Description */}
-    <p className="font-lufga-400 text-2xl text-black mb-8 max-w-5xl text-center">
+    <p className="font-lufga-400 sm:text-xl lg:text-2xl text-black mb-8 max-w-5xl text-center">
       {project.description}
     </p>
     {/* Hero Subtitle */}
@@ -44,11 +44,11 @@ const ProjectHero = ({ project }: { project: ProjectData }) => (
 
     {/* Tags */}
     {project.tags && (
-      <div className="grid grid-cols-2 gap-8 mb-8  mx-auto">
+      <div className="flex flex-wrap gap-4 mb-8 mx-auto justify-center">
         {project.tags.map((tag) => (
           <span
             key={tag.name}
-            className="bg-white text-md px-4 py-1.5 rounded-full border border-gray-200 font-kalam-400 text-black flex items-center justify-center gap-2"
+            className="bg-white text-md px-4 py-1.5 rounded-full border border-gray-200 font-kalam-400 text-black inline-flex items-center justify-start gap-2"
           >
             {tag.name}
             <img src={tag.arrowIcon} alt="arrow" className="w-5 h-5" />
