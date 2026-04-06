@@ -25,7 +25,7 @@ const Card = ({
   return (
     <Link
       to={`/project/${id}`}
-      className="block w-full sm:w-[30rem] lg:w-120 bg-white rounded-4xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 p-6 sm:p-8"
+      className="block w-full sm:w-[30rem] lg:w-120 bg-white rounded-4xl shadow-md overflow-hidden shadow-lg hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] transition-shadow p-6 sm:p-8"
     >
       {/* Type & Icon */}
       <div className="flex items-center space-x-2 mb-4">
@@ -37,7 +37,7 @@ const Card = ({
       </div>
 
       {/* Image */}
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-4 transition-all duration-100 hover:scale-110">
         <img
           src={image}
           alt={title}
