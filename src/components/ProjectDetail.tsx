@@ -19,31 +19,31 @@ const ProjectDetail = () => {
   switch (projectId) {
     case 1:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <ProductionManagementDetail />
         </div>
       );
     case 2:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <MindfulnessDetail />
         </div>
       );
     case 3:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <SpaceflightBookingDetail />
         </div>
       );
     case 4:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <HotelManagementDetail />
         </div>
       );
     case 5:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <EcommerceDetail />
         </div>
       );

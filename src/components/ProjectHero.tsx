@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import type { ProjectData } from "../data/types";
 
 const ProjectHero = ({ project }: { project: ProjectData }) => (
-  <section className="snap-start snap-always w-full px-4 sm:px-12 pt-32 pb-12 flex flex-col items-center">
+  <section className="snap-start snap-always w-full h-screen overflow-hidden px-4 sm:px-12 pt-32 pb-12 flex flex-col items-center">
     {/* Back link — left-aligned override */}
     <div className="w-full mb-10 mt-6 px-8">
       <Link
@@ -21,9 +21,13 @@ const ProjectHero = ({ project }: { project: ProjectData }) => (
     </h1>
 
     {/* Hero image */}
-    <div className="w-full rounded-3xl overflow-hidden flex items-center justify-center mb-10">
+    <div className="w-full rounded-3xl flex items-center justify-center mb-10">
       {project.image ? (
-        <img src={project.image} alt={project.title} className="" />
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-auto max-h-[35vh] object-contain"
+        />
       ) : (
         <div className="w-full h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
           <span className="text-gray-300 font-lufga-300 text-lg">
