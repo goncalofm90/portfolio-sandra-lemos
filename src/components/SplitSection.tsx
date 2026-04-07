@@ -14,7 +14,7 @@ export const SplitSection = ({
   return (
     <section
       id={sectionId}
-      className="w-full scroll-mt-40 border-t border-gray-100 px-4 py-6 sm:px-12 sm:py-8 md:scroll-mt-48 lg:px-16"
+      className="snap-start snap-always w-full scroll-mt-40 border-t border-gray-100 px-4 py-6 sm:px-12 sm:py-8 md:scroll-mt-48 lg:px-16"
     >
       <div className="flex min-h-[calc(100vh-7rem)] w-full flex-col gap-4 lg:flex-row lg:items-center lg:gap-5">
         <div className="flex w-full items-center justify-center rounded-2xl lg:w-1/2">

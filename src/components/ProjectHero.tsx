@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import type { ProjectData } from "../data/types";
 
 const ProjectHero = ({ project }: { project: ProjectData }) => (
-  <section className="w-full px-4 sm:px-12 pt-32 pb-12 flex flex-col items-center">
+  <section className="snap-start snap-always w-full px-4 sm:px-12 pt-32 pb-12 flex flex-col items-center">
     {/* Back link — left-aligned override */}
     <div className="w-full mb-10 mt-6 px-8">
       <Link

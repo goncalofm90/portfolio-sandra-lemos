@@ -18,15 +18,35 @@ const ProjectDetail = () => {
 
   switch (projectId) {
     case 1:
-      return <ProductionManagementDetail />;
+      return (
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+          <ProductionManagementDetail />
+        </div>
+      );
     case 2:
-      return <MindfulnessDetail />;
+      return (
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+          <MindfulnessDetail />
+        </div>
+      );
     case 3:
-      return <SpaceflightBookingDetail />;
+      return (
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+          <SpaceflightBookingDetail />
+        </div>
+      );
     case 4:
-      return <HotelManagementDetail />;
+      return (
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+          <HotelManagementDetail />
+        </div>
+      );
     case 5:
-      return <EcommerceDetail />;
+      return (
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+          <EcommerceDetail />
+        </div>
+      );
     default:
       return (
         <div className="flex min-h-screen flex-col items-center justify-center gap-6">
