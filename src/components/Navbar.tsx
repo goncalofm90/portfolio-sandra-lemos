@@ -1,41 +1,43 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(true);
-  const [hideTimeout, setHideTimeout] = useState<ReturnType<
-    typeof setTimeout
-  > | null>(null);
+  const hideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    const scrollContainer =
+      document.querySelector(".overflow-y-scroll") ?? window;
+
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY =
+        scrollContainer === window
+          ? window.scrollY
+          : (scrollContainer as HTMLElement).scrollTop;
 
       if (currentScrollY < 50) {
         setIsVisible(true);
-        if (hideTimeout) clearTimeout(hideTimeout);
+        if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
         return;
       }
 
       setIsVisible(true);
 
-      if (hideTimeout) clearTimeout(hideTimeout);
+      if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
 
-      const timeout = setTimeout(() => {
+      hideTimeoutRef.current = setTimeout(() => {
         setIsVisible(false);
       }, 2000);
-
-      setHideTimeout(timeout);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-      if (hideTimeout) clearTimeout(hideTimeout);
+      scrollContainer.removeEventListener("scroll", handleScroll);
+      if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
     };
-  }, [hideTimeout]);
+  }, [location.pathname]);
 
   return (
     <nav
