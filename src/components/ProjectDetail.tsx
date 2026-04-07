@@ -16,10 +16,58 @@ const ProjectDetail = () => {
     window.scrollTo(0, 0);
   }, [projectId]);
 
+  useEffect(() => {
+    const container = document.querySelector(
+      ".overflow-y-scroll",
+    ) as HTMLElement;
+    if (!container) return;
+
+    const sections = container.querySelectorAll(".snap-section");
+    let scrollTimeout: NodeJS.Timeout;
+
+    const handleScrollEnd = () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        // Find which section is most visible
+        let bestSection: Element | null = null;
+        let bestVisibility = 0;
+
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          const containerRect = container.getBoundingClientRect();
+          const visibility = Math.min(
+            1,
+            (Math.min(rect.bottom, containerRect.bottom) -
+              Math.max(rect.top, containerRect.top)) /
+              rect.height,
+          );
+
+          if (visibility > bestVisibility) {
+            bestVisibility = visibility;
+            bestSection = section;
+          }
+        });
+
+        if (bestSection) {
+          bestSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 150); // Wait for scroll to stop
+    };
+
+    container.addEventListener("scroll", handleScrollEnd, { passive: true });
+    return () => {
+      container.removeEventListener("scroll", handleScrollEnd);
+      clearTimeout(scrollTimeout);
+    };
+  }, [projectId]);
+
   switch (projectId) {
     case 1:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always] ">
           <ProductionManagementDetail />
         </div>
       );

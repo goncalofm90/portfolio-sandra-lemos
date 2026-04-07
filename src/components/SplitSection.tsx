@@ -14,7 +14,7 @@ export const SplitSection = ({
   return (
     <section
       id={sectionId}
-      className="snap-start snap-always w-full h-screen overflow-hidden border-t border-gray-100 px-4 py-6 sm:px-12 sm:py-8 lg:px-16"
+      className="snap-start snap-always w-full h-screen overflow-hidden border-t border-gray-100 px-4 py-6 sm:px-12 sm:py-8 lg:px-16 snap-section"
     >
       <div className="flex h-full w-full flex-col gap-2 lg:flex-row lg:gap-2 items-center justify-center">
         {/* Image */}
