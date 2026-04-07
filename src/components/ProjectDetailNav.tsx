@@ -46,13 +46,16 @@ const ProjectDetailNav = ({ sections }: { sections: NavSection[] }) => {
   useEffect(() => {
     if (!navItems.length) return;
 
+    // target the snap scroll container, not window
+    const scrollContainer = document.querySelector(".overflow-y-scroll");
+    if (!scrollContainer) return;
+
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 220;
+      const scrollPosition = scrollContainer.scrollTop + 220;
       let currentId = navItems[0].id;
 
       navItems.forEach((item) => {
         const element = document.getElementById(item.id);
-
         if (element && element.offsetTop <= scrollPosition) {
           currentId = item.id;
         }
@@ -62,9 +65,9 @@ const ProjectDetailNav = ({ sections }: { sections: NavSection[] }) => {
     };
 
     handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => scrollContainer.removeEventListener("scroll", handleScroll);
   }, [navItems]);
 
   const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -72,7 +75,7 @@ const ProjectDetailNav = ({ sections }: { sections: NavSection[] }) => {
     setActiveId(id);
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "start",
     });
     window.history.replaceState(null, "", `#${id}`);
   };
