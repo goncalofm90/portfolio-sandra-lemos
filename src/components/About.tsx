@@ -5,31 +5,31 @@ const toolbox = [
   {
     id: 1,
     name: "Figma",
-    description: "Interface design tool.",
+    description: "Interface design tool",
     image: "/images/toolbox-icons/figma.svg",
   },
   {
     id: 2,
     name: "Photoshop",
-    description: "Graphic editing tool.",
+    description: "Graphic editing tool",
     image: "/images/toolbox-icons/photoshop.svg",
   },
   {
     id: 3,
     name: "Illustrator",
-    description: "Vector illustration tool.",
+    description: "Vector illustration tool",
     image: "/images/toolbox-icons/illustrator.svg",
   },
   {
     id: 4,
     name: "Jira",
-    description: "Productivity tool.",
+    description: "Productivity tool",
     image: "/images/toolbox-icons/jira.svg",
   },
   {
     id: 5,
     name: "Slack",
-    description: "Communication tool.",
+    description: "Communication tool",
     image: "/images/toolbox-icons/slack.svg",
   },
 ];
@@ -38,37 +38,37 @@ const skills = [
     id: 1,
     name: "User Research",
     description: "Usability testing, interviews, surveys, design solutions",
-    image: "/images/skill-icons/user-research.svg",
+    image: "/images/skill-icons/user-research.png",
   },
   {
     id: 2,
     name: "UX Writing",
     description: "Copy for interfaces in English & Portuguese",
-    image: "/images/skill-icons/ux-writing.svg",
+    image: "/images/skill-icons/ux-writing.png",
   },
   {
     id: 3,
     name: "UX Documentation",
     description: "Personas, Journey Maps, User Flows.",
-    image: "/images/skill-icons/ux-documentation.svg",
+    image: "/images/skill-icons/ux-documentation.png",
   },
   {
     id: 4,
     name: "Data Analysis",
     description: "Synthesizing research findings and conclusions",
-    image: "/images/skill-icons/data-analysis.svg",
+    image: "/images/skill-icons/data-analysis.png",
   },
   {
     id: 5,
     name: "Project Management",
     description: "Highly organized, results-oriented",
-    image: "/images/skill-icons/project-management.svg",
+    image: "/images/skill-icons/project-management.png",
   },
   {
     id: 6,
     name: "Languages",
     description: " Fluent in Portuguese, English and Spanish",
-    image: "/images/skill-icons/languages.svg",
+    image: "/images/skill-icons/languages.png",
   },
 ];
 
@@ -85,7 +85,7 @@ const aiTools = [
     name: "Figma Make",
     description: "AI-Powered Design & Prototyping in Figma ",
     image: "/images/ai-tools-icons/figma-make.svg",
-    justifyStart: true,
+    justifyStart: false,
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ const aiTools = [
     name: "Google AI Studio",
     description: "Workflow Automation & Ideation",
     image: "/images/ai-tools-icons/google-ai.svg",
-    justifyStart: true,
+    justifyStart: false,
   },
 ];
 const education = [
@@ -187,8 +187,7 @@ const About = () => {
               Skills
             </h1>
             <p className="text-center text-kalam-grey text-2xl sm:text-3xl lg:text-4xl mb-24 font-kalam-300">
-              Continuous learning to stay aligned with <br /> evolving design
-              trends
+              Continuous learning to stay aligned with evolving design trends
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {skills.map((skill) => (
@@ -196,13 +195,13 @@ const About = () => {
                   <img
                     src={skill.image}
                     alt={skill.name}
-                    className="w-10 sm:w-12 h-10 sm:h-12"
+                    className="w-12 lg:w-20 h-12 lg:h-20"
                   />
                   <div>
                     <p className="font-lufga-500 text-black text-xl sm:text-2xl">
                       {skill.name}
                     </p>
-                    <p className="font-lufga-400 text-kalam-grey text-base sm:text-lg lg:text-xl">
+                    <p className="font-lufga-400 text-kalam-grey text-base sm:text-lg lg:text-lg">
                       {skill.description}
                     </p>
                   </div>
@@ -222,16 +221,13 @@ const About = () => {
               Integrating AI into the design workflow to move <br /> faster and
               think deeper
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-fit mx-auto">
               {aiTools.map((tool) => (
-                <div
-                  className={`flex items-start gap-4 sm:gap-6 lg:${tool.justifyStart ? "justify-start" : "justify-end"}`}
-                  key={tool.id}
-                >
+                <div className="flex items-start gap-4 sm:gap-6" key={tool.id}>
                   <img
                     src={tool.image}
                     alt={tool.name}
-                    className="w-8 sm:w-10 h-8 sm:h-10"
+                    className="w-10 h-10 shrink-0"
                   />
                   <div>
                     <p className="font-lufga-500 text-black text-xl sm:text-2xl">
