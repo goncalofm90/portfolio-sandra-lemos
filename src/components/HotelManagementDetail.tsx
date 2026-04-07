@@ -255,7 +255,6 @@ const SECTIONS = [
     ],
   },
   {
-    index: 8,
     title: "Guest App — Upgrade & Room Key",
     image:
       "/images/paragraph-images/project-4/guest-app-upgrade-room-key-4.png",
@@ -268,7 +267,6 @@ const SECTIONS = [
     ],
   },
   {
-    index: 9,
     title: "Hero Section",
     badge: "Landing Page",
     image: "/images/paragraph-images/project-4/hero-section-4.png",
@@ -279,7 +277,7 @@ const SECTIONS = [
     ],
   },
   {
-    index: 10,
+    index: 8,
     designIndex: 1,
     total: 2,
     title: "Reflection, Improvement & Next Steps",
@@ -301,7 +299,6 @@ const SECTIONS = [
     ],
   },
   {
-    index: 11,
     designIndex: 2,
     total: 2,
     title: "Reflection, Improvement & Next Steps",
@@ -323,7 +320,7 @@ const SECTIONS = [
     ],
   },
   {
-    index: 12,
+    index: 9,
     title: "Conclusion",
     image: "/images/paragraph-images/project-4/conclusion-4.png",
     paragraphs: [
@@ -369,7 +366,7 @@ const NAV_SECTIONS = [
   { title: "Expected Outcomes", match: "outcomes" },
   { title: "Key Features", match: "key features" },
   { title: "Dashboard", match: "dashboard" },
-  { title: "Reflection & Improvement", match: "reflection" },
+  { title: "Reflection, Improvement & Next Steps", match: "reflection" },
   { title: "Conclusion", match: "conclusion" },
 ];
 
