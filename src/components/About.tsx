@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutHero from "./AboutHero";
 
 const toolbox = [
@@ -140,6 +141,9 @@ const education = [
 ];
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 150);
+  }, []);
   return (
     <div className="relative">
       <div className="relative z-10">
