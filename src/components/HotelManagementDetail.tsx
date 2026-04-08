@@ -115,7 +115,7 @@ const SECTIONS = [
     title: "Research Approach",
     image: "/images/paragraph-images/project-1/research-approach-1.png",
     icons: [
-      "/images/paragraph-images/project-4/research-icons/research-icon-4.png",
+      "/images/paragraph-images/project-4/research-icons/research-icon-1.png",
       "/images/paragraph-images/project-4/research-icons/research-icon-2.png",
       "/images/paragraph-images/project-4/research-icons/research-icon-3.png",
       "/images/paragraph-images/project-4/research-icons/research-icon-4.png",
@@ -411,7 +411,7 @@ const SectionParagraphs = ({
               key={j}
               src={`${src}`}
               alt={`icon-${j + 1}`}
-              className="w-30 h-40"
+              className="w-[60px] h-[20px] sm:w-[80px] sm:h-[27px] md:w-[100px] md:h-[33px] lg:w-[100px] lg:h-[30px] xl:w-[140px] xl:h-[40px]"
             />
           ))}
         </div>
