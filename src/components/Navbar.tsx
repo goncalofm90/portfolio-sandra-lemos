@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 const Navbar = () => {
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(true);
-  const hideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastScrollY = useRef(0);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -19,23 +19,22 @@ const Navbar = () => {
 
       if (currentScrollY < 50) {
         setIsVisible(true);
-        if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
+        lastScrollY.current = currentScrollY;
         return;
       }
 
-      setIsVisible(true);
-
-      if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
-
-      hideTimeoutRef.current = setTimeout(() => {
+      if (currentScrollY > lastScrollY.current) {
         setIsVisible(false);
-      }, 2000);
+      } else {
+        setIsVisible(true);
+      }
+
+      lastScrollY.current = currentScrollY;
     };
 
     scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       scrollContainer.removeEventListener("scroll", handleScroll);
-      if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
     };
   }, [location.pathname]);
 
