@@ -7,6 +7,7 @@ import HotelManagementDetail from "./HotelManagementDetail";
 import EcommerceDetail from "./EcommerceDetail";
 import { useEffect } from "react";
 import { scrollToTop } from "../utils/scrollToTop";
+import Footer from "./Footer";
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -71,30 +72,45 @@ const ProjectDetail = () => {
       return (
         <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always] ">
           <ProductionManagementDetail />
+          <div className="snap-start">
+            <Footer />
+          </div>
         </div>
       );
     case 2:
       return (
         <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <MindfulnessDetail />
+          <div className="snap-start">
+            <Footer />
+          </div>
         </div>
       );
     case 3:
       return (
         <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <SpaceflightBookingDetail />
+          <div className="snap-start">
+            <Footer />
+          </div>
         </div>
       );
     case 4:
       return (
         <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <HotelManagementDetail />
+          <div className="snap-start">
+            <Footer />
+          </div>
         </div>
       );
     case 5:
       return (
         <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <EcommerceDetail />
+          <div className="snap-start">
+            <Footer />
+          </div>
         </div>
       );
     default:

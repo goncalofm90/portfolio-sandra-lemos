@@ -1,4 +1,4 @@
-import { FiChevronLeft } from "react-icons/fi";
+import { FiChevronLeft, FiChevronDown } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import type { ProjectData } from "../data/types";
 
@@ -42,13 +42,13 @@ const ProjectHero = ({ project }: { project: ProjectData }) => (
       {project.description}
     </p>
     {/* Hero Subtitle */}
-    <p className="font-lufga-500 text-sm text-lufga-salmon  max-w-2xl mb-8 ">
+    <p className="font-lufga-500 text-sm text-lufga-salmon max-w-2xl mb-8">
       {project.heroSubtitle}
     </p>
 
     {/* Tags */}
     {project.tags && (
-      <div className="flex flex-wrap gap-4 mb-8 mx-auto justify-center">
+      <div className="flex flex-wrap gap-4 mb-3 mx-auto justify-center">
         {project.tags.map((tag) => (
           <span
             key={tag.name}
@@ -73,6 +73,13 @@ const ProjectHero = ({ project }: { project: ProjectData }) => (
           </p>
         </div>
       )}
+    </div>
+
+    {/* Scroll down */}
+    <div className="mt-1 flex flex-col items-center gap-1 text-black animate-bounce">
+      <span className="text-md font-kalam-300 tracking-widest">
+        Scroll down
+      </span>
     </div>
   </section>
 );

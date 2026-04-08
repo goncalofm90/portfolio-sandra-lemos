@@ -20,7 +20,10 @@ const Card = ({
           {type}
         </span>
         <span className="text-gray-400">|</span>
-        <span className="text-black">{getIcon(type)}</span>
+        <span className="text-black">
+          <span className="sm:hidden">{getIcon(type, "sm")}</span>
+          <span className="hidden sm:inline">{getIcon(type, "lg")}</span>
+        </span>
       </div>
 
       <div className="flex justify-center mb-4 transition-all duration-100 hover:scale-105">

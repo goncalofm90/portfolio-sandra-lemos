@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import ProjectDetail from "./components/ProjectDetail";
@@ -7,21 +12,30 @@ import Footer from "./components/Footer";
 import "./App.css";
 import EdgeSprayBackground from "./components/EdgeSprayBackground/EdgeSprayBackground";
 
+function AppContent() {
+  const location = useLocation();
+  const isProjectDetail = location.pathname.startsWith("/project/");
+
+  return (
+    <div className="relative min-h-screen noise-bg">
+      <div className="relative z-10">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+        {!isProjectDetail && <Footer />}
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router>
       <EdgeSprayBackground />
-      <div className="relative min-h-screen noise-bg">
-        <div className="relative z-10">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/project/:id" element={<ProjectDetail />} />
-          </Routes>
-          <Footer />
-        </div>
-      </div>
+      <AppContent />
     </Router>
   );
 }
