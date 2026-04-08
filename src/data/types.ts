@@ -18,6 +18,7 @@ export type CaseStudySection = {
   }[];
   image?: string;
   badge?: string;
+  icons?: string[];
   index?: number;
   designIndex?: number;
   total?: number;
@@ -44,7 +45,7 @@ export interface ProjectData {
 export type SplitSectionProps = {
   title: string;
   index?: number;
-  image: string;
+  image?: string;
   children: React.ReactNode;
   designIndex?: number;
   total?: number;

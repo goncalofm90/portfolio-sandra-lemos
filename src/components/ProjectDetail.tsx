@@ -22,14 +22,15 @@ const ProjectDetail = () => {
     ) as HTMLElement;
     if (!container) return;
 
-    const sections = container.querySelectorAll(".snap-section");
-    let scrollTimeout: NodeJS.Timeout;
+    let scrollTimeout: ReturnType<typeof setTimeout>;
 
     const handleScrollEnd = () => {
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         // Find which section is most visible
-        let bestSection: Element | null = null;
+        const sections =
+          container.querySelectorAll<HTMLElement>(".snap-section");
+        let bestSection: HTMLElement | null = null;
         let bestVisibility = 0;
 
         sections.forEach((section) => {
@@ -49,7 +50,7 @@ const ProjectDetail = () => {
         });
 
         if (bestSection) {
-          bestSection.scrollIntoView({
+          (bestSection as HTMLElement).scrollIntoView({
             behavior: "smooth",
             block: "start",
           });

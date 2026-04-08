@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 const brands = [
   <img src={"/images/ima.png"} alt="Brand 1" />,
   <img src={"/images/boiron.png"} alt="Brand 2" />,
@@ -14,12 +12,7 @@ const brands = [
 ];
 
 const BrandCarousel = () => {
-  const [duplicatedBrands, setDuplicatedBrands] = useState<string[]>([]);
-
-  useEffect(() => {
-    // Duplicate brands for infinite scroll effect
-    setDuplicatedBrands([...brands, ...brands, ...brands]);
-  }, []);
+  const duplicatedBrands = [...brands, ...brands, ...brands];
 
   return (
     <div className="py-12">

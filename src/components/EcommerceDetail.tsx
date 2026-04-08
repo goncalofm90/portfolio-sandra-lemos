@@ -2,7 +2,7 @@ import ProjectHero from "./ProjectHero";
 import ProjectDetailNav from "./ProjectDetailNav";
 import { SplitSection } from "./SplitSection";
 import OtherProjectsSection from "./OtherProjectsSection";
-import type { Paragraph } from "../data/types";
+import type { CaseStudySection, Paragraph } from "../data/types";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 /**
@@ -15,7 +15,7 @@ import type { Paragraph } from "../data/types";
  *   badge?       – pill label (Mobile App / Tablet)
  *   paragraphs   – array of { bold?: string, text: string }
  */
-const SECTIONS = [
+const SECTIONS: CaseStudySection[] = [
   {
     index: 0,
     title: "Problem Statement",
