@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import AboutHero from "./AboutHero";
+import { scrollToTop } from "../utils/scrollToTop";
 
 const toolbox = [
   {
@@ -142,7 +143,7 @@ const education = [
 
 const About = () => {
   useEffect(() => {
-    window.scrollTo(0, 150);
+    scrollToTop();
   }, []);
   return (
     <div className="relative">

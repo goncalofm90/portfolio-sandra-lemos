@@ -421,7 +421,9 @@ const EcommerceDetail = () => (
       </SplitSection>
     ))}
 
-    <OtherProjectsSection currentProjectId={3} />
+    <div className="snap-section snap-start">
+      <OtherProjectsSection currentProjectId={5} />
+    </div>
   </main>
 );
 

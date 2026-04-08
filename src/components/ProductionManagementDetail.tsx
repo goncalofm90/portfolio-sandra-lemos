@@ -289,7 +289,9 @@ const ProductionManagementDetail = () => (
       </SplitSection>
     ))}
 
-    <OtherProjectsSection currentProjectId={3} />
+    <div className="snap-section snap-start">
+      <OtherProjectsSection currentProjectId={1} />
+    </div>
   </main>
 );
 

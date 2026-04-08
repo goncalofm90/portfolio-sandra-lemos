@@ -432,8 +432,9 @@ const HotelManagementDetail = () => (
         <SectionParagraphs paragraphs={paragraphs} icons={icons} />
       </SplitSection>
     ))}
-
-    <OtherProjectsSection currentProjectId={3} />
+    <div className="snap-section snap-start">
+      <OtherProjectsSection currentProjectId={4} />
+    </div>
   </main>
 );
 

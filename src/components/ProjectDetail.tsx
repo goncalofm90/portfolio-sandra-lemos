@@ -6,6 +6,7 @@ import MindfulnessDetail from "./MindfulnessDetail";
 import HotelManagementDetail from "./HotelManagementDetail";
 import EcommerceDetail from "./EcommerceDetail";
 import { useEffect } from "react";
+import { scrollToTop } from "../utils/scrollToTop";
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -13,7 +14,7 @@ const ProjectDetail = () => {
 
   //start at top of page, react router doesn't do this by default after v6
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTop();
   }, [projectId]);
 
   useEffect(() => {

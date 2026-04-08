@@ -377,7 +377,9 @@ const SpaceflightBookingDetail = () => (
       </SplitSection>
     ))}
 
-    <OtherProjectsSection currentProjectId={3} />
+    <div className="snap-section snap-start">
+      <OtherProjectsSection currentProjectId={3} />
+    </div>
   </main>
 );
 
