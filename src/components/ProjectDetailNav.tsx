@@ -43,6 +43,7 @@ const ProjectDetailNav = ({ sections }: { sections: NavSection[] }) => {
 
   const [activeId, setActiveId] = useState(navItems[0]?.id ?? "");
   const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
   const hideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -51,17 +52,28 @@ const ProjectDetailNav = ({ sections }: { sections: NavSection[] }) => {
     const scrollContainer = document.querySelector(
       ".overflow-y-scroll",
     ) as HTMLElement | null;
-    if (!scrollContainer) return;
 
-    const hideNav = () => {
-      if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
-      hideTimeoutRef.current = setTimeout(() => {
-        setIsVisible(false);
-      }, 2000);
-    };
+    const container = scrollContainer ?? window;
 
     const handleScroll = () => {
-      const scrollPosition = scrollContainer.scrollTop + 220;
+      const currentScrollY =
+        container === window
+          ? window.scrollY
+          : (container as HTMLElement).scrollTop;
+
+      // Show/hide based on scroll direction
+      if (currentScrollY < 50) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY.current) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      lastScrollY.current = currentScrollY;
+
+      // Update active section
+      const scrollPosition = currentScrollY + 220;
       let currentId = navItems[0].id;
 
       navItems.forEach((item) => {
@@ -73,17 +85,18 @@ const ProjectDetailNav = ({ sections }: { sections: NavSection[] }) => {
 
       setActiveId(currentId);
       const isDesktop = window.innerWidth >= 768;
-      setIsVisible(true);
-
       if (!isDesktop) {
-        hideNav();
+        if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
+        hideTimeoutRef.current = setTimeout(() => {
+          setIsVisible(false);
+        }, 2000);
       }
     };
 
     handleScroll();
-    scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
+    container.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
-      scrollContainer.removeEventListener("scroll", handleScroll);
+      container.removeEventListener("scroll", handleScroll);
       if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
     };
   }, [navItems]);
