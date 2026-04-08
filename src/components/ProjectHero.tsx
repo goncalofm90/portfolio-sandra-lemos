@@ -1,4 +1,4 @@
-import { FiChevronLeft, FiChevronDown } from "react-icons/fi";
+import { FiChevronLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import type { ProjectData } from "../data/types";
 
