@@ -1,19 +1,6 @@
 import { Link } from "react-router-dom";
 import { getIcon } from "../utils/getIcon";
-
-interface CardProps {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  type?:
-    | "Web App"
-    | "Mobile"
-    | "Dashboard"
-    | "Web, Mobile & Landing Page"
-    | "Mobile & Tablet"
-    | string;
-}
+import type { CardProps } from "../data/types";
 
 const Card = ({
   id,
@@ -21,39 +8,39 @@ const Card = ({
   description,
   image,
   type = "Web App",
+  isFirst = false,
 }: CardProps) => {
   return (
     <Link
       to={`/project/${id}`}
-      className="block w-full sm:w-[30rem] lg:w-120 bg-white rounded-4xl shadow-md overflow-hidden shadow-lg hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] transition-shadow p-6 sm:p-8"
+      className="block w-full bg-white rounded-4xl shadow-md overflow-hidden shadow-lg hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] transition-shadow p-6 sm:p-8 min-h-[600px]"
     >
-      {/* Type & Icon */}
-      <div className="flex items-center space-x-2 mb-4">
-        <span className="font-lufga italic text-lg sm:text-lg font-lufga-400 text-black">
+      <div className="flex items-center space-x-2 mb-3">
+        <span className="font-lufga italic text-base font-lufga-400 text-black">
           {type}
         </span>
         <span className="text-gray-400">|</span>
         <span className="text-black">{getIcon(type)}</span>
       </div>
 
-      {/* Image */}
-      <div className="flex justify-center mb-4 transition-all duration-100 hover:scale-110">
+      <div className="flex justify-center mb-4 transition-all duration-100 hover:scale-105">
         <img
           src={image}
           alt={title}
-          className="w-full sm:w-auto max-h-64 sm:max-h-72 object-contain py-4 sm:py-8"
+          className={`w-full object-contain py-8 ${
+            isFirst ? "max-h-[500px]" : "max-h-[420px]"
+          }`}
         />
       </div>
 
-      {/* Title & Description */}
       <div>
-        <h2 className="font-lufga text-2xl sm:text-3xl font-lufga-500 text-black mb-2">
+        <h2 className="font-lufga text-xl lg:text-3xl font-lufga-500 text-black mb-2">
           {title}
         </h2>
-        <p className="font-lufga-400 text-black mb-2 sm:mb-4 text-sm sm:text-md text-gray-700 leading-5 sm:leading-6 line-clamp-5 whitespace-pre-line">
+        <p className="font-lufga-400 text-gray-700 mb-3 text-sm leading-5 line-clamp-5 whitespace-pre-line">
           {description}
         </p>
-        <p className="text-kalam-black font-kalam-100 font-light text-sm sm:text-base">
+        <p className="text-kalam-black font-kalam-100 font-light text-sm">
           UX Research & UI Design
         </p>
       </div>

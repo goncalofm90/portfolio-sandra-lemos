@@ -1,6 +1,6 @@
 type Tag = {
   name: string;
-  arrowIcon: string; // path to image
+  arrowIcon: string; 
 };
 
 export type Paragraph = {
@@ -11,7 +11,7 @@ export type Paragraph = {
 
 export type CaseStudySection = {
   title: string;
-  match?: string; // ✅ ADD THIS
+  match?: string;
   paragraphs: {
     text?: string;
     bold?: string;
@@ -50,3 +50,18 @@ export type SplitSectionProps = {
   designIndex?: number;
   total?: number;
 };
+
+export interface CardProps {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  isFirst?: boolean;
+  type?:
+    | "Web App"
+    | "Mobile"
+    | "Dashboard"
+    | "Web, Mobile & Landing Page"
+    | "Mobile & Tablet"
+    | string;
+}

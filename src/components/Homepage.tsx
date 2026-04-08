@@ -34,9 +34,9 @@ const Homepage = () => {
             <p className="text-center font-kalam-300 text-gray-600 text-4xl mb-24">
               Transform insights into simple, effective design solutions
             </p>
-            <div className="space-y-6 flex flex-col items-center gap-6">
-              {PROJECT_CARDS.map((project) => (
-                <Card key={project.id} {...project} />
+            <div className="grid grid-cols-1 gap-20 w-full max-w-2xl mx-auto px-4">
+              {PROJECT_CARDS.map((project, index) => (
+                <Card key={project.id} {...project} isFirst={index === 0} />
               ))}
             </div>
           </div>
