@@ -292,7 +292,7 @@ const MindfulnessDetail = () => (
       </SplitSection>
     ))}
 
-    <div className="snap-section snap-start">
+    <div className="lg:snap-section lg:snap-start">
       <OtherProjectsSection currentProjectId={2} />
     </div>
   </main>

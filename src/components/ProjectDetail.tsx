@@ -70,45 +70,45 @@ const ProjectDetail = () => {
   switch (projectId) {
     case 1:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always] ">
+        <div className="lg:snap-y lg:snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always] ">
           <ProductionManagementDetail />
-          <div className="snap-start">
+          <div className="lg:snap-start">
             <Footer />
           </div>
         </div>
       );
     case 2:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
+        <div className="lg:snap-y lg:snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <MindfulnessDetail />
-          <div className="snap-start">
+          <div className="lg:snap-start">
             <Footer />
           </div>
         </div>
       );
     case 3:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
+        <div className="lg:snap-y lg:snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <SpaceflightBookingDetail />
-          <div className="snap-start">
+          <div className="lg:snap-start">
             <Footer />
           </div>
         </div>
       );
     case 4:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
+        <div className="lg:snap-y lg:snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <HotelManagementDetail />
-          <div className="snap-start">
+          <div className="lg:snap-start">
             <Footer />
           </div>
         </div>
       );
     case 5:
       return (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
+        <div className="lg:snap-y lg:snap-mandatory overflow-y-scroll h-screen overflow-x-hidden scroll-pt-20 [scroll-snap-stop:always]">
           <EcommerceDetail />
-          <div className="snap-start">
+          <div className="lg:snap-start">
             <Footer />
           </div>
         </div>
