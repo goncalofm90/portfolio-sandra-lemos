@@ -18,12 +18,12 @@ const OtherProjectsSection = ({
           Check out other Projects
         </h2>
 
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {otherProjects.map((project) => (
             <Link
               key={project.id}
               to={`/project/${project.id}`}
-              className="rounded-3xl bg-white p-4 shadow-lg hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
+              className="rounded-3xl bg-white p-4 shadow-lg hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] snap-section snap-start"
             >
               <div className="mb-3 flex aspect-[3/3] items-center justify-center overflow-hidden rounded-xl transition-all duration-100 hover:scale-110">
                 <img
