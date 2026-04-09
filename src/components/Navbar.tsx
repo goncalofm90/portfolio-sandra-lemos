@@ -99,11 +99,17 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="focus:outline-none"
+            className="md:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none group"
           >
-            <div className="w-6 h-0.5 bg-black mb-1"></div>
-            <div className="w-6 h-0.5 bg-black mb-1"></div>
-            <div className="w-6 h-0.5 bg-black"></div>
+            <span
+              className={`block w-5 h-0.5 bg-black rounded-full transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}
+            />
+            <span
+              className={`block w-5 h-0.5 bg-black rounded-full transition-all duration-300 ${menuOpen ? "opacity-0 scale-x-0" : "opacity-100 my-0.5"}`}
+            />
+            <span
+              className={`block w-5 h-0.5 bg-black rounded-full transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}
+            />
           </button>
         </div>
       </div>
@@ -115,7 +121,7 @@ const Navbar = () => {
             to="/"
             onClick={() => setMenuOpen(false)}
             className={({ isActive }) =>
-              `text-black hover:text-lufga-salmon transition-colors text-2xl ${
+              `text-black hover:text-lufga-salmon transition-colors text-lg ${
                 isActive ? "nav-link-active font-kalam-800" : "font-normal"
               }`
             }
@@ -126,7 +132,7 @@ const Navbar = () => {
             to="/about"
             onClick={() => setMenuOpen(false)}
             className={({ isActive }) =>
-              `text-black hover:text-lufga-salmon transition-colors text-2xl ${
+              `text-black hover:text-lufga-salmon transition-colors text-lg ${
                 isActive ? "nav-link-active font-kalam-600" : "font-normal"
               }`
             }
@@ -135,7 +141,7 @@ const Navbar = () => {
           </NavLink>
           <a
             href="mailto:SsandraBrazLemos@gmail.com"
-            className="text-white px-6 py-2 rounded-full font-kalam-500 text-lg"
+            className="text-white px-6 py-2 rounded-full font-kalam-500 text-sm"
             style={{ backgroundColor: "#292929" }}
             onClick={() => setMenuOpen(false)}
           >

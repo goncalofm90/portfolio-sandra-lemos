@@ -129,7 +129,7 @@ const ProjectDetailNav = ({ sections }: { sections: NavSection[] }) => {
               <a
                 href={`#${item.id}`}
                 onClick={(event) => handleNavClick(event, item.id)}
-                className={`text-sm transition-colors md:text-xl ${
+                className={`text-xs transition-colors md:text-xl ${
                   activeId === item.id
                     ? "nav-link-active text-lufga-salmon font-kalam-100"
                     : "text-black hover:text-lufga-salmon font-kalam-100"
