@@ -1,26 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback, useRef } from "react";
 import "./EdgeSprayBackground.css";
 
 const BLOB_COLORS = ["color1", "color2"];
 
 const EdgeSprayBackground: React.FC = () => {
   const [scrollRatio, setScrollRatio] = useState(0);
+  const rafRef = useRef<number | null>(null);
+  const isMobile = window.innerWidth < 768;
 
-  useEffect(() => {
-    const handleScroll = () => {
+  const handleScroll = useCallback(() => {
+    if (rafRef.current) return; // throttle to one update per frame
+    rafRef.current = requestAnimationFrame(() => {
       const maxScroll = document.body.scrollHeight - window.innerHeight;
       const ratio = maxScroll > 0 ? window.scrollY / maxScroll : 0;
       setScrollRatio(ratio);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+      rafRef.current = null;
+    });
   }, []);
 
-  // Alternating opacity
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [handleScroll]);
+
   const leftOpacity = Math.cos(scrollRatio * Math.PI * 2) * 0.5 + 0.5;
   const rightOpacity = 1 - leftOpacity;
+
+  const rx = isMobile ? 180 : 350;
+  const ry = isMobile ? 110 : 220;
+  const blur = isMobile ? 15 : 30;
 
   return (
     <>
@@ -37,14 +49,14 @@ const EdgeSprayBackground: React.FC = () => {
             width="300%"
             height="300%"
           >
-            <feGaussianBlur stdDeviation="30" />
+            <feGaussianBlur stdDeviation={blur} />
           </filter>
         </defs>
         <ellipse
           cx="0"
           cy="0"
-          rx="350"
-          ry="220"
+          rx={rx}
+          ry={ry}
           filter="url(#esp-left-filter)"
           className={`spray spray-ellipse ${BLOB_COLORS[0]}`}
         />
@@ -63,14 +75,14 @@ const EdgeSprayBackground: React.FC = () => {
             width="300%"
             height="300%"
           >
-            <feGaussianBlur stdDeviation="30" />
+            <feGaussianBlur stdDeviation={blur} />
           </filter>
         </defs>
         <ellipse
           cx="0"
           cy="0"
-          rx="350"
-          ry="220"
+          rx={rx}
+          ry={ry}
           filter="url(#esp-right-filter)"
           className={`spray spray-ellipse ${BLOB_COLORS[1]}`}
         />
