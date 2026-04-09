@@ -9,20 +9,38 @@ const EdgeSprayBackground: React.FC = () => {
   const isMobile = window.innerWidth < 768;
 
   const handleScroll = useCallback(() => {
-    if (rafRef.current) return; // throttle to one update per frame
+    if (rafRef.current) return;
     rafRef.current = requestAnimationFrame(() => {
-      const maxScroll = document.body.scrollHeight - window.innerHeight;
-      const ratio = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+      const scrollContainer = document.querySelector(
+        ".overflow-y-scroll",
+      ) as HTMLElement | null;
+      const scrollY = scrollContainer
+        ? scrollContainer.scrollTop
+        : window.scrollY;
+      const scrollHeight = scrollContainer
+        ? scrollContainer.scrollHeight
+        : document.body.scrollHeight;
+      const clientHeight = scrollContainer
+        ? scrollContainer.clientHeight
+        : window.innerHeight;
+
+      const maxScroll = scrollHeight - clientHeight;
+      const ratio = maxScroll > 0 ? scrollY / maxScroll : 0;
       setScrollRatio(ratio);
       rafRef.current = null;
     });
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    const scrollContainer = document.querySelector(
+      ".overflow-y-scroll",
+    ) as HTMLElement | null;
+    const target = scrollContainer ?? window;
+
+    target.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      target.removeEventListener("scroll", handleScroll);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, [handleScroll]);
